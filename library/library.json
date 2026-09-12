@@ -6,37 +6,42 @@
       "file": "library/study-handbook.pdf",
       "title": "Your 180-day study handbook",
       "desc": "Complete daily plan, weekly targets and study routines. Printable PDF.",
-      "license": "Original study guide · generated 12 September 2026"
+      "subject": "Plan",
+      "license": "Original study guide"
     },
     {
       "id": "study-handbook-word",
       "file": "library/study-handbook.docx",
       "title": "Your 180-day handbook · Word",
       "desc": "Editable DOCX version. Read here or download for personal planning.",
+      "subject": "Plan",
       "license": "Original study guide"
     },
     {
       "id": "complete-notes",
       "file": "library/complete-study-notes.pdf",
       "title": "Complete study notes · offline collection",
-      "desc": "All topic notes in one downloadable reference. Includes labelled supplementary material.",
-      "license": "Original study notes · technical and dated policy summaries"
+      "desc": "All 142 topic notes in one reference. The fastest way to revise away from the app.",
+      "subject": "All subjects",
+      "license": "Original study notes"
     },
     {
       "id": "open-data-structures",
       "file": "library/open-data-structures.pdf",
       "title": "Open Data Structures · Java",
       "author": "Pat Morin",
-      "desc": "Full textbook: arrays, lists, hashing, trees, heaps and graphs. Begin with chapters 1–3, 5–6 and 10.",
+      "subject": "Data Structures",
+      "desc": "Full textbook: arrays, lists, hashing, trees, heaps and graphs. Begin with chapters 1-3, 5-6 and 10.",
       "source": "https://opendatastructures.org/",
-      "license": "Creative Commons Attribution · unmodified original"
+      "license": "CC BY · unmodified original"
     },
     {
       "id": "think-python",
       "file": "library/think-python.pdf",
       "title": "Think Python · Second edition",
       "author": "Allen B. Downey",
-      "desc": "Python foundations, functions, collections and objects. A full introductory book for your daily reading.",
+      "subject": "Programming",
+      "desc": "Python foundations, functions, collections and objects. A full introductory book for daily reading.",
       "source": "https://greenteapress.com/wp/think-python-2e/",
       "license": "CC BY-NC 3.0 · unmodified · noncommercial study use"
     },
@@ -45,9 +50,90 @@
       "file": "library/algorithms.pdf",
       "title": "Algorithms",
       "author": "Jeff Erickson",
-      "desc": "Full textbook for deeper practice in recursion, backtracking, greedy algorithms and dynamic programming.",
+      "subject": "Algorithms",
+      "desc": "Deep practice in recursion, backtracking, greedy algorithms and dynamic programming.",
       "source": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
       "license": "CC BY 4.0 · unmodified original"
+    },
+    {
+      "id": "cn-systems-approach",
+      "file": "library/computer-networks-systems-approach.pdf",
+      "title": "Computer Networks: A Systems Approach",
+      "author": "Larry Peterson & Bruce Davie",
+      "subject": "Computer Networks",
+      "desc": "Full university textbook. Read chapters 1-2 (foundation, links), 3 (switching), 4 (internetworking), 5 (transport) and 8 (security).",
+      "source": "https://book.systemsapproach.org/",
+      "license": "CC BY 4.0 · unmodified release v6.1"
+    },
+    {
+      "id": "database-design",
+      "file": "library/database-design.pdf",
+      "title": "Database Design · Second edition",
+      "author": "Adrienne Watt & Nelson Eng",
+      "subject": "DBMS",
+      "desc": "Open textbook covering the relational model, ER modelling, normalisation and SQL basics.",
+      "source": "https://opentextbc.ca/dbdesign01/",
+      "license": "CC BY 4.0 · BCcampus Open Education · unmodified"
+    },
+    {
+      "id": "little-book-semaphores",
+      "file": "library/little-book-of-semaphores.pdf",
+      "title": "The Little Book of Semaphores",
+      "author": "Allen B. Downey",
+      "subject": "Operating Systems",
+      "desc": "Process synchronisation in depth — producer-consumer, readers-writers, dining philosophers, and every classic problem with worked solutions.",
+      "source": "https://greenteapress.com/wp/semaphores/",
+      "license": "CC BY-NC · unmodified · noncommercial study use"
+    },
+    {
+      "id": "crypto101",
+      "file": "library/crypto-101.pdf",
+      "title": "Crypto 101",
+      "author": "Laurens Van Houtven",
+      "subject": "Cyber Security",
+      "desc": "Introductory cryptography: block ciphers, modes, hashes, MACs, signatures and how they fail. Pairs with the cryptography notes.",
+      "source": "https://www.crypto101.io/",
+      "license": "CC BY-NC 4.0 · unmodified"
+    },
+    {
+      "id": "nist-800-207",
+      "file": "library/nist-sp-800-207-zero-trust.pdf",
+      "title": "NIST SP 800-207 · Zero Trust Architecture",
+      "author": "NIST",
+      "subject": "Cyber Security",
+      "desc": "The definitive zero-trust reference. Read the tenets in section 2 — quotable in the descriptive paper and the interview.",
+      "source": "https://csrc.nist.gov/pubs/sp/800/207/final",
+      "license": "US Government work · public domain"
+    },
+    {
+      "id": "nist-800-61r3",
+      "file": "library/nist-sp-800-61r3-incident-response.pdf",
+      "title": "NIST SP 800-61r3 · Incident Response",
+      "author": "NIST",
+      "subject": "Cyber Security",
+      "desc": "Incident handling lifecycle. Maps directly onto SEBI CSCRF respond-and-recover expectations.",
+      "source": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "license": "US Government work · public domain"
+    },
+    {
+      "id": "nist-800-145",
+      "file": "library/nist-sp-800-145-cloud.pdf",
+      "title": "NIST SP 800-145 · The NIST Definition of Cloud Computing",
+      "author": "NIST",
+      "subject": "Cloud",
+      "desc": "Three pages. The five essential characteristics and the service/deployment models every cloud question is built on.",
+      "source": "https://csrc.nist.gov/pubs/sp/800/145/final",
+      "license": "US Government work · public domain"
+    },
+    {
+      "id": "elements-of-style",
+      "file": "library/elements-of-style.txt",
+      "title": "The Elements of Style",
+      "author": "William Strunk Jr.",
+      "subject": "English (Descriptive)",
+      "desc": "Short, public-domain style guide. One read improves the Phase II descriptive paper more than any grammar drill.",
+      "source": "https://www.gutenberg.org/ebooks/37134",
+      "license": "Public domain · Project Gutenberg"
     }
   ],
   "links": [

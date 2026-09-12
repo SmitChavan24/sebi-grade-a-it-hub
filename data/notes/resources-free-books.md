@@ -2,7 +2,40 @@
 
 > Everything on this page is **legally free** — either open-licensed, published free by the author, or an official government/regulator publication. No pirated PDFs: apart from the ethics, a SEBI candidate downloading copyrighted books from shady sites is a bad look.
 >
-> **How to use this page:** open a link, download the PDF, then drop it into the **Book Reader** in this app. It will render there and remember your page across sessions.
+> **Most of what you need is already bundled** — see the table immediately below. The rest of this page is for going deeper: open a link, download the PDF, then drop it into the **Book Reader**, which will render it and remember your page.
+
+---
+
+## ★ Already inside this app — nothing to download
+
+These are bundled in the **Book Reader**. Open them there; nothing to fetch, no account, no internet needed once cached. Every one is redistributable under the licence shown, and the files are unmodified originals.
+
+| Book | Subject | Licence |
+|---|---|---|
+| **Computer Networks: A Systems Approach** — Peterson & Davie | Computer Networks | CC BY 4.0 |
+| **Database Design, 2nd ed.** — Watt & Eng (BCcampus) | DBMS | CC BY 4.0 |
+| **Algorithms** — Jeff Erickson | DSA | CC BY 4.0 |
+| **Open Data Structures (Java)** — Pat Morin | DSA | CC BY |
+| **The Little Book of Semaphores** — Downey | OS — synchronisation | CC BY-NC |
+| **Think Python, 2nd ed.** — Downey | Programming | CC BY-NC 3.0 |
+| **Crypto 101** — Van Houtven | Cryptography | CC BY-NC 4.0 |
+| **NIST SP 800-207** — Zero Trust Architecture | Cyber security | Public domain |
+| **NIST SP 800-61r3** — Incident Response | Cyber security | Public domain |
+| **NIST SP 800-145** — Definition of Cloud Computing | Cloud | Public domain |
+| **The Elements of Style** — Strunk | English (descriptive) | Public domain |
+| **Your 180-day handbook** (PDF + Word) | Plan | Original |
+| **Complete study notes** — all 142 notes in one PDF | All subjects | Original |
+
+> ⚠ **Before you travel:** these PDFs are not part of the automatic offline download — that would make the first page load 70 MB. **Open each book once while online** and it is cached on your device from then on.
+
+### Deliberately not bundled
+
+Free to read, but not free to mirror — so this page links to them instead:
+
+- **OSTEP (Operating Systems: Three Easy Pieces)** — the authors give away chapter PDFs from their own site and sell the combined book. Download the chapters from their site; the Little Book of Semaphores covers the synchronisation half already.
+- **Handbook of Applied Cryptography** — free for personal use, copyright CRC Press.
+- **SEBI / RBI / CERT-In / MeitY documents** — deliberately linked, never cached. These are the live regulatory position, and a stale copy of a superseded circular is worse for you than no copy at all.
+- **NCERT textbooks** — free to download, copyright NCERT.
 
 ---
 
@@ -29,6 +62,8 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 
 ## B. Operating Systems
 
+**★ Bundled already:** *The Little Book of Semaphores* (synchronisation in depth). OSTEP below is the complement for the rest of OS.
+
 - **Operating Systems: Three Easy Pieces (OSTEP)** — Arpaci-Dusseau. Free chapter-wise PDFs, and genuinely the best OS book written. → [pages.cs.wisc.edu/~remzi/OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 - **NPTEL — Operating Systems** (IIT faculty, full video course + notes) → [nptel.ac.in](https://nptel.ac.in/)
 - **Linux Documentation Project / man pages** for the command-line portion.
@@ -37,12 +72,16 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 
 ## C. Computer Networks
 
+**★ Bundled already:** *Computer Networks: A Systems Approach* — the full textbook, offline, in the Book Reader.
+
 - **Computer Networks: A Systems Approach** — Peterson & Davie, now **open source and free online** → [book.systemsapproach.org](https://book.systemsapproach.org/)
 - **Beej's Guide to Network Programming** — free, excellent for sockets → [beej.us/guide/bgnet](https://beej.us/guide/bgnet/)
 - **NPTEL — Computer Networks**; **Kurose & Ross companion site** has free slides and interactive problems.
 - **RFCs** for anything you want the authoritative answer on → [rfc-editor.org](https://www.rfc-editor.org/)
 
 ## D. DBMS
+
+**★ Bundled already:** *Database Design, 2nd edition* (BCcampus).
 
 - **Database Design (2nd ed.)** — BCcampus open textbook, CC-licensed → [opentextbc.ca/dbdesign01](https://opentextbc.ca/dbdesign01/)
 - **Database System Concepts (Silberschatz)** — the book is paid, but the **author's site gives away all slides and practice exercises** free → [db-book.com](https://www.db-book.com/)
@@ -51,12 +90,16 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 
 ## E. Data Structures & Algorithms
 
+**★ Bundled already:** *Algorithms* (Erickson) and *Open Data Structures* (Morin).
+
 - **Algorithms** — Jeff Erickson (free, superb, rigorous) → [jeffe.cs.illinois.edu/teaching/algorithms](https://jeffe.cs.illinois.edu/teaching/algorithms/)
 - **Algorithms** — Dasgupta, Papadimitriou & Vazirani (free PDF from the authors) → [people.eecs.berkeley.edu/~vazirani/algorithms.html](https://people.eecs.berkeley.edu/~vazirani/algorithms.html)
 - **Open Data Structures** — Pat Morin, free in Java/C++/Python → [opendatastructures.org](https://opendatastructures.org/)
 - **Practice:** LeetCode, GeeksforGeeks, Codeforces — free tiers are more than enough for this exam.
 
 ## F. Programming (C / Java / Python)
+
+**★ Bundled already:** *Think Python, 2nd edition*.
 
 - **Modern C** — Jens Gustedt, free PDF → [gustedt.gitlabpages.inria.fr/modern-c](https://gustedt.gitlabpages.inria.fr/modern-c/)
 - **Think Python** — Allen Downey, free → [greenteapress.com/wp/think-python-2e](https://greenteapress.com/wp/think-python-2e/)
@@ -78,6 +121,8 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 
 ## I. Cyber Security (highest-value block for you)
 
+**★ Bundled already:** *Crypto 101*, *NIST SP 800-207 (Zero Trust)* and *NIST SP 800-61r3 (Incident Response)*.
+
 - **NIST Cybersecurity Framework 2.0** and the **SP 800 series** — all free, and the vocabulary SEBI's own framework borrows → [csrc.nist.gov](https://csrc.nist.gov/publications/sp800)
   - Start with **SP 800-53** (controls), **SP 800-61** (incident handling), **SP 800-145** (cloud definition), **SP 800-207** (zero trust).
 - **OWASP Top 10** and the **OWASP ASVS / Cheat Sheet Series** — free → [owasp.org](https://owasp.org/www-project-top-ten/)
@@ -88,6 +133,8 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 
 ## J. Cloud, Big Data, AI & Blockchain
 
+**★ Bundled already:** *NIST SP 800-145* — the cloud definition every question is built on.
+
 - **NIST SP 800-145** — the definition of cloud computing everyone cites.
 - **AWS / Azure / GCP official documentation and free-tier training** — free, and more current than any book.
 - **Google Cloud Architecture Framework**, **AWS Well-Architected Framework** — free whitepapers.
@@ -96,6 +143,8 @@ These are free, authoritative, and the actual source that every coaching PDF cop
 - **Dive into Deep Learning (d2l.ai)** — free, interactive → [d2l.ai](https://d2l.ai/)
 
 ## K. English, Quant & Reasoning
+
+**★ Bundled already:** *The Elements of Style*.
 
 - **The Elements of Style** — Strunk, public domain → [gutenberg.org/ebooks/37134](https://www.gutenberg.org/ebooks/37134)
 - **Purdue OWL** — free, thorough grammar and formal-writing reference → [owl.purdue.edu](https://owl.purdue.edu/)
