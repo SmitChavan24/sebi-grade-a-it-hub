@@ -1,0 +1,574 @@
+{
+  "cards": [
+    {
+      "id": "f-q-001",
+      "s": "it-prog",
+      "q": "In C, what is 7 / 2 when both operands are int?",
+      "a": "3\n\nInteger division discards the fractional part; a floating operand would change the operation."
+    },
+    {
+      "id": "f-q-002",
+      "s": "it-prog",
+      "q": "C: int x=4; int y=x++; What are x and y afterwards?",
+      "a": "x=5, y=4\n\nPost-increment yields the old value and then increments x."
+    },
+    {
+      "id": "f-q-003",
+      "s": "it-prog",
+      "q": "C: int x=4; int y=++x; What are x and y afterwards?",
+      "a": "x=5, y=5\n\nPre-increment increments first and yields the new value."
+    },
+    {
+      "id": "f-q-004",
+      "s": "it-prog",
+      "q": "C: char s[]=\"SEBI\"; What is sizeof(s)?",
+      "a": "5\n\nThe array contains four characters and a terminating null byte."
+    },
+    {
+      "id": "f-q-005",
+      "s": "it-prog",
+      "q": "C: int a[5]; What does sizeof(a)/sizeof(a[0]) give in the same scope?",
+      "a": "5\n\nThe array total size divided by one element size is the element count. This fails after array-to-pointer parameter adjustment."
+    },
+    {
+      "id": "f-q-006",
+      "s": "it-prog",
+      "q": "Which C expression has undefined behaviour?",
+      "a": "Reading a[5] from int a[5]\n\nValid indices are 0 through 4. Out-of-bounds access is undefined."
+    },
+    {
+      "id": "f-q-007",
+      "s": "it-prog",
+      "q": "What must a recursive function have to terminate on intended inputs?",
+      "a": "A reachable base case and progress toward it\n\nA base case is insufficient if recursive calls never move toward it."
+    },
+    {
+      "id": "f-q-008",
+      "s": "it-prog",
+      "q": "C++: int x=2; int& r=x; r=8; What is x?",
+      "a": "8\n\nr is an alias for x. Assigning through r updates x."
+    },
+    {
+      "id": "f-q-009",
+      "s": "it-prog",
+      "q": "What does encapsulation primarily support?",
+      "a": "Controlling access to state through an interface\n\nEncapsulation groups state and behaviour and controls how state is accessed."
+    },
+    {
+      "id": "f-q-010",
+      "s": "it-prog",
+      "q": "Two methods with the same name but different parameter lists demonstrate what?",
+      "a": "Overloading\n\nOverloading distinguishes callable signatures; overriding replaces inherited behaviour."
+    },
+    {
+      "id": "f-q-011",
+      "s": "it-prog",
+      "q": "Java: int[] a={1,2}; int[] b=a; b[0]=9; What is a[0]?",
+      "a": "9\n\nBoth references point to the same array object. No copy was made."
+    },
+    {
+      "id": "f-q-012",
+      "s": "it-prog",
+      "q": "What does a Java finally block generally provide?",
+      "a": "Cleanup executed when leaving the try/catch flow\n\nFinally is for cleanup; abnormal VM termination is an exception to the usual execution rule."
+    },
+    {
+      "id": "f-q-013",
+      "s": "it-prog",
+      "q": "Python: a=[1,2]; b=a[:]; b.append(3); What is len(a)?",
+      "a": "2\n\nSlicing copies the outer list; appending to b does not append to a."
+    },
+    {
+      "id": "f-q-014",
+      "s": "it-prog",
+      "q": "Python: a=[[1]]; b=a[:]; b[0].append(2); What is a?",
+      "a": "[[1, 2]]\n\nA shallow copy shares the nested list, so mutating that nested object is visible through both."
+    },
+    {
+      "id": "f-q-015",
+      "s": "it-prog",
+      "q": "What is Python len(set([1,1,2,3,3]))?",
+      "a": "3\n\nA set contains only distinct values: 1, 2 and 3."
+    },
+    {
+      "id": "f-q-016",
+      "s": "it-ds",
+      "q": "Which structure naturally implements breadth-first traversal?",
+      "a": "Queue\n\nBFS processes discovered vertices in first-in-first-out order."
+    },
+    {
+      "id": "f-q-017",
+      "s": "it-ds",
+      "q": "Which structure is used for matching nested parentheses?",
+      "a": "Stack\n\nEach closing bracket must match the most recent unmatched opening bracket."
+    },
+    {
+      "id": "f-q-018",
+      "s": "it-ds",
+      "q": "Binary search requires what property of its search space?",
+      "a": "An ordered or monotonic search condition\n\nIt discards half the space based on an order or monotonic predicate."
+    },
+    {
+      "id": "f-q-019",
+      "s": "it-ds",
+      "q": "What is the worst-case time of binary search on a sorted array?",
+      "a": "O(log n)\n\nThe remaining interval is halved on each step."
+    },
+    {
+      "id": "f-q-020",
+      "s": "it-ds",
+      "q": "Inserting at the head of a singly linked list, given the head, takes what time?",
+      "a": "O(1)\n\nOnly the new node link and the head pointer need updating."
+    },
+    {
+      "id": "f-q-021",
+      "s": "it-ds",
+      "q": "Which traversal of a BST with distinct keys gives ascending order?",
+      "a": "Inorder\n\nLeft subtree, root, right subtree follows the BST ordering invariant."
+    },
+    {
+      "id": "f-q-022",
+      "s": "it-ds",
+      "q": "A min-heap guarantees which relationship?",
+      "a": "Each parent is no greater than its children\n\nThe heap invariant is local parent-child order, not total sorted order."
+    },
+    {
+      "id": "f-q-023",
+      "s": "it-ds",
+      "q": "Building a binary heap bottom-up from n values takes what time?",
+      "a": "O(n)\n\nMost nodes are near leaves and require little work; the sum of sift-down costs is linear."
+    },
+    {
+      "id": "f-q-024",
+      "s": "it-ds",
+      "q": "A hash table has n entries and m buckets. Its load factor is?",
+      "a": "n/m\n\nLoad factor measures entries relative to capacity or bucket count."
+    },
+    {
+      "id": "f-q-025",
+      "s": "it-ds",
+      "q": "Which sorting algorithm has O(n squared) worst case despite O(n log n) average behaviour?",
+      "a": "Quicksort\n\nRepeatedly highly unbalanced partitions make quicksort quadratic."
+    },
+    {
+      "id": "f-q-026",
+      "s": "it-ds",
+      "q": "A stable sort preserves what?",
+      "a": "Relative order of equal-key items\n\nStability is useful when composing sorts on multiple keys."
+    },
+    {
+      "id": "f-q-027",
+      "s": "it-ds",
+      "q": "What property commonly makes dynamic programming useful?",
+      "a": "Overlapping subproblems and optimal substructure\n\nDP stores subproblem results and combines them according to a recurrence."
+    },
+    {
+      "id": "f-q-028",
+      "s": "it-ds",
+      "q": "For 0/1 knapsack, can an item be chosen repeatedly?",
+      "a": "No\n\n0/1 means each item is either selected once or not selected."
+    },
+    {
+      "id": "f-q-029",
+      "s": "it-ds",
+      "q": "With coins 1, 3, 4, how many coins optimally make 6?",
+      "a": "2\n\n3+3 uses two coins. Greedy 4+1+1 uses three and is not optimal here."
+    },
+    {
+      "id": "f-q-030",
+      "s": "it-ds",
+      "q": "How many overlapping occurrences of ABA are in ABABA?",
+      "a": "2\n\nMatches start at zero-based positions 0 and 2."
+    },
+    {
+      "id": "f-q-031",
+      "s": "it-ds",
+      "q": "What is the zero-based row-major offset of element [2][1] in a matrix with 4 columns?",
+      "a": "9\n\nOffset = row*columns + column = 2*4+1."
+    },
+    {
+      "id": "f-q-032",
+      "s": "it-ds",
+      "q": "Which is valid JSON?",
+      "a": "{\"ok\":true,\"n\":null}\n\nJSON needs quoted keys, lowercase literals and no trailing comma."
+    },
+    {
+      "id": "f-q-033",
+      "s": "it-ds",
+      "q": "Dijkstra’s standard correctness guarantee requires which edge-weight condition?",
+      "a": "Non-negative weights\n\nNegative edges can invalidate the greedy finalisation step."
+    },
+    {
+      "id": "f-q-034",
+      "s": "it-ds",
+      "q": "A topological ordering exists for which directed graphs?",
+      "a": "Acyclic directed graphs\n\nA directed cycle prevents an ordering with every edge going forward."
+    },
+    {
+      "id": "f-q-035",
+      "s": "it-dbms",
+      "q": "Which key uniquely identifies a row and is selected as the principal identifier?",
+      "a": "Primary key\n\nA primary key is the chosen candidate key and disallows null values."
+    },
+    {
+      "id": "f-q-036",
+      "s": "it-dbms",
+      "q": "Which relational operation selects rows satisfying a condition?",
+      "a": "Selection\n\nSelection filters rows; projection selects attributes."
+    },
+    {
+      "id": "f-q-037",
+      "s": "it-dbms",
+      "q": "SQL: Which clause filters groups after aggregation?",
+      "a": "HAVING\n\nWHERE filters input rows, while HAVING filters grouped results."
+    },
+    {
+      "id": "f-q-038",
+      "s": "it-dbms",
+      "q": "SQL: What does COUNT(column) exclude?",
+      "a": "NULL values in that column\n\nCOUNT(column) counts non-null values; COUNT(*) counts rows."
+    },
+    {
+      "id": "f-q-039",
+      "s": "it-dbms",
+      "q": "SQL: What predicate correctly tests a null value?",
+      "a": "IS NULL\n\nSQL uses three-valued logic; ordinary comparison with null is unknown."
+    },
+    {
+      "id": "f-q-040",
+      "s": "it-dbms",
+      "q": "Which join retains every left-table row even when there is no right match?",
+      "a": "LEFT JOIN\n\nA left outer join supplies nulls for the missing right-side values."
+    },
+    {
+      "id": "f-q-041",
+      "s": "it-dbms",
+      "q": "How does UNION differ from UNION ALL?",
+      "a": "UNION eliminates duplicate result rows\n\nUNION has distinct semantics. Ordering is not guaranteed without ORDER BY."
+    },
+    {
+      "id": "f-q-042",
+      "s": "it-dbms",
+      "q": "A transaction should happen entirely or not at all. Which ACID property is this?",
+      "a": "Atomicity\n\nAtomicity prevents partial transaction effects from being committed."
+    },
+    {
+      "id": "f-q-043",
+      "s": "it-dbms",
+      "q": "Which ACID property concerns persistence after commit?",
+      "a": "Durability\n\nCommitted changes should survive the failures covered by the system guarantees."
+    },
+    {
+      "id": "f-q-044",
+      "s": "it-dbms",
+      "q": "For BCNF, every nontrivial functional dependency X → Y must satisfy what?",
+      "a": "X is a superkey\n\nBCNF requires every determinant of a nontrivial dependency to be a superkey."
+    },
+    {
+      "id": "f-q-045",
+      "s": "it-dbms",
+      "q": "Which index structure is especially suitable for ordered range scans?",
+      "a": "B+ tree\n\nSorted leaf entries and leaf links allow efficient range traversal."
+    },
+    {
+      "id": "f-q-046",
+      "s": "it-dbms",
+      "q": "What does a window aggregate usually preserve compared with GROUP BY?",
+      "a": "Individual input rows\n\nA window computes over related rows without necessarily collapsing them into grouped rows."
+    },
+    {
+      "id": "f-q-047",
+      "s": "it-cn",
+      "q": "Which OSI layer handles routing between networks?",
+      "a": "Network\n\nThe network layer deals with logical addressing and routing."
+    },
+    {
+      "id": "f-q-048",
+      "s": "it-cn",
+      "q": "Which transport protocol provides ordered reliable byte-stream delivery?",
+      "a": "TCP\n\nTCP uses sequence numbers, acknowledgements and retransmissions."
+    },
+    {
+      "id": "f-q-049",
+      "s": "it-cn",
+      "q": "What service usually resolves hostnames to IP addresses?",
+      "a": "DNS\n\nDNS provides name resolution; DHCP supplies network configuration."
+    },
+    {
+      "id": "f-q-050",
+      "s": "it-cn",
+      "q": "How many total IPv4 addresses are in a /26 subnet?",
+      "a": "64\n\nThere are 6 host bits, so 2^6 = 64 total addresses. Traditional usable-host count is 62."
+    },
+    {
+      "id": "f-q-051",
+      "s": "it-cn",
+      "q": "An Ethernet switch normally forwards frames using which address?",
+      "a": "Destination MAC\n\nLayer-2 switches use their learned MAC forwarding table."
+    },
+    {
+      "id": "f-q-052",
+      "s": "it-cn",
+      "q": "What is ARP used for in an IPv4 LAN?",
+      "a": "Resolving a local IPv4 address to a link-layer address\n\nARP maps an on-link IPv4 destination or next hop to its MAC address."
+    },
+    {
+      "id": "f-q-053",
+      "s": "it-cn",
+      "q": "Which protocol is associated with sending email?",
+      "a": "SMTP\n\nSMTP transports outgoing mail. POP3 and IMAP are mainly for mailbox access."
+    },
+    {
+      "id": "f-q-054",
+      "s": "it-cn",
+      "q": "What does TCP flow control mainly protect?",
+      "a": "The receiver from excessive incoming data\n\nThe receiver window limits how much unacknowledged data the receiver can accept."
+    },
+    {
+      "id": "f-q-055",
+      "s": "it-sec",
+      "q": "Which CIA property is harmed when unauthorised users read confidential records?",
+      "a": "Confidentiality\n\nConfidentiality controls disclosure to unauthorised parties."
+    },
+    {
+      "id": "f-q-056",
+      "s": "it-sec",
+      "q": "A record is altered without authorisation. Which CIA property is directly affected?",
+      "a": "Integrity\n\nIntegrity concerns correctness and unauthorised modification."
+    },
+    {
+      "id": "f-q-057",
+      "s": "it-sec",
+      "q": "Which combination represents two distinct authentication factors?",
+      "a": "Password and hardware security key\n\nKnowledge plus possession is multifactor. Two knowledge secrets are the same factor type."
+    },
+    {
+      "id": "f-q-058",
+      "s": "it-sec",
+      "q": "Which control most directly prevents SQL injection in query parameters?",
+      "a": "Parameterized queries\n\nBind values as data rather than concatenating them into executable SQL."
+    },
+    {
+      "id": "f-q-059",
+      "s": "it-sec",
+      "q": "Passwords should generally be stored using what?",
+      "a": "A salted password hashing function\n\nA deliberately costly password hash with a unique salt limits offline guessing and precomputed attacks."
+    },
+    {
+      "id": "f-q-060",
+      "s": "it-sec",
+      "q": "A digital signature is typically created with which key?",
+      "a": "Signer’s private key\n\nVerification uses the corresponding public key. Signing does not itself encrypt the message."
+    },
+    {
+      "id": "f-q-061",
+      "s": "it-sec",
+      "q": "Which policy best follows least privilege?",
+      "a": "Grant only necessary access and review it\n\nLimit access by role and task, and review it as needs change."
+    },
+    {
+      "id": "f-q-062",
+      "s": "it-sec",
+      "q": "What distinguishes an IPS from a purely passive IDS?",
+      "a": "An IPS can actively block traffic\n\nAn intrusion prevention system can intervene; detection alone alerts."
+    },
+    {
+      "id": "f-q-063",
+      "s": "it-data",
+      "q": "Python: list(range(1,6,2)) gives what?",
+      "a": "[1, 3, 5]\n\nrange excludes the stop value and advances by the supplied step."
+    },
+    {
+      "id": "f-q-064",
+      "s": "it-data",
+      "q": "In pandas, which selector is primarily position-based?",
+      "a": "iloc\n\niloc selects by integer positions; loc uses labels or boolean masks."
+    },
+    {
+      "id": "f-q-065",
+      "s": "it-data",
+      "q": "A join key appears 3 times on the left and 2 times on the right. How many matching rows can an inner join produce for it?",
+      "a": "6\n\nEvery left match combines with every right match: 3*2 rows."
+    },
+    {
+      "id": "f-q-066",
+      "s": "it-data",
+      "q": "R: c(10,20,30)[1] is what?",
+      "a": "10\n\nR uses one-based vector indexing."
+    },
+    {
+      "id": "f-q-067",
+      "s": "it-data",
+      "q": "R: mean(c(2,NA,6), na.rm=TRUE) gives what?",
+      "a": "4\n\nRemoving the missing observation leaves (2+6)/2 = 4."
+    },
+    {
+      "id": "f-q-068",
+      "s": "it-data",
+      "q": "Which ETL stage standardises inconsistent date formats?",
+      "a": "Transform\n\nTransformation cleans and maps source values into the target representation."
+    },
+    {
+      "id": "f-q-069",
+      "s": "it-data",
+      "q": "Moving from daily totals to monthly totals is which OLAP operation?",
+      "a": "Roll-up\n\nRoll-up aggregates to a coarser level of a hierarchy."
+    },
+    {
+      "id": "f-q-070",
+      "s": "it-data",
+      "q": "What should a fact table’s grain define?",
+      "a": "What one row represents\n\nA clear grain prevents mixing measures at incompatible levels of detail."
+    },
+    {
+      "id": "f-q-071",
+      "s": "it-data",
+      "q": "Which regex matches exactly three ASCII digits and nothing else?",
+      "a": "^[0-9]{3}$\n\nAnchors require the whole string and {3} sets the exact repetition count."
+    },
+    {
+      "id": "f-q-072",
+      "s": "it-shell",
+      "q": "In a shell script, what does $# represent?",
+      "a": "Number of positional arguments\n\nThe argument count is separate from $1 (first argument) and $? (previous status)."
+    },
+    {
+      "id": "f-q-073",
+      "s": "it-shell",
+      "q": "Which shell exit status conventionally indicates success?",
+      "a": "0\n\nZero means success by convention; nonzero usually signals failure."
+    },
+    {
+      "id": "f-q-074",
+      "s": "it-shell",
+      "q": "What does a shell pipe connect?",
+      "a": "Left command stdout to right command stdin\n\nA pipe streams one program’s standard output to another’s standard input."
+    },
+    {
+      "id": "f-q-075",
+      "s": "it-shell",
+      "q": "Why quote \"$name\" in a shell command?",
+      "a": "To preserve it as one argument despite spaces\n\nDouble quotes allow variable expansion while preventing word splitting and pathname expansion of the result."
+    },
+    {
+      "id": "f-q-076",
+      "s": "it-shell",
+      "q": "Why commonly run sort before uniq?",
+      "a": "uniq combines adjacent duplicate lines\n\nIdentical lines must be adjacent to be consolidated by uniq."
+    },
+    {
+      "id": "f-q-077",
+      "s": "ga",
+      "q": "What is a primary market transaction?",
+      "a": "An issuer selling newly issued securities\n\nThe primary market raises funds through new issuance; secondary trading transfers existing securities."
+    },
+    {
+      "id": "f-q-078",
+      "s": "ga",
+      "q": "What does diversification mainly reduce?",
+      "a": "Asset-specific risk\n\nCombining imperfectly correlated exposures can reduce concentration risk, but does not guarantee returns."
+    },
+    {
+      "id": "f-q-079",
+      "s": "ga",
+      "q": "An equity share generally represents what?",
+      "a": "An ownership interest\n\nEquity is a residual ownership claim with uncertain returns."
+    },
+    {
+      "id": "f-q-080",
+      "s": "ga",
+      "q": "What is a depository’s core role?",
+      "a": "Holding securities electronically and facilitating transfers\n\nElectronic holdings and book-entry transfers are central depository functions."
+    },
+    {
+      "id": "f-q-081",
+      "s": "ga",
+      "q": "Which instrument gives its holder a right, without an obligation, to buy at a specified strike under its terms?",
+      "a": "Call option\n\nA call provides the purchase right; a put provides the sale right."
+    },
+    {
+      "id": "f-q-082",
+      "s": "ga",
+      "q": "What does a mutual fund NAV represent?",
+      "a": "Net assets per unit\n\nNAV divides the fund’s net asset value by its outstanding units."
+    },
+    {
+      "id": "f-q-083",
+      "s": "eng",
+      "q": "Choose the grammatically correct sentence.",
+      "a": "Each of the applicants is ready.\n\nEach is the singular subject; the phrase of the applicants does not change agreement."
+    },
+    {
+      "id": "f-q-084",
+      "s": "eng",
+      "q": "Choose the correct usage.",
+      "a": "The results affect the decision.\n\nAffect is the verb meaning influence; results is plural and takes affect."
+    },
+    {
+      "id": "f-q-085",
+      "s": "eng",
+      "q": "Which word is closest in meaning to mitigate?",
+      "a": "Reduce the severity of\n\nMitigate means make less severe; it does not mean eliminate."
+    },
+    {
+      "id": "f-q-086",
+      "s": "eng",
+      "q": "Which sentence uses parallel structure?",
+      "a": "The role requires analysing data, writing reports and reviewing controls.\n\nAll three coordinated activities use the same grammatical form."
+    },
+    {
+      "id": "f-q-087",
+      "s": "reas",
+      "q": "All A are B. Some B are C. Does some A are C necessarily follow?",
+      "a": "No\n\nThe B-C overlap may be entirely outside A."
+    },
+    {
+      "id": "f-q-088",
+      "s": "reas",
+      "q": "A > B and B >= C. What follows?",
+      "a": "A > C\n\nCombining a strict greater-than with a non-strict greater-than gives a strict greater-than."
+    },
+    {
+      "id": "f-q-089",
+      "s": "reas",
+      "q": "A candidate ranks 7th from the top and 14th from the bottom. How many candidates are there?",
+      "a": "20\n\nAdd the two ranks and subtract one to avoid counting the candidate twice."
+    },
+    {
+      "id": "f-q-090",
+      "s": "reas",
+      "q": "A person walks 6 km east then 8 km north. What is displacement magnitude?",
+      "a": "10 km\n\nThe straight-line displacement follows the Pythagorean theorem: sqrt(36+64)."
+    },
+    {
+      "id": "f-q-091",
+      "s": "qa",
+      "q": "A value rises 20% then falls 20%. Relative to the original, it is now?",
+      "a": "4% lower\n\nMultipliers 1.2*0.8 = 0.96. The percentage changes have different bases."
+    },
+    {
+      "id": "f-q-092",
+      "s": "qa",
+      "q": "A does a job in 10 days and B in 15 days. Together they need?",
+      "a": "6 days\n\nCombined daily work rate is 1/10+1/15 = 1/6."
+    },
+    {
+      "id": "f-q-093",
+      "s": "qa",
+      "q": "A bag has 3 red and 2 blue balls. One is drawn uniformly. P(blue) is?",
+      "a": "2/5\n\nTwo of the five equally likely outcomes are blue."
+    },
+    {
+      "id": "f-q-094",
+      "s": "qa",
+      "q": "How many ways can 2 people be selected from 5, ignoring order?",
+      "a": "10\n\n5 choose 2 = 5*4/2 = 10. Divide by two because each pair can be ordered in two ways."
+    },
+    {
+      "id": "f-q-095",
+      "s": "qa",
+      "q": "A train covers 150 km in 2.5 hours. Average speed is?",
+      "a": "60 km/h\n\nAverage speed = total distance divided by total time."
+    }
+  ]
+}

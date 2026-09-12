@@ -1,0 +1,1361 @@
+{
+  "stream": "Information Technology",
+  "post": "Officer Grade A (Assistant Manager) — SEBI",
+  "disclaimer": "Preparation baseline: official 2025 recruitment notice, checked 12 September 2026. Its exams were in January/February 2026. This is a reusable preparation plan, not an announced next-attempt calendar. Confirm any newer notice on the SEBI vacancies page. Supplementary CS and interview topics are labelled separately.",
+  "phases": [
+    {
+      "id": "p1",
+      "name": "Phase I — screening",
+      "when": "Date: consult your recruitment notice",
+      "nature": "Two objective papers; screening marks do not enter final merit.",
+      "note": "Minimum cut-offs: Paper 1 30%, Paper 2 40%, aggregate 40%. Wrong objective answers lose one-quarter of the marks assigned.",
+      "papers": [
+        {
+          "id": "p1p1",
+          "name": "Paper 1 — common aptitude",
+          "marks": 100,
+          "minutes": 60,
+          "contents": "General awareness, English, quantitative aptitude and reasoning."
+        },
+        {
+          "id": "p1p2",
+          "name": "Paper 2 — IT",
+          "marks": 100,
+          "minutes": 40,
+          "contents": "IT objective questions; indicative topic weights are listed below."
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "Phase II — main examination",
+      "when": "Date: consult your recruitment notice",
+      "nature": "Descriptive English and objective IT.",
+      "note": "Paper weights: English 1/3; IT 2/3. Minimums: English 30%, IT 40%, weighted aggregate 50%. IT wrong answers carry one-quarter negative marking.",
+      "papers": [
+        {
+          "id": "p2p1",
+          "name": "Paper 1 — English drafting",
+          "marks": 100,
+          "minutes": 60,
+          "contents": "Descriptive writing; consult the handout for task types."
+        },
+        {
+          "id": "p2p2",
+          "name": "Paper 2 — IT objective",
+          "marks": 100,
+          "minutes": 180,
+          "contents": "Code tracing, debugging, logic and data-analysis MCQs."
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "Phase III — interview",
+      "when": "After shortlisting",
+      "nature": "Final weighting: Phase II 85%, interview 15%.",
+      "papers": [],
+      "note": "Practice factual profile answers, technical explanations and informed judgement."
+    }
+  ],
+  "subjects": [
+    {
+      "id": "ga",
+      "name": "General Awareness & Securities Market",
+      "short": "GA + Securities Market",
+      "paper": "Phase I Paper 1",
+      "colour": "acc",
+      "weightNote": "Practise financial awareness alongside the other common-paper sections. No fixed internal GA topic weights are assumed.",
+      "topics": [
+        {
+          "id": "ga-01",
+          "name": "Indian financial system: structure, regulators, intermediaries",
+          "note": "ga-financial-system",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-02",
+          "name": "SEBI: establishment, objectives, structure, powers & functions",
+          "note": "ga-sebi",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ga-03",
+          "name": "SEBI Act 1992 — key sections, penalties, SAT appeals",
+          "note": "ga-sebi-act",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-04",
+          "name": "Securities Contracts (Regulation) Act 1956 & SCRR",
+          "note": "ga-scra",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "ga-05",
+          "name": "Depositories Act 1996, NSDL/CDSL, dematerialisation",
+          "note": "ga-depositories",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "ga-06",
+          "name": "Primary market: IPO, FPO, book building, ASBA, UPI, red herring prospectus",
+          "note": "ga-primary-market",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-07",
+          "name": "Secondary market: exchanges, indices, trading, clearing & settlement, T+1/T+0",
+          "note": "ga-secondary-market",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-08",
+          "name": "Market instruments: equity, debt, G-sec, REITs, InvITs, AT1 bonds",
+          "note": "ga-instruments",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "ga-09",
+          "name": "Derivatives: futures, options, payoffs, margins, F&O regulation",
+          "note": "ga-derivatives",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-10",
+          "name": "Mutual funds, AIFs, PMS, index funds & ETFs",
+          "note": "ga-mutual-funds",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ga-11",
+          "name": "Key SEBI regulations: LODR, ICDR, PIT, SAST, PFUTP",
+          "note": "ga-sebi-regulations",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ga-12",
+          "name": "Investor protection, grievance redressal (SCORES), IPEF, ODR",
+          "note": "ga-investor-protection",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "ga-13",
+          "name": "RBI, monetary policy, banking system, NBFCs",
+          "note": "ga-rbi-banking",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "ga-14",
+          "name": "Other regulators: IRDAI, PFRDA, IBBI, FSDC, IFSCA",
+          "note": "ga-other-regulators",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "ga-15",
+          "name": "Indian economy basics: GDP, inflation, budget, fiscal & external sector",
+          "note": "ga-economy",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "ga-16",
+          "name": "Static GK: HQs, heads, schemes, indices, awards, abbreviations",
+          "note": "ga-static-gk",
+          "est": 2,
+          "imp": "low"
+        },
+        {
+          "id": "ga-17",
+          "name": "Current affairs method: 6-month window, sources, note-making",
+          "note": "ga-current-affairs",
+          "est": 1,
+          "imp": "high"
+        }
+      ]
+    },
+    {
+      "id": "eng",
+      "name": "English Language (Objective)",
+      "short": "English (Obj)",
+      "paper": "Phase I Paper 1",
+      "colour": "pur",
+      "topics": [
+        {
+          "id": "eng-01",
+          "name": "Reading comprehension strategy & speed",
+          "note": "eng-comprehension",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "eng-02",
+          "name": "Cloze test & sentence completion",
+          "note": "eng-cloze",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "eng-03",
+          "name": "Error spotting & sentence correction",
+          "note": "eng-grammar",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "eng-04",
+          "name": "Para jumbles & sentence rearrangement",
+          "note": "eng-parajumble",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "eng-05",
+          "name": "Fillers, synonyms, antonyms, idioms & phrases",
+          "note": "eng-vocab",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "eng-06",
+          "name": "Core grammar rules: tense, S-V agreement, prepositions, modifiers",
+          "note": "eng-grammar",
+          "est": 4,
+          "imp": "high"
+        }
+      ]
+    },
+    {
+      "id": "qa",
+      "name": "Quantitative Aptitude",
+      "short": "Quant",
+      "paper": "Phase I Paper 1",
+      "colour": "ok",
+      "topics": [
+        {
+          "id": "qa-01",
+          "name": "Number system, simplification, approximation",
+          "note": "qa-basics",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "qa-02",
+          "name": "Percentage, ratio & proportion, averages",
+          "note": "qa-arithmetic",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "qa-03",
+          "name": "Profit & loss, SI & CI, mixtures & alligation",
+          "note": "qa-arithmetic",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "qa-04",
+          "name": "Time-speed-distance, time & work, pipes & cisterns",
+          "note": "qa-arithmetic",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "qa-05",
+          "name": "Data Interpretation: tables, bar, line, pie, caselets",
+          "note": "qa-di",
+          "est": 5,
+          "imp": "high"
+        },
+        {
+          "id": "qa-06",
+          "name": "Quadratic equations & number series",
+          "note": "qa-series",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "qa-07",
+          "name": "Permutation, combination & probability",
+          "note": "qa-pnc",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "qa-08",
+          "name": "Mensuration & basic algebra",
+          "note": "qa-basics",
+          "est": 2,
+          "imp": "low"
+        },
+        {
+          "id": "qa-09",
+          "name": "Speed maths: tables, squares, cubes, fraction-percent conversions",
+          "note": "qa-speed-maths",
+          "est": 2,
+          "imp": "high"
+        }
+      ]
+    },
+    {
+      "id": "reas",
+      "name": "Test of Reasoning",
+      "short": "Reasoning",
+      "paper": "Phase I Paper 1",
+      "colour": "warn",
+      "topics": [
+        {
+          "id": "re-01",
+          "name": "Puzzles: seating arrangement (linear, circular, square)",
+          "note": "reas-puzzles",
+          "est": 5,
+          "imp": "high"
+        },
+        {
+          "id": "re-02",
+          "name": "Puzzles: floor, box, scheduling, month/day based",
+          "note": "reas-puzzles",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "re-03",
+          "name": "Syllogism (including reverse & possibility cases)",
+          "note": "reas-syllogism",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "re-04",
+          "name": "Inequality (direct & coded)",
+          "note": "reas-inequality",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "re-05",
+          "name": "Coding-decoding, blood relations, direction sense",
+          "note": "reas-misc",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "re-06",
+          "name": "Order & ranking, alphanumeric series, input-output",
+          "note": "reas-misc",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "re-07",
+          "name": "Data sufficiency & statement-based (assumption, conclusion, course of action)",
+          "note": "reas-critical",
+          "est": 3,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "engd",
+      "name": "English — Descriptive (Phase II Paper 1)",
+      "short": "English (Desc)",
+      "paper": "Phase II Paper 1",
+      "colour": "pur",
+      "weightNote": "Practise typing and self-review from the beginning. English has one-third of Phase II weighting.",
+      "topics": [
+        {
+          "id": "ed-01",
+          "name": "Essay writing: structure, intro-body-conclusion, argument balance",
+          "note": "engd-essay",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ed-02",
+          "name": "Essay banks: markets, technology, regulation, economy themes",
+          "note": "engd-essay-topics",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ed-03",
+          "name": "Précis writing: 1/3 rule, title, indirect speech",
+          "note": "engd-precis",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ed-04",
+          "name": "Comprehension passages (descriptive answers)",
+          "note": "engd-comprehension",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "ed-05",
+          "name": "Formal letters, reports, office correspondence",
+          "note": "engd-letters",
+          "est": 3,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "it-prog",
+      "name": "Programming & Object-Oriented Concepts",
+      "short": "Programming",
+      "paper": "IT Paper (Phase I & II)",
+      "colour": "acc",
+      "topics": [
+        {
+          "id": "pr-01",
+          "name": "C fundamentals: data types, operators, control flow, functions",
+          "note": "it-prog-c",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "pr-02",
+          "name": "Pointers, arrays, strings, memory model, dynamic allocation",
+          "note": "it-prog-pointers",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "pr-03",
+          "name": "Recursion, scope, storage classes, parameter passing",
+          "note": "it-prog-c",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "pr-04",
+          "name": "OOP: class, object, encapsulation, abstraction",
+          "note": "it-prog-oop",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "pr-05",
+          "name": "Inheritance, polymorphism, overloading vs overriding, virtual functions",
+          "note": "it-prog-oop",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "pr-06",
+          "name": "Java essentials: JVM/JRE/JDK, collections, exceptions, threads",
+          "note": "it-prog-java",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "pr-07",
+          "name": "Python essentials: data structures, comprehensions, modules, libraries",
+          "note": "it-prog-python",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "pr-08",
+          "name": "Output-based & code-tracing questions practice",
+          "note": "it-prog-output",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "pr-cpp",
+          "name": "C++ fundamentals, references and object lifetime",
+          "note": "it-prog-cpp",
+          "imp": "high",
+          "est": 5
+        }
+      ]
+    },
+    {
+      "id": "it-ds",
+      "name": "Data Structures & Algorithms",
+      "short": "DSA",
+      "paper": "IT Paper (Phase I & II)",
+      "colour": "ok",
+      "topics": [
+        {
+          "id": "ds-01",
+          "name": "Complexity analysis: Big-O, Θ, Ω, recurrence & Master theorem",
+          "note": "it-ds-complexity",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ds-02",
+          "name": "Arrays, linked lists (single, double, circular)",
+          "note": "it-ds-linear",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ds-03",
+          "name": "Stacks, queues, deques, priority queues & applications",
+          "note": "it-ds-linear",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ds-04",
+          "name": "Trees: BST, AVL, B/B+ trees, heaps, traversals",
+          "note": "it-ds-trees",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ds-05",
+          "name": "Hashing: functions, collision resolution, load factor",
+          "note": "it-ds-hashing",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "ds-06",
+          "name": "Graphs: representation, BFS/DFS, MST, shortest paths, topological sort",
+          "note": "it-ds-graphs",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ds-07",
+          "name": "Sorting: bubble, insertion, merge, quick, heap, counting — complexity & stability",
+          "note": "it-ds-sorting",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "ds-08",
+          "name": "Searching, divide & conquer, greedy, dynamic programming, backtracking",
+          "note": "it-ds-paradigms",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "ds-09",
+          "name": "Classic DP problems: knapsack, LCS, LIS, matrix chain, coin change",
+          "note": "it-ds-paradigms",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "ds-strings",
+          "name": "String operations, pattern matching, matrix and JSON tracing",
+          "note": "it-strings",
+          "imp": "high",
+          "est": 6
+        }
+      ]
+    },
+    {
+      "id": "it-dbms",
+      "name": "Database Management Systems",
+      "short": "DBMS",
+      "paper": "Phase I IT; selected material also supports interview",
+      "colour": "pur",
+      "topics": [
+        {
+          "id": "db-01",
+          "name": "DBMS architecture, data independence, ER & EER modelling",
+          "note": "it-dbms-model",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "db-02",
+          "name": "Relational model, keys, integrity constraints, relational algebra",
+          "note": "it-dbms-relational",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "db-03",
+          "name": "SQL: DDL, DML, joins, subqueries, aggregates, group by/having",
+          "note": "it-dbms-sql",
+          "est": 5,
+          "imp": "high"
+        },
+        {
+          "id": "db-04",
+          "name": "Advanced SQL: views, indexes, triggers, stored procedures, window functions",
+          "note": "it-dbms-sql-adv",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "db-05",
+          "name": "Normalisation: functional dependency, 1NF→BCNF, 4NF, decomposition",
+          "note": "it-dbms-normalisation",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "db-06",
+          "name": "Transactions: ACID, schedules, serialisability, recovery",
+          "note": "it-dbms-transactions",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "db-07",
+          "name": "Concurrency control: locking, 2PL, deadlock, timestamp, MVCC",
+          "note": "it-dbms-concurrency",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "db-08",
+          "name": "Indexing & file organisation: B+ tree, hashing, clustered vs non-clustered",
+          "note": "it-dbms-indexing",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "db-09",
+          "name": "NoSQL, data warehousing, OLAP vs OLTP, distributed DB & CAP",
+          "note": "it-dbms-nosql",
+          "est": 3,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "it-cn",
+      "name": "Computer Networks",
+      "short": "Networks",
+      "paper": "Phase I IT; selected material also supports interview",
+      "colour": "warn",
+      "topics": [
+        {
+          "id": "cn-01",
+          "name": "OSI & TCP/IP models, layer functions, encapsulation",
+          "note": "it-cn-models",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-02",
+          "name": "Physical layer, transmission media, topologies, switching",
+          "note": "it-cn-physical",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "cn-03",
+          "name": "Data link layer: framing, error detection (CRC, checksum), flow control, ARQ",
+          "note": "it-cn-datalink",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-04",
+          "name": "MAC: Ethernet, CSMA/CD, CSMA/CA, switches, VLAN, ARP",
+          "note": "it-cn-mac",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-05",
+          "name": "Network layer: IPv4 addressing, subnetting, CIDR, NAT, IPv6",
+          "note": "it-cn-ip",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cn-06",
+          "name": "Routing: distance vector, link state, OSPF, BGP, RIP",
+          "note": "it-cn-routing",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-07",
+          "name": "Transport layer: TCP vs UDP, handshake, congestion & flow control",
+          "note": "it-cn-transport",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cn-08",
+          "name": "Application layer: DNS, HTTP/HTTPS, SMTP, FTP, DHCP, SNMP",
+          "note": "it-cn-application",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-09",
+          "name": "Network security devices: firewall, IDS/IPS, VPN, proxy, DMZ",
+          "note": "it-cn-security",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cn-10",
+          "name": "Wireless, mobile networks, 5G, SDN, network troubleshooting tools",
+          "note": "it-cn-modern",
+          "est": 2,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "it-os",
+      "name": "Operating Systems",
+      "short": "OS",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "acc",
+      "topics": [
+        {
+          "id": "os-01",
+          "name": "OS functions, types, kernel, system calls, modes",
+          "note": "it-os-intro",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "os-02",
+          "name": "Processes, PCB, states, context switching, threads",
+          "note": "it-os-process",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "os-03",
+          "name": "CPU scheduling: FCFS, SJF, SRTF, priority, RR — numericals",
+          "note": "it-os-scheduling",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "os-04",
+          "name": "Synchronisation: race condition, critical section, semaphores, monitors",
+          "note": "it-os-sync",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "os-05",
+          "name": "Deadlock: conditions, prevention, avoidance (Banker's), detection",
+          "note": "it-os-deadlock",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "os-06",
+          "name": "Memory: contiguous allocation, paging, segmentation, TLB",
+          "note": "it-os-memory",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "os-07",
+          "name": "Virtual memory, page replacement (FIFO, LRU, Optimal), thrashing",
+          "note": "it-os-virtual",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "os-08",
+          "name": "File systems, directory structures, disk scheduling (FCFS, SSTF, SCAN)",
+          "note": "it-os-file-disk",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "os-09",
+          "name": "I/O management, RAID levels, Linux/Windows basics & commands",
+          "note": "it-os-io",
+          "est": 2,
+          "imp": "med"
+        }
+      ],
+      "supplemental": true,
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table."
+    },
+    {
+      "id": "it-se",
+      "name": "Software Engineering & Project Management",
+      "short": "Software Engg",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "ok",
+      "topics": [
+        {
+          "id": "se-01",
+          "name": "SDLC models: waterfall, spiral, iterative, V-model, prototype",
+          "note": "it-se-sdlc",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "se-02",
+          "name": "Agile, Scrum, Kanban, DevOps, CI/CD",
+          "note": "it-se-agile",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "se-03",
+          "name": "Requirement engineering, SRS, feasibility study",
+          "note": "it-se-requirements",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "se-04",
+          "name": "Design concepts: coupling, cohesion, modularity, design patterns",
+          "note": "it-se-design",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "se-05",
+          "name": "Testing: unit, integration, system, black/white box, regression, UAT",
+          "note": "it-se-testing",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "se-06",
+          "name": "Estimation & metrics: COCOMO, function points, LOC, Halstead",
+          "note": "it-se-estimation",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "se-07",
+          "name": "Project management: CPM/PERT, risk, configuration management, CMMI, ISO",
+          "note": "it-se-pm",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "se-08",
+          "name": "Maintenance, reverse engineering, quality assurance",
+          "note": "it-se-quality",
+          "est": 2,
+          "imp": "low"
+        }
+      ],
+      "supplemental": true,
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table."
+    },
+    {
+      "id": "it-coa",
+      "name": "Computer Organisation & Digital Logic",
+      "short": "COA",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "warn",
+      "topics": [
+        {
+          "id": "co-01",
+          "name": "Number systems, binary arithmetic, 1's & 2's complement, IEEE 754",
+          "note": "it-coa-number",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "co-02",
+          "name": "Boolean algebra, K-maps, logic gates, minimisation",
+          "note": "it-coa-boolean",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "co-03",
+          "name": "Combinational circuits: adders, MUX, decoder, encoder, comparator",
+          "note": "it-coa-combinational",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "co-04",
+          "name": "Sequential circuits: flip-flops, registers, counters",
+          "note": "it-coa-sequential",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "co-05",
+          "name": "CPU organisation, instruction cycle, addressing modes, RISC vs CISC",
+          "note": "it-coa-cpu",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "co-06",
+          "name": "Memory hierarchy, cache mapping & numericals, virtual memory interface",
+          "note": "it-coa-memory",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "co-07",
+          "name": "Pipelining, hazards, speedup numericals, parallel processing",
+          "note": "it-coa-pipeline",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "co-08",
+          "name": "I/O organisation: interrupts, DMA, bus architecture",
+          "note": "it-coa-io",
+          "est": 2,
+          "imp": "med"
+        }
+      ],
+      "supplemental": true,
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table."
+    },
+    {
+      "id": "it-web",
+      "name": "Web Technologies & System Architecture",
+      "short": "Web & Arch",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "pur",
+      "topics": [
+        {
+          "id": "wb-01",
+          "name": "Client-server, 3-tier architecture, web servers & app servers",
+          "note": "it-web-architecture",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "wb-02",
+          "name": "HTML, CSS, JavaScript essentials, DOM",
+          "note": "it-web-frontend",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "wb-03",
+          "name": "HTTP methods, status codes, cookies, sessions, REST vs SOAP",
+          "note": "it-web-http",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "wb-04",
+          "name": "APIs, JSON/XML, microservices, API gateway, message queues",
+          "note": "it-web-api",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "wb-05",
+          "name": "Web security: OWASP Top 10, XSS, CSRF, SQL injection, TLS/SSL",
+          "note": "it-web-security",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "wb-06",
+          "name": "Containers, Docker, Kubernetes, load balancing, caching, CDN",
+          "note": "it-web-infra",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "wb-07",
+          "name": "High availability, DR, RTO/RPO, scalability patterns",
+          "note": "it-web-ha",
+          "est": 2,
+          "imp": "high"
+        }
+      ],
+      "supplemental": true,
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table."
+    },
+    {
+      "id": "it-sec",
+      "name": "Information Security & Cyber Security",
+      "short": "Cyber Security",
+      "paper": "Phase I IT; selected material also supports interview",
+      "colour": "bad",
+      "weightNote": "Cybersecurity: indicative 10% of Phase I IT. Detailed regulatory material is supplementary interview reading.",
+      "topics": [
+        {
+          "id": "cs-01",
+          "name": "CIA triad, AAA, security policies, risk management",
+          "note": "it-sec-fundamentals",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-02",
+          "name": "Cryptography: symmetric (DES/AES), asymmetric (RSA, ECC), modes",
+          "note": "it-sec-crypto",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cs-03",
+          "name": "Hashing, digital signature, PKI, digital certificates, CA",
+          "note": "it-sec-pki",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-04",
+          "name": "Authentication: passwords, MFA, biometrics, SSO, OAuth, Kerberos",
+          "note": "it-sec-auth",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-05",
+          "name": "Attacks: malware, phishing, DDoS, MITM, ransomware, zero-day, APT",
+          "note": "it-sec-attacks",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-06",
+          "name": "Network & endpoint defence: firewall, IDS/IPS, SIEM, SOC, EDR, zero trust",
+          "note": "it-sec-defence",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-07",
+          "name": "IT Act 2000 & amendments, CERT-In directions, DPDP Act 2023",
+          "note": "it-sec-law",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cs-08",
+          "name": "SEBI Cyber Security & Cyber Resilience Framework (CSCRF), MIIs",
+          "note": "it-sec-sebi-cscrf",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cs-09",
+          "name": "Standards & frameworks: ISO 27001, NIST CSF, COBIT, audits, BCP/DR",
+          "note": "it-sec-standards",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cs-10",
+          "name": "Incident response, forensics, VAPT, bug bounty, threat intelligence",
+          "note": "it-sec-ir",
+          "est": 3,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "it-cloud",
+      "name": "Cloud, Data & Emerging Technologies",
+      "short": "Cloud & Emerging",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "acc",
+      "topics": [
+        {
+          "id": "cl-01",
+          "name": "Cloud models: IaaS, PaaS, SaaS; public/private/hybrid; virtualisation",
+          "note": "it-cloud-models",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cl-02",
+          "name": "Cloud security, shared responsibility, MeitY empanelment, data localisation",
+          "note": "it-cloud-security",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cl-03",
+          "name": "SEBI Framework for Adoption of Cloud Services by regulated entities",
+          "note": "it-cloud-sebi",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cl-04",
+          "name": "Big Data: 5 Vs, Hadoop, HDFS, MapReduce, Spark, data lakes",
+          "note": "it-bigdata",
+          "est": 3,
+          "imp": "med"
+        },
+        {
+          "id": "cl-05",
+          "name": "AI/ML basics: supervised vs unsupervised, neural nets, LLMs, model risk",
+          "note": "it-aiml",
+          "est": 4,
+          "imp": "high"
+        },
+        {
+          "id": "cl-06",
+          "name": "Blockchain & DLT: consensus, smart contracts, security tokens, CBDC",
+          "note": "it-blockchain",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "cl-07",
+          "name": "IoT, edge computing, quantum computing & post-quantum cryptography",
+          "note": "it-emerging",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "cl-08",
+          "name": "Data analytics & visualisation, surveillance analytics at exchanges",
+          "note": "it-analytics",
+          "est": 2,
+          "imp": "med"
+        }
+      ],
+      "supplemental": true,
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table."
+    },
+    {
+      "id": "it-fin",
+      "name": "Technology in Securities Markets (SEBI-specific IT)",
+      "short": "IT × Markets",
+      "paper": "Supplementary CS / interview reference",
+      "colour": "ok",
+      "weightNote": "Extra reference material. This subject is not a separate weighted heading in the 2025 IT syllabus. Prioritise the official topic table.",
+      "topics": [
+        {
+          "id": "fn-01",
+          "name": "Market infrastructure institutions: exchanges, clearing corps, depositories & their tech stack",
+          "note": "it-fin-mii",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "fn-02",
+          "name": "Trading systems: order matching engines, latency, co-location, tick data",
+          "note": "it-fin-trading-tech",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "fn-03",
+          "name": "Algorithmic & high-frequency trading; SEBI algo trading framework",
+          "note": "it-fin-algo",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "fn-04",
+          "name": "Market surveillance systems, data analytics for fraud & insider trading detection",
+          "note": "it-fin-surveillance",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "fn-05",
+          "name": "RegTech & SupTech; SEBI's SI Portal, SCORES, DigiLocker-linked initiatives",
+          "note": "it-fin-regtech",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "fn-06",
+          "name": "KYC infrastructure: KRA, CKYC, e-KYC, Aadhaar-based authentication",
+          "note": "it-fin-kyc",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "fn-07",
+          "name": "Payment systems: UPI, NACH, RTGS/NEFT, ASBA plumbing in the market",
+          "note": "it-fin-payments",
+          "est": 2,
+          "imp": "med"
+        },
+        {
+          "id": "fn-08",
+          "name": "Business continuity for MIIs, disaster recovery drills, system audits",
+          "note": "it-fin-bcp",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "fn-09",
+          "name": "Online dispute resolution, investor tech, account aggregators, ONDC-style rails",
+          "note": "it-fin-investortech",
+          "est": 2,
+          "imp": "med"
+        }
+      ],
+      "supplemental": true
+    },
+    {
+      "id": "intv",
+      "name": "Interview Preparation",
+      "short": "Interview",
+      "paper": "Phase III",
+      "colour": "pur",
+      "topics": [
+        {
+          "id": "iv-01",
+          "name": "Your profile: DAF-style self-audit, projects, academics, work experience",
+          "note": "intv-profile",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "iv-02",
+          "name": "Why SEBI, why Grade A, why IT stream — crafted honest answers",
+          "note": "intv-why-sebi",
+          "est": 2,
+          "imp": "high"
+        },
+        {
+          "id": "iv-03",
+          "name": "SEBI departments, recent orders, annual report highlights",
+          "note": "intv-sebi-current",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "iv-04",
+          "name": "IT-in-markets questions the panel actually asks",
+          "note": "intv-it-questions",
+          "est": 3,
+          "imp": "high"
+        },
+        {
+          "id": "iv-05",
+          "name": "Situational, ethics & HR questions; mock interview practice",
+          "note": "intv-hr",
+          "est": 3,
+          "imp": "med"
+        }
+      ]
+    },
+    {
+      "id": "it-data",
+      "name": "Data analytics and warehousing",
+      "short": "Data analytics",
+      "paper": "Phase I IT",
+      "topics": [
+        {
+          "id": "data-py",
+          "name": "Python analytics and dataframes",
+          "note": "it-data-python",
+          "est": 8,
+          "imp": "high"
+        },
+        {
+          "id": "data-r",
+          "name": "R analytics foundations",
+          "note": "it-data-r",
+          "est": 5,
+          "imp": "high"
+        },
+        {
+          "id": "data-wh",
+          "name": "Warehousing, ETL and data models",
+          "note": "it-warehouse",
+          "est": 5,
+          "imp": "high"
+        }
+      ]
+    },
+    {
+      "id": "it-shell",
+      "name": "Shell programming",
+      "short": "Shell",
+      "paper": "Phase I IT",
+      "topics": [
+        {
+          "id": "shell-01",
+          "name": "UNIX commands, variables, arguments and control flow",
+          "note": "it-shell",
+          "est": 6,
+          "imp": "high"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "title": "SEBI Grade A recruitment 2025 — official advertisement",
+    "url": "https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf",
+    "checked": "2026-09-12",
+    "pages": "6, 7, 24, 25"
+  },
+  "weights": {
+    "phase1": [
+      [
+        "Database concepts",
+        10
+      ],
+      [
+        "SQL",
+        10
+      ],
+      [
+        "Programming (C/C++/Java)",
+        30
+      ],
+      [
+        "Python/R analytics",
+        10
+      ],
+      [
+        "Algorithms",
+        10
+      ],
+      [
+        "Networks",
+        10
+      ],
+      [
+        "Cybersecurity",
+        10
+      ],
+      [
+        "Warehousing",
+        5
+      ],
+      [
+        "Shell",
+        5
+      ]
+    ],
+    "phase2": [
+      [
+        "Algorithms",
+        30
+      ],
+      [
+        "Data structures",
+        40
+      ],
+      [
+        "Strings",
+        10
+      ],
+      [
+        "OOP",
+        20
+      ]
+    ]
+  }
+}

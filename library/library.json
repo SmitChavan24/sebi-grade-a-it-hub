@@ -1,0 +1,245 @@
+{
+  "_readme": "Add your own PDFs/DOCX to this folder and list them under \"books\". Each entry needs at least: file (path relative to the site root) and title. Then commit and push - the book appears on every device you open the site from.",
+  "books": [
+    {
+      "id": "study-handbook",
+      "file": "library/study-handbook.pdf",
+      "title": "Your 180-day study handbook",
+      "desc": "Complete daily plan, weekly targets and study routines. Printable PDF.",
+      "license": "Original study guide · generated 12 September 2026"
+    },
+    {
+      "id": "study-handbook-word",
+      "file": "library/study-handbook.docx",
+      "title": "Your 180-day handbook · Word",
+      "desc": "Editable DOCX version. Read here or download for personal planning.",
+      "license": "Original study guide"
+    },
+    {
+      "id": "complete-notes",
+      "file": "library/complete-study-notes.pdf",
+      "title": "Complete study notes · offline collection",
+      "desc": "All topic notes in one downloadable reference. Includes labelled supplementary material.",
+      "license": "Original study notes · technical and dated policy summaries"
+    },
+    {
+      "id": "open-data-structures",
+      "file": "library/open-data-structures.pdf",
+      "title": "Open Data Structures · Java",
+      "author": "Pat Morin",
+      "desc": "Full textbook: arrays, lists, hashing, trees, heaps and graphs. Begin with chapters 1–3, 5–6 and 10.",
+      "source": "https://opendatastructures.org/",
+      "license": "Creative Commons Attribution · unmodified original"
+    },
+    {
+      "id": "think-python",
+      "file": "library/think-python.pdf",
+      "title": "Think Python · Second edition",
+      "author": "Allen B. Downey",
+      "desc": "Python foundations, functions, collections and objects. A full introductory book for your daily reading.",
+      "source": "https://greenteapress.com/wp/think-python-2e/",
+      "license": "CC BY-NC 3.0 · unmodified · noncommercial study use"
+    },
+    {
+      "id": "algorithms",
+      "file": "library/algorithms.pdf",
+      "title": "Algorithms",
+      "author": "Jeff Erickson",
+      "desc": "Full textbook for deeper practice in recursion, backtracking, greedy algorithms and dynamic programming.",
+      "source": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+      "license": "CC BY 4.0 · unmodified original"
+    }
+  ],
+  "links": [
+    {
+      "group": "Securities market & SEBI (official, free)",
+      "items": [
+        {
+          "t": "SEBI — Acts, Rules & Regulations (bare text)",
+          "u": "https://www.sebi.gov.in/legal.html",
+          "d": "SEBI Act, SCRA, Depositories Act, LODR, ICDR, PIT, SAST"
+        },
+        {
+          "t": "SEBI — Annual Report",
+          "u": "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doValue=yes&type=1",
+          "d": "Best single interview document. Read the IT and surveillance chapters."
+        },
+        {
+          "t": "SEBI — Investor education material",
+          "u": "https://investor.sebi.gov.in/",
+          "d": "Free booklets explaining every market concept in plain language"
+        },
+        {
+          "t": "SEBI — Circulars & Press Releases",
+          "u": "https://www.sebi.gov.in/",
+          "d": "Your daily current affairs source"
+        },
+        {
+          "t": "RBI — Publications & Financial Stability Report",
+          "u": "https://www.rbi.org.in/Scripts/AnnualPublications.aspx",
+          "d": "Banking, systemic risk, payment systems"
+        },
+        {
+          "t": "Economic Survey & Union Budget",
+          "u": "https://www.indiabudget.gov.in/",
+          "d": "Economy section, straight from the source"
+        },
+        {
+          "t": "NCERT textbooks (Economics XI & XII)",
+          "u": "https://ncert.nic.in/textbook.php",
+          "d": "Cleanest foundation for the economy portion"
+        },
+        {
+          "t": "India Code — IT Act 2000, Companies Act 2013",
+          "u": "https://www.indiacode.nic.in/",
+          "d": "Bare statutory text"
+        }
+      ]
+    },
+    {
+      "group": "Core CS — free, legal, full books",
+      "items": [
+        {
+          "t": "OSTEP — Operating Systems: Three Easy Pieces",
+          "u": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+          "d": "Free chapter PDFs. The best OS book written."
+        },
+        {
+          "t": "Computer Networks: A Systems Approach",
+          "u": "https://book.systemsapproach.org/",
+          "d": "Peterson & Davie — now open source and free"
+        },
+        {
+          "t": "Algorithms — Jeff Erickson",
+          "u": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+          "d": "Free, rigorous, excellent for DSA depth"
+        },
+        {
+          "t": "Algorithms — Dasgupta, Papadimitriou, Vazirani",
+          "u": "https://people.eecs.berkeley.edu/~vazirani/algorithms.html",
+          "d": "Free PDF from the authors; concise"
+        },
+        {
+          "t": "Open Data Structures",
+          "u": "https://opendatastructures.org/",
+          "d": "Free, in Java / C++ / Python"
+        },
+        {
+          "t": "Database Design — open textbook",
+          "u": "https://opentextbc.ca/dbdesign01/",
+          "d": "CC-licensed DBMS textbook"
+        },
+        {
+          "t": "Database System Concepts — free slides & exercises",
+          "u": "https://www.db-book.com/",
+          "d": "Silberschatz; book is paid, all teaching material is free"
+        },
+        {
+          "t": "Modern C — Jens Gustedt",
+          "u": "https://gustedt.gitlabpages.inria.fr/modern-c/",
+          "d": "Free, current C reference"
+        },
+        {
+          "t": "Think Python",
+          "u": "https://greenteapress.com/wp/think-python-2e/",
+          "d": "Free Python foundation"
+        },
+        {
+          "t": "nand2tetris",
+          "u": "https://www.nand2tetris.org/",
+          "d": "Computer organisation, built from NAND gates up"
+        },
+        {
+          "t": "Software Engineering at Google",
+          "u": "https://abseil.io/resources/swe-book",
+          "d": "Free to read online"
+        },
+        {
+          "t": "Google SRE Book",
+          "u": "https://sre.google/books/",
+          "d": "Reliability, incident response, error budgets"
+        }
+      ]
+    },
+    {
+      "group": "Cyber security & emerging tech",
+      "items": [
+        {
+          "t": "NIST SP 800 series & Cybersecurity Framework 2.0",
+          "u": "https://csrc.nist.gov/publications/sp800",
+          "d": "SP 800-53 controls, 800-61 incident handling, 800-207 zero trust"
+        },
+        {
+          "t": "OWASP Top 10 & Cheat Sheets",
+          "u": "https://owasp.org/www-project-top-ten/",
+          "d": "Web application security, free"
+        },
+        {
+          "t": "Crypto 101",
+          "u": "https://www.crypto101.io/",
+          "d": "Free introductory cryptography book"
+        },
+        {
+          "t": "Handbook of Applied Cryptography",
+          "u": "https://cacr.uwaterloo.ca/hac/",
+          "d": "Free chapter PDFs, for depth"
+        },
+        {
+          "t": "MITRE ATT&CK",
+          "u": "https://attack.mitre.org/",
+          "d": "Attacker techniques — quotable in the interview"
+        },
+        {
+          "t": "CERT-In",
+          "u": "https://www.cert-in.org.in/",
+          "d": "Indian advisories and directions"
+        },
+        {
+          "t": "MeitY — DPDP Act & rules",
+          "u": "https://www.meity.gov.in/",
+          "d": "Data protection law"
+        },
+        {
+          "t": "Dive into Deep Learning (d2l.ai)",
+          "u": "https://d2l.ai/",
+          "d": "Free, interactive ML book"
+        }
+      ]
+    },
+    {
+      "group": "Practice & video courses (free tiers)",
+      "items": [
+        {
+          "t": "NPTEL / SWAYAM",
+          "u": "https://nptel.ac.in/",
+          "d": "Full IIT courses on OS, DBMS, CN, DSA, COA — free"
+        },
+        {
+          "t": "MIT OpenCourseWare",
+          "u": "https://ocw.mit.edu/",
+          "d": "Free lectures and problem sets"
+        },
+        {
+          "t": "SQLZoo",
+          "u": "https://sqlzoo.net/",
+          "d": "Free interactive SQL practice"
+        },
+        {
+          "t": "PG Exercises",
+          "u": "https://pgexercises.com/",
+          "d": "SQL drills with solutions"
+        },
+        {
+          "t": "Purdue OWL",
+          "u": "https://owl.purdue.edu/",
+          "d": "Grammar and formal writing reference for the descriptive paper"
+        },
+        {
+          "t": "Project Gutenberg — The Elements of Style",
+          "u": "https://www.gutenberg.org/ebooks/37134",
+          "d": "Public domain; short and worth one read"
+        }
+      ]
+    }
+  ]
+}

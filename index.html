@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>SEBI Grade A (IT) — Preparation Hub</title>
+<meta name="description" content="Complete 180-day study roadmap, notes, question bank, PDF/DOC reader and progress tracker for SEBI Grade A Assistant Manager (Information Technology)." />
+<meta name="theme-color" content="#0b1020" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/icons/icon.svg" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div id="boot" class="boot">
+  <div class="boot-logo">SEBI<span>·A</span></div>
+  <div class="boot-bar"><i></i></div>
+  <p>Loading your preparation hub…</p>
+</div>
+
+<header class="topbar" hidden>
+  <button class="icon-btn" id="navToggle" aria-label="Menu">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="#/dashboard">
+    <span class="brand-mark">SEBI<i>·A</i></span>
+    <span class="brand-sub">Grade A · IT Stream</span>
+  </a>
+  <div class="topbar-right">
+    <div class="countdown" id="examCountdown" title="Days to target exam date"></div>
+    <button class="icon-btn" id="timerBtn" aria-label="Study timer" title="Study timer">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>
+    </button>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="shell" hidden>
+  <nav class="sidenav" id="sidenav">
+    <div class="nav-scroll">
+      <p class="nav-label">Prepare</p>
+      <a href="#/dashboard" data-nav="dashboard"><span class="ic">◎</span>Dashboard</a>
+      <a href="#/roadmap"   data-nav="roadmap"><span class="ic">▤</span>180-Day Roadmap</a>
+      <a href="#/today"     data-nav="today"><span class="ic">✓</span>Today's Targets</a>
+      <a href="#/syllabus"  data-nav="syllabus"><span class="ic">☰</span>Syllabus &amp; Exam</a>
+
+      <p class="nav-label">Study</p>
+      <a href="#/notes"     data-nav="notes"><span class="ic">✎</span>Study Material</a>
+      <a href="#/library"   data-nav="library"><span class="ic">▣</span>Book Reader (PDF/DOC)</a>
+      <a href="#/flashcards" data-nav="flashcards"><span class="ic">⚡</span>Flashcards</a>
+
+      <p class="nav-label">Practice</p>
+      <a href="#/practice"  data-nav="practice"><span class="ic">?</span>Question Bank</a>
+      <a href="#/mocks"     data-nav="mocks"><span class="ic">▲</span>Mock Test Log</a>
+      <a href="#/revision"  data-nav="revision"><span class="ic">↻</span>Revision Queue</a>
+
+      <p class="nav-label">Track</p>
+      <a href="#/currentaffairs" data-nav="currentaffairs"><span class="ic">◇</span>Current Affairs</a>
+      <a href="#/analytics" data-nav="analytics"><span class="ic">◭</span>Analytics</a>
+      <a href="#/settings"  data-nav="settings"><span class="ic">⚙</span>Settings &amp; Backup</a>
+    </div>
+    <div class="nav-foot">
+      <div class="streak-chip" id="streakChip">🔥 0 day streak</div>
+    </div>
+  </nav>
+  <div class="scrim" id="scrim"></div>
+
+  <main id="view" class="view" tabindex="-1"></main>
+</div>
+
+<!-- Floating study timer -->
+<div class="timer-pop" id="timerPop" hidden>
+  <div class="timer-head">
+    <strong id="timerMode">Focus</strong>
+    <button class="icon-btn sm" id="timerClose" aria-label="Close">✕</button>
+  </div>
+  <div class="timer-clock" id="timerClock">25:00</div>
+  <div class="timer-actions">
+    <button class="btn primary sm" id="timerStart">Start</button>
+    <button class="btn ghost sm" id="timerReset">Reset</button>
+    <select id="timerLen" class="sel sm" aria-label="Session length">
+      <option value="25">25 min</option>
+      <option value="45" selected>45 min</option>
+      <option value="60">60 min</option>
+      <option value="90">90 min</option>
+      <option value="5">5 min break</option>
+    </select>
+  </div>
+  <p class="timer-note">Logged today: <b id="timerToday">0h 0m</b></p>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="assets/vendor/purify.min.js"></script>
+<script type="module" src="assets/js/app.js?v=3"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') navigator.serviceWorker.addEventListener('controllerchange', () => location.reload());
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>
