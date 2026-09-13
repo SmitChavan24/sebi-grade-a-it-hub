@@ -326,6 +326,31 @@
           "d": "Public domain; short and worth one read"
         }
       ]
+    },
+    {
+      "group": "Genuine free past papers (official, not memory-based)",
+      "items": [
+        {
+          "t": "GATE — Computer Science past papers & keys",
+          "u": "https://gate.iitk.ac.in/",
+          "d": "Official IIT-published papers. The best real practice for OS, DBMS, CN, DSA and COA."
+        },
+        {
+          "t": "UGC-NET Computer Science — NTA papers & keys",
+          "u": "https://ugcnet.nta.ac.in/",
+          "d": "Official past papers, closest in style to SEBI's recall-based IT questions."
+        },
+        {
+          "t": "NIELIT / ISRO CS question papers",
+          "u": "https://www.nielit.gov.in/",
+          "d": "Official technical papers, useful for computer organisation and networks."
+        },
+        {
+          "t": "SEBI — Recruitment notices",
+          "u": "https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doRecruitment=yes",
+          "d": "The only official SEBI source. Note: SEBI does NOT publish past question papers."
+        }
+      ]
     }
   ]
 }

@@ -1,1727 +1,3799 @@
 {
-  "provenance": "Original practice questions, not official or recalled past papers. Use alongside full-length mocks.",
-  "questions": [
-    {
-      "id": "q-001",
-      "s": "it-prog",
-      "q": "In C, what is 7 / 2 when both operands are int?",
-      "o": [
-        "3",
-        "3.5",
-        "4",
-        "Compilation error"
-      ],
-      "a": 0,
-      "e": "Integer division discards the fractional part; a floating operand would change the operation.",
-      "d": "hard"
-    },
-    {
-      "id": "q-002",
-      "s": "it-prog",
-      "q": "C: int x=4; int y=x++; What are x and y afterwards?",
-      "o": [
-        "x=5, y=5",
-        "x=5, y=4",
-        "x=4, y=5",
-        "x=4, y=4"
-      ],
-      "a": 1,
-      "e": "Post-increment yields the old value and then increments x.",
-      "d": "med"
-    },
-    {
-      "id": "q-003",
-      "s": "it-prog",
-      "q": "C: int x=4; int y=++x; What are x and y afterwards?",
-      "o": [
-        "x=4, y=5",
-        "x=5, y=4",
-        "x=5, y=5",
-        "x=4, y=4"
-      ],
-      "a": 2,
-      "e": "Pre-increment increments first and yields the new value.",
-      "d": "med"
-    },
-    {
-      "id": "q-004",
-      "s": "it-prog",
-      "q": "C: char s[]=\"SEBI\"; What is sizeof(s)?",
-      "o": [
-        "Depends on pointer size",
-        "4",
-        "8",
-        "5"
-      ],
-      "a": 3,
-      "e": "The array contains four characters and a terminating null byte.",
-      "d": "easy"
-    },
-    {
-      "id": "q-005",
-      "s": "it-prog",
-      "q": "C: int a[5]; What does sizeof(a)/sizeof(a[0]) give in the same scope?",
-      "o": [
-        "5",
-        "1",
-        "4",
-        "Pointer size"
-      ],
-      "a": 0,
-      "e": "The array total size divided by one element size is the element count. This fails after array-to-pointer parameter adjustment.",
-      "d": "med"
-    },
-    {
-      "id": "q-006",
-      "s": "it-prog",
-      "q": "Which C expression has undefined behaviour?",
-      "o": [
-        "Reading a[4] from int a[5] after initialisation",
-        "Reading a[5] from int a[5]",
-        "Computing 7/2",
-        "Assigning int x=0"
-      ],
-      "a": 1,
-      "e": "Valid indices are 0 through 4. Out-of-bounds access is undefined.",
-      "d": "hard"
-    },
-    {
-      "id": "q-007",
-      "s": "it-prog",
-      "q": "What must a recursive function have to terminate on intended inputs?",
-      "o": [
-        "Global variables",
-        "Only a loop",
-        "A reachable base case and progress toward it",
-        "A pointer argument"
-      ],
-      "a": 2,
-      "e": "A base case is insufficient if recursive calls never move toward it.",
-      "d": "easy"
-    },
-    {
-      "id": "q-008",
-      "s": "it-prog",
-      "q": "C++: int x=2; int& r=x; r=8; What is x?",
-      "o": [
-        "Undefined",
-        "2",
-        "0",
-        "8"
-      ],
-      "a": 3,
-      "e": "r is an alias for x. Assigning through r updates x.",
-      "d": "med"
-    },
-    {
-      "id": "q-009",
-      "s": "it-prog",
-      "q": "What does encapsulation primarily support?",
-      "o": [
-        "Controlling access to state through an interface",
-        "Making every field public",
-        "Replacing all classes with globals",
-        "Guaranteeing encryption"
-      ],
-      "a": 0,
-      "e": "Encapsulation groups state and behaviour and controls how state is accessed.",
-      "d": "med"
-    },
-    {
-      "id": "q-010",
-      "s": "it-prog",
-      "q": "Two methods with the same name but different parameter lists demonstrate what?",
-      "o": [
-        "Overriding",
-        "Overloading",
-        "Garbage collection",
-        "Normalisation"
-      ],
-      "a": 1,
-      "e": "Overloading distinguishes callable signatures; overriding replaces inherited behaviour.",
-      "d": "easy"
-    },
-    {
-      "id": "q-011",
-      "s": "it-prog",
-      "q": "Java: int[] a={1,2}; int[] b=a; b[0]=9; What is a[0]?",
-      "o": [
-        "2",
-        "1",
-        "9",
-        "Compilation error"
-      ],
-      "a": 2,
-      "e": "Both references point to the same array object. No copy was made.",
-      "d": "hard"
-    },
-    {
-      "id": "q-012",
-      "s": "it-prog",
-      "q": "What does a Java finally block generally provide?",
-      "o": [
-        "An alternative constructor",
-        "A loop counter",
-        "A way to ignore all exceptions",
-        "Cleanup executed when leaving the try/catch flow"
-      ],
-      "a": 3,
-      "e": "Finally is for cleanup; abnormal VM termination is an exception to the usual execution rule.",
-      "d": "med"
-    },
-    {
-      "id": "q-013",
-      "s": "it-prog",
-      "q": "Python: a=[1,2]; b=a[:]; b.append(3); What is len(a)?",
-      "o": [
-        "2",
-        "3",
-        "1",
-        "0"
-      ],
-      "a": 0,
-      "e": "Slicing copies the outer list; appending to b does not append to a.",
-      "d": "easy"
-    },
-    {
-      "id": "q-014",
-      "s": "it-prog",
-      "q": "Python: a=[[1]]; b=a[:]; b[0].append(2); What is a?",
-      "o": [
-        "[[1]]",
-        "[[1, 2]]",
-        "[1, 2]",
-        "[[2]]"
-      ],
-      "a": 1,
-      "e": "A shallow copy shares the nested list, so mutating that nested object is visible through both.",
-      "d": "med"
-    },
-    {
-      "id": "q-015",
-      "s": "it-prog",
-      "q": "What is Python len(set([1,1,2,3,3]))?",
-      "o": [
-        "2",
-        "5",
-        "3",
-        "4"
-      ],
-      "a": 2,
-      "e": "A set contains only distinct values: 1, 2 and 3.",
-      "d": "med"
-    },
-    {
-      "id": "q-016",
-      "s": "it-ds",
-      "q": "Which structure naturally implements breadth-first traversal?",
-      "o": [
-        "Call stack only",
-        "Stack",
-        "Binary search tree",
-        "Queue"
-      ],
-      "a": 3,
-      "e": "BFS processes discovered vertices in first-in-first-out order.",
-      "d": "hard"
-    },
-    {
-      "id": "q-017",
-      "s": "it-ds",
-      "q": "Which structure is used for matching nested parentheses?",
-      "o": [
-        "Stack",
-        "FIFO queue",
-        "Unsorted array counter only",
-        "Heap"
-      ],
-      "a": 0,
-      "e": "Each closing bracket must match the most recent unmatched opening bracket.",
-      "d": "med"
-    },
-    {
-      "id": "q-018",
-      "s": "it-ds",
-      "q": "Binary search requires what property of its search space?",
-      "o": [
-        "Unique values only",
-        "An ordered or monotonic search condition",
-        "A linked list only",
-        "A prime number of elements"
-      ],
-      "a": 1,
-      "e": "It discards half the space based on an order or monotonic predicate.",
-      "d": "med"
-    },
-    {
-      "id": "q-019",
-      "s": "it-ds",
-      "q": "What is the worst-case time of binary search on a sorted array?",
-      "o": [
-        "O(n log n)",
-        "O(n)",
-        "O(log n)",
-        "O(n squared)"
-      ],
-      "a": 2,
-      "e": "The remaining interval is halved on each step.",
-      "d": "easy"
-    },
-    {
-      "id": "q-020",
-      "s": "it-ds",
-      "q": "Inserting at the head of a singly linked list, given the head, takes what time?",
-      "o": [
-        "O(n squared)",
-        "O(log n)",
-        "O(n)",
-        "O(1)"
-      ],
-      "a": 3,
-      "e": "Only the new node link and the head pointer need updating.",
-      "d": "med"
-    },
-    {
-      "id": "q-021",
-      "s": "it-ds",
-      "q": "Which traversal of a BST with distinct keys gives ascending order?",
-      "o": [
-        "Inorder",
-        "Preorder",
-        "Postorder",
-        "Breadth first"
-      ],
-      "a": 0,
-      "e": "Left subtree, root, right subtree follows the BST ordering invariant.",
-      "d": "hard"
-    },
-    {
-      "id": "q-022",
-      "s": "it-ds",
-      "q": "A min-heap guarantees which relationship?",
-      "o": [
-        "Every left child is less than every right child",
-        "Each parent is no greater than its children",
-        "The array is fully sorted",
-        "All leaves are equal"
-      ],
-      "a": 1,
-      "e": "The heap invariant is local parent-child order, not total sorted order.",
-      "d": "easy"
-    },
-    {
-      "id": "q-023",
-      "s": "it-ds",
-      "q": "Building a binary heap bottom-up from n values takes what time?",
-      "o": [
-        "O(log n)",
-        "O(n log n) necessarily",
-        "O(n)",
-        "O(n squared)"
-      ],
-      "a": 2,
-      "e": "Most nodes are near leaves and require little work; the sum of sift-down costs is linear.",
-      "d": "med"
-    },
-    {
-      "id": "q-024",
-      "s": "it-ds",
-      "q": "A hash table has n entries and m buckets. Its load factor is?",
-      "o": [
-        "n-m",
-        "m/n",
-        "n+m",
-        "n/m"
-      ],
-      "a": 3,
-      "e": "Load factor measures entries relative to capacity or bucket count.",
-      "d": "med"
-    },
-    {
-      "id": "q-025",
-      "s": "it-ds",
-      "q": "Which sorting algorithm has O(n squared) worst case despite O(n log n) average behaviour?",
-      "o": [
-        "Quicksort",
-        "Merge sort",
-        "Heap sort",
-        "Counting sort on bounded keys"
-      ],
-      "a": 0,
-      "e": "Repeatedly highly unbalanced partitions make quicksort quadratic.",
-      "d": "easy"
-    },
-    {
-      "id": "q-026",
-      "s": "it-ds",
-      "q": "A stable sort preserves what?",
-      "o": [
-        "The original order of all items",
-        "Relative order of equal-key items",
-        "Array length only",
-        "Memory addresses of all items"
-      ],
-      "a": 1,
-      "e": "Stability is useful when composing sorts on multiple keys.",
-      "d": "hard"
-    },
-    {
-      "id": "q-027",
-      "s": "it-ds",
-      "q": "What property commonly makes dynamic programming useful?",
-      "o": [
-        "No repeated subproblem",
-        "Only a sorted input",
-        "Overlapping subproblems and optimal substructure",
-        "A mandatory greedy choice"
-      ],
-      "a": 2,
-      "e": "DP stores subproblem results and combines them according to a recurrence.",
-      "d": "med"
-    },
-    {
-      "id": "q-028",
-      "s": "it-ds",
-      "q": "For 0/1 knapsack, can an item be chosen repeatedly?",
-      "o": [
-        "Only when its value is even",
-        "Yes, without limit",
-        "Exactly twice",
-        "No"
-      ],
-      "a": 3,
-      "e": "0/1 means each item is either selected once or not selected.",
-      "d": "easy"
-    },
-    {
-      "id": "q-029",
-      "s": "it-ds",
-      "q": "With coins 1, 3, 4, how many coins optimally make 6?",
-      "o": [
-        "2",
-        "3",
-        "4",
-        "6"
-      ],
-      "a": 0,
-      "e": "3+3 uses two coins. Greedy 4+1+1 uses three and is not optimal here.",
-      "d": "med"
-    },
-    {
-      "id": "q-030",
-      "s": "it-ds",
-      "q": "How many overlapping occurrences of ABA are in ABABA?",
-      "o": [
-        "1",
-        "2",
-        "3",
-        "0"
-      ],
-      "a": 1,
-      "e": "Matches start at zero-based positions 0 and 2.",
-      "d": "med"
-    },
-    {
-      "id": "q-031",
-      "s": "it-ds",
-      "q": "What is the zero-based row-major offset of element [2][1] in a matrix with 4 columns?",
-      "o": [
-        "7",
-        "6",
-        "9",
-        "12"
-      ],
-      "a": 2,
-      "e": "Offset = row*columns + column = 2*4+1.",
-      "d": "hard"
-    },
-    {
-      "id": "q-032",
-      "s": "it-ds",
-      "q": "Which is valid JSON?",
-      "o": [
-        "{\"ok\":true,}",
-        "{ok:true}",
-        "{\"ok\":True}",
-        "{\"ok\":true,\"n\":null}"
-      ],
-      "a": 3,
-      "e": "JSON needs quoted keys, lowercase literals and no trailing comma.",
-      "d": "med"
-    },
-    {
-      "id": "q-033",
-      "s": "it-ds",
-      "q": "Dijkstra’s standard correctness guarantee requires which edge-weight condition?",
-      "o": [
-        "Non-negative weights",
-        "All weights negative",
-        "All weights identical",
-        "At least one negative cycle"
-      ],
-      "a": 0,
-      "e": "Negative edges can invalidate the greedy finalisation step.",
-      "d": "med"
-    },
-    {
-      "id": "q-034",
-      "s": "it-ds",
-      "q": "A topological ordering exists for which directed graphs?",
-      "o": [
-        "All directed graphs",
-        "Acyclic directed graphs",
-        "Only complete graphs",
-        "Only graphs with one vertex"
-      ],
-      "a": 1,
-      "e": "A directed cycle prevents an ordering with every edge going forward.",
-      "d": "easy"
-    },
-    {
-      "id": "q-035",
-      "s": "it-dbms",
-      "q": "Which key uniquely identifies a row and is selected as the principal identifier?",
-      "o": [
-        "Nonunique index",
-        "Foreign key",
-        "Primary key",
-        "View"
-      ],
-      "a": 2,
-      "e": "A primary key is the chosen candidate key and disallows null values.",
-      "d": "med"
-    },
-    {
-      "id": "q-036",
-      "s": "it-dbms",
-      "q": "Which relational operation selects rows satisfying a condition?",
-      "o": [
-        "Rename",
-        "Projection",
-        "Cartesian product",
-        "Selection"
-      ],
-      "a": 3,
-      "e": "Selection filters rows; projection selects attributes.",
-      "d": "hard"
-    },
-    {
-      "id": "q-037",
-      "s": "it-dbms",
-      "q": "SQL: Which clause filters groups after aggregation?",
-      "o": [
-        "HAVING",
-        "WHERE only",
-        "ORDER BY",
-        "FROM"
-      ],
-      "a": 0,
-      "e": "WHERE filters input rows, while HAVING filters grouped results.",
-      "d": "easy"
-    },
-    {
-      "id": "q-038",
-      "s": "it-dbms",
-      "q": "SQL: What does COUNT(column) exclude?",
-      "o": [
-        "Zero values",
-        "NULL values in that column",
-        "Duplicate values always",
-        "Empty tables only"
-      ],
-      "a": 1,
-      "e": "COUNT(column) counts non-null values; COUNT(*) counts rows.",
-      "d": "med"
-    },
-    {
-      "id": "q-039",
-      "s": "it-dbms",
-      "q": "SQL: What predicate correctly tests a null value?",
-      "o": [
-        "== NULL",
-        "= NULL",
-        "IS NULL",
-        "IN NULL"
-      ],
-      "a": 2,
-      "e": "SQL uses three-valued logic; ordinary comparison with null is unknown.",
-      "d": "med"
-    },
-    {
-      "id": "q-040",
-      "s": "it-dbms",
-      "q": "Which join retains every left-table row even when there is no right match?",
-      "o": [
-        "SELF JOIN always",
-        "INNER JOIN",
-        "CROSS JOIN only",
-        "LEFT JOIN"
-      ],
-      "a": 3,
-      "e": "A left outer join supplies nulls for the missing right-side values.",
-      "d": "easy"
-    },
-    {
-      "id": "q-041",
-      "s": "it-dbms",
-      "q": "How does UNION differ from UNION ALL?",
-      "o": [
-        "UNION eliminates duplicate result rows",
-        "UNION ALL eliminates duplicates",
-        "UNION cannot combine queries",
-        "UNION always sorts by the first column"
-      ],
-      "a": 0,
-      "e": "UNION has distinct semantics. Ordering is not guaranteed without ORDER BY.",
-      "d": "hard"
-    },
-    {
-      "id": "q-042",
-      "s": "it-dbms",
-      "q": "A transaction should happen entirely or not at all. Which ACID property is this?",
-      "o": [
-        "Consistency",
-        "Atomicity",
-        "Isolation",
-        "Durability"
-      ],
-      "a": 1,
-      "e": "Atomicity prevents partial transaction effects from being committed.",
-      "d": "med"
-    },
-    {
-      "id": "q-043",
-      "s": "it-dbms",
-      "q": "Which ACID property concerns persistence after commit?",
-      "o": [
-        "Atomicity",
-        "Isolation",
-        "Durability",
-        "Indexing"
-      ],
-      "a": 2,
-      "e": "Committed changes should survive the failures covered by the system guarantees.",
-      "d": "easy"
-    },
-    {
-      "id": "q-044",
-      "s": "it-dbms",
-      "q": "For BCNF, every nontrivial functional dependency X → Y must satisfy what?",
-      "o": [
-        "Y contains every attribute",
-        "Y is always a primary key",
-        "X is a single attribute",
-        "X is a superkey"
-      ],
-      "a": 3,
-      "e": "BCNF requires every determinant of a nontrivial dependency to be a superkey.",
-      "d": "med"
-    },
-    {
-      "id": "q-045",
-      "s": "it-dbms",
-      "q": "Which index structure is especially suitable for ordered range scans?",
-      "o": [
-        "B+ tree",
-        "Unordered heap file only",
-        "Cryptographic hash only",
-        "Stack"
-      ],
-      "a": 0,
-      "e": "Sorted leaf entries and leaf links allow efficient range traversal.",
-      "d": "med"
-    },
-    {
-      "id": "q-046",
-      "s": "it-dbms",
-      "q": "What does a window aggregate usually preserve compared with GROUP BY?",
-      "o": [
-        "Only one row in the result",
-        "Individual input rows",
-        "Only primary keys",
-        "No ordering information"
-      ],
-      "a": 1,
-      "e": "A window computes over related rows without necessarily collapsing them into grouped rows.",
-      "d": "hard"
-    },
-    {
-      "id": "q-047",
-      "s": "it-cn",
-      "q": "Which OSI layer handles routing between networks?",
-      "o": [
-        "Data link",
-        "Physical",
-        "Network",
-        "Presentation"
-      ],
-      "a": 2,
-      "e": "The network layer deals with logical addressing and routing.",
-      "d": "med"
-    },
-    {
-      "id": "q-048",
-      "s": "it-cn",
-      "q": "Which transport protocol provides ordered reliable byte-stream delivery?",
-      "o": [
-        "ARP",
-        "UDP",
-        "IP",
-        "TCP"
-      ],
-      "a": 3,
-      "e": "TCP uses sequence numbers, acknowledgements and retransmissions.",
-      "d": "med"
-    },
-    {
-      "id": "q-049",
-      "s": "it-cn",
-      "q": "What service usually resolves hostnames to IP addresses?",
-      "o": [
-        "DNS",
-        "DHCP",
-        "SMTP",
-        "NTP"
-      ],
-      "a": 0,
-      "e": "DNS provides name resolution; DHCP supplies network configuration.",
-      "d": "easy"
-    },
-    {
-      "id": "q-050",
-      "s": "it-cn",
-      "q": "How many total IPv4 addresses are in a /26 subnet?",
-      "o": [
-        "62",
-        "64",
-        "32",
-        "128"
-      ],
-      "a": 1,
-      "e": "There are 6 host bits, so 2^6 = 64 total addresses. Traditional usable-host count is 62.",
-      "d": "med"
-    },
-    {
-      "id": "q-051",
-      "s": "it-cn",
-      "q": "An Ethernet switch normally forwards frames using which address?",
-      "o": [
-        "URL path",
-        "Destination email",
-        "Destination MAC",
-        "Process ID"
-      ],
-      "a": 2,
-      "e": "Layer-2 switches use their learned MAC forwarding table.",
-      "d": "hard"
-    },
-    {
-      "id": "q-052",
-      "s": "it-cn",
-      "q": "What is ARP used for in an IPv4 LAN?",
-      "o": [
-        "Selecting application ports",
-        "Encrypting email",
-        "Assigning domain names",
-        "Resolving a local IPv4 address to a link-layer address"
-      ],
-      "a": 3,
-      "e": "ARP maps an on-link IPv4 destination or next hop to its MAC address.",
-      "d": "easy"
-    },
-    {
-      "id": "q-053",
-      "s": "it-cn",
-      "q": "Which protocol is associated with sending email?",
-      "o": [
-        "SMTP",
-        "POP3 only",
-        "IMAP only",
-        "SNMP"
-      ],
-      "a": 0,
-      "e": "SMTP transports outgoing mail. POP3 and IMAP are mainly for mailbox access.",
-      "d": "med"
-    },
-    {
-      "id": "q-054",
-      "s": "it-cn",
-      "q": "What does TCP flow control mainly protect?",
-      "o": [
-        "All routers from every attack",
-        "The receiver from excessive incoming data",
-        "DNS consistency",
-        "Disk integrity"
-      ],
-      "a": 1,
-      "e": "The receiver window limits how much unacknowledged data the receiver can accept.",
-      "d": "med"
-    },
-    {
-      "id": "q-055",
-      "s": "it-sec",
-      "q": "Which CIA property is harmed when unauthorised users read confidential records?",
-      "o": [
-        "Availability only",
-        "Integrity only",
-        "Confidentiality",
-        "Nonrepudiation only"
-      ],
-      "a": 2,
-      "e": "Confidentiality controls disclosure to unauthorised parties.",
-      "d": "easy"
-    },
-    {
-      "id": "q-056",
-      "s": "it-sec",
-      "q": "A record is altered without authorisation. Which CIA property is directly affected?",
-      "o": [
-        "Compression",
-        "Availability only",
-        "Confidentiality only",
-        "Integrity"
-      ],
-      "a": 3,
-      "e": "Integrity concerns correctness and unauthorised modification.",
-      "d": "hard"
-    },
-    {
-      "id": "q-057",
-      "s": "it-sec",
-      "q": "Which combination represents two distinct authentication factors?",
-      "o": [
-        "Password and hardware security key",
-        "Password and PIN",
-        "Two passwords",
-        "Username and password"
-      ],
-      "a": 0,
-      "e": "Knowledge plus possession is multifactor. Two knowledge secrets are the same factor type.",
-      "d": "med"
-    },
-    {
-      "id": "q-058",
-      "s": "it-sec",
-      "q": "Which control most directly prevents SQL injection in query parameters?",
-      "o": [
-        "Hiding the login page",
-        "Parameterized queries",
-        "Longer table names",
-        "Client-side validation alone"
-      ],
-      "a": 1,
-      "e": "Bind values as data rather than concatenating them into executable SQL.",
-      "d": "easy"
-    },
-    {
-      "id": "q-059",
-      "s": "it-sec",
-      "q": "Passwords should generally be stored using what?",
-      "o": [
-        "Reversible encryption with a shared hardcoded key",
-        "Plain text",
-        "A salted password hashing function",
-        "A username prefix"
-      ],
-      "a": 2,
-      "e": "A deliberately costly password hash with a unique salt limits offline guessing and precomputed attacks.",
-      "d": "med"
-    },
-    {
-      "id": "q-060",
-      "s": "it-sec",
-      "q": "A digital signature is typically created with which key?",
-      "o": [
-        "The document title",
-        "Verifier’s private key",
-        "Everyone’s public key",
-        "Signer’s private key"
-      ],
-      "a": 3,
-      "e": "Verification uses the corresponding public key. Signing does not itself encrypt the message.",
-      "d": "med"
-    },
-    {
-      "id": "q-061",
-      "s": "it-sec",
-      "q": "Which policy best follows least privilege?",
-      "o": [
-        "Grant only necessary access and review it",
-        "Give all staff administrator access",
-        "Never revoke permissions",
-        "Share one administrator account"
-      ],
-      "a": 0,
-      "e": "Limit access by role and task, and review it as needs change.",
-      "d": "hard"
-    },
-    {
-      "id": "q-062",
-      "s": "it-sec",
-      "q": "What distinguishes an IPS from a purely passive IDS?",
-      "o": [
-        "An IPS cannot inspect traffic",
-        "An IPS can actively block traffic",
-        "IDS always encrypts traffic",
-        "They are both backup systems"
-      ],
-      "a": 1,
-      "e": "An intrusion prevention system can intervene; detection alone alerts.",
-      "d": "med"
-    },
-    {
-      "id": "q-063",
-      "s": "it-data",
-      "q": "Python: list(range(1,6,2)) gives what?",
-      "o": [
-        "[1, 3]",
-        "[1, 2, 3, 4, 5]",
-        "[1, 3, 5]",
-        "[2, 4, 6]"
-      ],
-      "a": 2,
-      "e": "range excludes the stop value and advances by the supplied step.",
-      "d": "med"
-    },
-    {
-      "id": "q-064",
-      "s": "it-data",
-      "q": "In pandas, which selector is primarily position-based?",
-      "o": [
-        "merge",
-        "loc",
-        "groupby",
-        "iloc"
-      ],
-      "a": 3,
-      "e": "iloc selects by integer positions; loc uses labels or boolean masks.",
-      "d": "easy"
-    },
-    {
-      "id": "q-065",
-      "s": "it-data",
-      "q": "A join key appears 3 times on the left and 2 times on the right. How many matching rows can an inner join produce for it?",
-      "o": [
-        "6",
-        "5",
-        "3",
-        "2"
-      ],
-      "a": 0,
-      "e": "Every left match combines with every right match: 3*2 rows.",
-      "d": "med"
-    },
-    {
-      "id": "q-066",
-      "s": "it-data",
-      "q": "R: c(10,20,30)[1] is what?",
-      "o": [
-        "20",
-        "10",
-        "30",
-        "An error because indexing starts at 0"
-      ],
-      "a": 1,
-      "e": "R uses one-based vector indexing.",
-      "d": "hard"
-    },
-    {
-      "id": "q-067",
-      "s": "it-data",
-      "q": "R: mean(c(2,NA,6), na.rm=TRUE) gives what?",
-      "o": [
-        "8",
-        "NA",
-        "4",
-        "2"
-      ],
-      "a": 2,
-      "e": "Removing the missing observation leaves (2+6)/2 = 4.",
-      "d": "easy"
-    },
-    {
-      "id": "q-068",
-      "s": "it-data",
-      "q": "Which ETL stage standardises inconsistent date formats?",
-      "o": [
-        "Archive only",
-        "Extract only",
-        "Load only",
-        "Transform"
-      ],
-      "a": 3,
-      "e": "Transformation cleans and maps source values into the target representation.",
-      "d": "med"
-    },
-    {
-      "id": "q-069",
-      "s": "it-data",
-      "q": "Moving from daily totals to monthly totals is which OLAP operation?",
-      "o": [
-        "Roll-up",
-        "Drill-down",
-        "Transaction rollback",
-        "Index seek"
-      ],
-      "a": 0,
-      "e": "Roll-up aggregates to a coarser level of a hierarchy.",
-      "d": "med"
-    },
-    {
-      "id": "q-070",
-      "s": "it-data",
-      "q": "What should a fact table’s grain define?",
-      "o": [
-        "The font size",
-        "What one row represents",
-        "The number of users",
-        "Only the primary-key data type"
-      ],
-      "a": 1,
-      "e": "A clear grain prevents mixing measures at incompatible levels of detail.",
-      "d": "easy"
-    },
-    {
-      "id": "q-071",
-      "s": "it-data",
-      "q": "Which regex matches exactly three ASCII digits and nothing else?",
-      "o": [
-        "[0-9]+",
-        "[0-9]*",
-        "^[0-9]{3}$",
-        "[A-Z]{3}"
-      ],
-      "a": 2,
-      "e": "Anchors require the whole string and {3} sets the exact repetition count.",
-      "d": "hard"
-    },
-    {
-      "id": "q-072",
-      "s": "it-shell",
-      "q": "In a shell script, what does $# represent?",
-      "o": [
-        "Current directory",
-        "Previous command status",
-        "First argument",
-        "Number of positional arguments"
-      ],
-      "a": 3,
-      "e": "The argument count is separate from $1 (first argument) and $? (previous status).",
-      "d": "med"
-    },
-    {
-      "id": "q-073",
-      "s": "it-shell",
-      "q": "Which shell exit status conventionally indicates success?",
-      "o": [
-        "0",
-        "1",
-        "-1",
-        "255"
-      ],
-      "a": 0,
-      "e": "Zero means success by convention; nonzero usually signals failure.",
-      "d": "easy"
-    },
-    {
-      "id": "q-074",
-      "s": "it-shell",
-      "q": "What does a shell pipe connect?",
-      "o": [
-        "Two file names only",
-        "Left command stdout to right command stdin",
-        "Stderr to a password",
-        "Two login sessions"
-      ],
-      "a": 1,
-      "e": "A pipe streams one program’s standard output to another’s standard input.",
-      "d": "med"
-    },
-    {
-      "id": "q-075",
-      "s": "it-shell",
-      "q": "Why quote \"$name\" in a shell command?",
-      "o": [
-        "To execute it as code",
-        "To encrypt it",
-        "To preserve it as one argument despite spaces",
-        "To make it numeric"
-      ],
-      "a": 2,
-      "e": "Double quotes allow variable expansion while preventing word splitting and pathname expansion of the result.",
-      "d": "med"
-    },
-    {
-      "id": "q-076",
-      "s": "it-shell",
-      "q": "Why commonly run sort before uniq?",
-      "o": [
-        "uniq only accepts numbers",
-        "uniq needs reverse alphabetical order",
-        "sort encrypts duplicates",
-        "uniq combines adjacent duplicate lines"
-      ],
-      "a": 3,
-      "e": "Identical lines must be adjacent to be consolidated by uniq.",
-      "d": "hard"
-    },
-    {
-      "id": "q-077",
-      "s": "ga",
-      "q": "What is a primary market transaction?",
-      "o": [
-        "An issuer selling newly issued securities",
-        "An investor reselling existing shares on exchange",
-        "A dividend record update only",
-        "A bank ATM withdrawal"
-      ],
-      "a": 0,
-      "e": "The primary market raises funds through new issuance; secondary trading transfers existing securities.",
-      "d": "med"
-    },
-    {
-      "id": "q-078",
-      "s": "ga",
-      "q": "What does diversification mainly reduce?",
-      "o": [
-        "Every possible loss",
-        "Asset-specific risk",
-        "All systematic risk",
-        "The need to understand products"
-      ],
-      "a": 1,
-      "e": "Combining imperfectly correlated exposures can reduce concentration risk, but does not guarantee returns.",
-      "d": "med"
-    },
-    {
-      "id": "q-079",
-      "s": "ga",
-      "q": "An equity share generally represents what?",
-      "o": [
-        "A tax invoice",
-        "A guaranteed fixed bank deposit",
-        "An ownership interest",
-        "A government promise of profit"
-      ],
-      "a": 2,
-      "e": "Equity is a residual ownership claim with uncertain returns.",
-      "d": "easy"
-    },
-    {
-      "id": "q-080",
-      "s": "ga",
-      "q": "What is a depository’s core role?",
-      "o": [
-        "Printing currency",
-        "Guaranteeing stock prices",
-        "Setting income-tax rates",
-        "Holding securities electronically and facilitating transfers"
-      ],
-      "a": 3,
-      "e": "Electronic holdings and book-entry transfers are central depository functions.",
-      "d": "med"
-    },
-    {
-      "id": "q-081",
-      "s": "ga",
-      "q": "Which instrument gives its holder a right, without an obligation, to buy at a specified strike under its terms?",
-      "o": [
-        "Call option",
-        "Put option",
-        "Futures contract",
-        "Ordinary bond"
-      ],
-      "a": 0,
-      "e": "A call provides the purchase right; a put provides the sale right.",
-      "d": "hard"
-    },
-    {
-      "id": "q-082",
-      "s": "ga",
-      "q": "What does a mutual fund NAV represent?",
-      "o": [
-        "A guaranteed next-day return",
-        "Net assets per unit",
-        "Only the unit’s face value",
-        "Total trading volume"
-      ],
-      "a": 1,
-      "e": "NAV divides the fund’s net asset value by its outstanding units.",
-      "d": "easy"
-    },
-    {
-      "id": "q-083",
-      "s": "eng",
-      "q": "Choose the grammatically correct sentence.",
-      "o": [
-        "Each of the applicant are ready.",
-        "Each of the applicants are ready.",
-        "Each of the applicants is ready.",
-        "Each applicants is ready."
-      ],
-      "a": 2,
-      "e": "Each is the singular subject; the phrase of the applicants does not change agreement.",
-      "d": "med"
-    },
-    {
-      "id": "q-084",
-      "s": "eng",
-      "q": "Choose the correct usage.",
-      "o": [
-        "The results affected to the decision.",
-        "The results effects the decision.",
-        "The results effecting the decision.",
-        "The results affect the decision."
-      ],
-      "a": 3,
-      "e": "Affect is the verb meaning influence; results is plural and takes affect.",
-      "d": "med"
-    },
-    {
-      "id": "q-085",
-      "s": "eng",
-      "q": "Which word is closest in meaning to mitigate?",
-      "o": [
-        "Reduce the severity of",
-        "Completely prove",
-        "Increase sharply",
-        "Conceal permanently"
-      ],
-      "a": 0,
-      "e": "Mitigate means make less severe; it does not mean eliminate.",
-      "d": "easy"
-    },
-    {
-      "id": "q-086",
-      "s": "eng",
-      "q": "Which sentence uses parallel structure?",
-      "o": [
-        "The role requires analysis data, to write reports and controls.",
-        "The role requires analysing data, writing reports and reviewing controls.",
-        "The role requires analysing data, reports written and review.",
-        "The role requires analyse data, writing and controls."
-      ],
-      "a": 1,
-      "e": "All three coordinated activities use the same grammatical form.",
-      "d": "hard"
-    },
-    {
-      "id": "q-087",
-      "s": "reas",
-      "q": "All A are B. Some B are C. Does some A are C necessarily follow?",
-      "o": [
-        "Only if A is singular",
-        "Yes, always",
-        "No",
-        "Only if B is plural"
-      ],
-      "a": 2,
-      "e": "The B-C overlap may be entirely outside A.",
-      "d": "med"
-    },
-    {
-      "id": "q-088",
-      "s": "reas",
-      "q": "A > B and B >= C. What follows?",
-      "o": [
-        "No relation can be established",
-        "A = C",
-        "A < C",
-        "A > C"
-      ],
-      "a": 3,
-      "e": "Combining a strict greater-than with a non-strict greater-than gives a strict greater-than.",
-      "d": "easy"
-    },
-    {
-      "id": "q-089",
-      "s": "reas",
-      "q": "A candidate ranks 7th from the top and 14th from the bottom. How many candidates are there?",
-      "o": [
-        "20",
-        "21",
-        "19",
-        "22"
-      ],
-      "a": 0,
-      "e": "Add the two ranks and subtract one to avoid counting the candidate twice.",
-      "d": "med"
-    },
-    {
-      "id": "q-090",
-      "s": "reas",
-      "q": "A person walks 6 km east then 8 km north. What is displacement magnitude?",
-      "o": [
-        "14 km",
-        "10 km",
-        "2 km",
-        "48 km"
-      ],
-      "a": 1,
-      "e": "The straight-line displacement follows the Pythagorean theorem: sqrt(36+64).",
-      "d": "med"
-    },
-    {
-      "id": "q-091",
-      "s": "qa",
-      "q": "A value rises 20% then falls 20%. Relative to the original, it is now?",
-      "o": [
-        "4% higher",
-        "Unchanged",
-        "4% lower",
-        "20% lower"
-      ],
-      "a": 2,
-      "e": "Multipliers 1.2*0.8 = 0.96. The percentage changes have different bases.",
-      "d": "hard"
-    },
-    {
-      "id": "q-092",
-      "s": "qa",
-      "q": "A does a job in 10 days and B in 15 days. Together they need?",
-      "o": [
-        "25 days",
-        "5 days",
-        "12.5 days",
-        "6 days"
-      ],
-      "a": 3,
-      "e": "Combined daily work rate is 1/10+1/15 = 1/6.",
-      "d": "med"
-    },
-    {
-      "id": "q-093",
-      "s": "qa",
-      "q": "A bag has 3 red and 2 blue balls. One is drawn uniformly. P(blue) is?",
-      "o": [
-        "2/5",
-        "3/5",
-        "1/2",
-        "2/3"
-      ],
-      "a": 0,
-      "e": "Two of the five equally likely outcomes are blue.",
-      "d": "med"
-    },
-    {
-      "id": "q-094",
-      "s": "qa",
-      "q": "How many ways can 2 people be selected from 5, ignoring order?",
-      "o": [
-        "20",
-        "10",
-        "25",
-        "5"
-      ],
-      "a": 1,
-      "e": "5 choose 2 = 5*4/2 = 10. Divide by two because each pair can be ordered in two ways.",
-      "d": "easy"
-    },
-    {
-      "id": "q-095",
-      "s": "qa",
-      "q": "A train covers 150 km in 2.5 hours. Average speed is?",
-      "o": [
-        "75 km/h",
-        "50 km/h",
-        "60 km/h",
-        "375 km/h"
-      ],
-      "a": 2,
-      "e": "Average speed = total distance divided by total time.",
-      "d": "med"
-    },
-    {
-      "id": "q-096",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(3): total += i. What is total?",
-      "o": [
-        "4",
-        "6",
-        "9",
-        "3"
-      ],
-      "a": 3,
-      "e": "range(3) includes 0 through 2. Their sum is 3*2/2.",
-      "d": "hard"
-    },
-    {
-      "id": "q-097",
-      "s": "qa",
-      "q": "An item costs Rs 300 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 360",
-        "Rs 240",
-        "Rs 330",
-        "Rs 375"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 300 * 1.20.",
-      "d": "easy"
-    },
-    {
-      "id": "q-098",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(4): total += i. What is total?",
-      "o": [
-        "10",
-        "6",
-        "16",
-        "5"
-      ],
-      "a": 1,
-      "e": "range(4) includes 0 through 3. Their sum is 4*3/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-099",
-      "s": "qa",
-      "q": "An item costs Rs 400 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 440",
-        "Rs 320",
-        "Rs 480",
-        "Rs 500"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 400 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-100",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(5): total += i. What is total?",
-      "o": [
-        "6",
-        "15",
-        "25",
-        "10"
-      ],
-      "a": 3,
-      "e": "range(5) includes 0 through 4. Their sum is 5*4/2.",
-      "d": "easy"
-    },
-    {
-      "id": "q-101",
-      "s": "qa",
-      "q": "An item costs Rs 500 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 600",
-        "Rs 400",
-        "Rs 550",
-        "Rs 625"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 500 * 1.20.",
-      "d": "hard"
-    },
-    {
-      "id": "q-102",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(6): total += i. What is total?",
-      "o": [
-        "21",
-        "15",
-        "36",
-        "7"
-      ],
-      "a": 1,
-      "e": "range(6) includes 0 through 5. Their sum is 6*5/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-103",
-      "s": "qa",
-      "q": "An item costs Rs 600 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 660",
-        "Rs 480",
-        "Rs 720",
-        "Rs 750"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 600 * 1.20.",
-      "d": "easy"
-    },
-    {
-      "id": "q-104",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(7): total += i. What is total?",
-      "o": [
-        "8",
-        "28",
-        "49",
-        "21"
-      ],
-      "a": 3,
-      "e": "range(7) includes 0 through 6. Their sum is 7*6/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-105",
-      "s": "qa",
-      "q": "An item costs Rs 700 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 840",
-        "Rs 560",
-        "Rs 770",
-        "Rs 875"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 700 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-106",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(8): total += i. What is total?",
-      "o": [
-        "36",
-        "28",
-        "64",
-        "9"
-      ],
-      "a": 1,
-      "e": "range(8) includes 0 through 7. Their sum is 8*7/2.",
-      "d": "hard"
-    },
-    {
-      "id": "q-107",
-      "s": "qa",
-      "q": "An item costs Rs 800 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 880",
-        "Rs 640",
-        "Rs 960",
-        "Rs 1000"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 800 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-108",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(9): total += i. What is total?",
-      "o": [
-        "10",
-        "45",
-        "81",
-        "36"
-      ],
-      "a": 3,
-      "e": "range(9) includes 0 through 8. Their sum is 9*8/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-109",
-      "s": "qa",
-      "q": "An item costs Rs 900 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1080",
-        "Rs 720",
-        "Rs 990",
-        "Rs 1125"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 900 * 1.20.",
-      "d": "easy"
-    },
-    {
-      "id": "q-110",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(10): total += i. What is total?",
-      "o": [
-        "55",
-        "45",
-        "100",
-        "11"
-      ],
-      "a": 1,
-      "e": "range(10) includes 0 through 9. Their sum is 10*9/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-111",
-      "s": "qa",
-      "q": "An item costs Rs 1000 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1100",
-        "Rs 800",
-        "Rs 1200",
-        "Rs 1250"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 1000 * 1.20.",
-      "d": "hard"
-    },
-    {
-      "id": "q-112",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(11): total += i. What is total?",
-      "o": [
-        "12",
-        "66",
-        "121",
-        "55"
-      ],
-      "a": 3,
-      "e": "range(11) includes 0 through 10. Their sum is 11*10/2.",
-      "d": "easy"
-    },
-    {
-      "id": "q-113",
-      "s": "qa",
-      "q": "An item costs Rs 1100 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1320",
-        "Rs 880",
-        "Rs 1210",
-        "Rs 1375"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 1100 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-114",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(12): total += i. What is total?",
-      "o": [
-        "78",
-        "66",
-        "144",
-        "13"
-      ],
-      "a": 1,
-      "e": "range(12) includes 0 through 11. Their sum is 12*11/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-115",
-      "s": "qa",
-      "q": "An item costs Rs 1200 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1320",
-        "Rs 960",
-        "Rs 1440",
-        "Rs 1500"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 1200 * 1.20.",
-      "d": "easy"
-    },
-    {
-      "id": "q-116",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(13): total += i. What is total?",
-      "o": [
-        "14",
-        "91",
-        "169",
-        "78"
-      ],
-      "a": 3,
-      "e": "range(13) includes 0 through 12. Their sum is 13*12/2.",
-      "d": "hard"
-    },
-    {
-      "id": "q-117",
-      "s": "qa",
-      "q": "An item costs Rs 1300 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1560",
-        "Rs 1040",
-        "Rs 1430",
-        "Rs 1625"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 1300 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-118",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(14): total += i. What is total?",
-      "o": [
-        "105",
-        "91",
-        "196",
-        "15"
-      ],
-      "a": 1,
-      "e": "range(14) includes 0 through 13. Their sum is 14*13/2.",
-      "d": "easy"
-    },
-    {
-      "id": "q-119",
-      "s": "qa",
-      "q": "An item costs Rs 1400 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1540",
-        "Rs 1120",
-        "Rs 1680",
-        "Rs 1750"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 1400 * 1.20.",
-      "d": "med"
-    },
-    {
-      "id": "q-120",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(15): total += i. What is total?",
-      "o": [
-        "16",
-        "120",
-        "225",
-        "105"
-      ],
-      "a": 3,
-      "e": "range(15) includes 0 through 14. Their sum is 15*14/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-121",
-      "s": "qa",
-      "q": "An item costs Rs 1500 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1800",
-        "Rs 1200",
-        "Rs 1650",
-        "Rs 1875"
-      ],
-      "a": 0,
-      "e": "Selling price = cost * 1.20 = 1500 * 1.20.",
-      "d": "hard"
-    },
-    {
-      "id": "q-122",
-      "s": "it-prog",
-      "q": "Python: total=0; then for i in range(16): total += i. What is total?",
-      "o": [
-        "136",
-        "120",
-        "256",
-        "17"
-      ],
-      "a": 1,
-      "e": "range(16) includes 0 through 15. Their sum is 16*15/2.",
-      "d": "med"
-    },
-    {
-      "id": "q-123",
-      "s": "qa",
-      "q": "An item costs Rs 1600 and is sold at a 20% profit on cost. What is the selling price?",
-      "o": [
-        "Rs 1760",
-        "Rs 1280",
-        "Rs 1920",
-        "Rs 2000"
-      ],
-      "a": 2,
-      "e": "Selling price = cost * 1.20 = 1600 * 1.20.",
-      "d": "med"
-    }
-  ]
+ "provenance": "Original practice questions, not official or recalled past papers. Use alongside full-length mocks.",
+ "questions": [
+  {
+   "id": "q-001",
+   "s": "it-prog",
+   "q": "In C, what is 7 / 2 when both operands are int?",
+   "o": [
+    "3",
+    "3.5",
+    "4",
+    "Compilation error"
+   ],
+   "a": 0,
+   "e": "Integer division discards the fractional part; a floating operand would change the operation.",
+   "d": "hard"
+  },
+  {
+   "id": "q-002",
+   "s": "it-prog",
+   "q": "C: int x=4; int y=x++; What are x and y afterwards?",
+   "o": [
+    "x=5, y=5",
+    "x=5, y=4",
+    "x=4, y=5",
+    "x=4, y=4"
+   ],
+   "a": 1,
+   "e": "Post-increment yields the old value and then increments x.",
+   "d": "med"
+  },
+  {
+   "id": "q-003",
+   "s": "it-prog",
+   "q": "C: int x=4; int y=++x; What are x and y afterwards?",
+   "o": [
+    "x=4, y=5",
+    "x=5, y=4",
+    "x=5, y=5",
+    "x=4, y=4"
+   ],
+   "a": 2,
+   "e": "Pre-increment increments first and yields the new value.",
+   "d": "med"
+  },
+  {
+   "id": "q-004",
+   "s": "it-prog",
+   "q": "C: char s[]=\"SEBI\"; What is sizeof(s)?",
+   "o": [
+    "Depends on pointer size",
+    "4",
+    "8",
+    "5"
+   ],
+   "a": 3,
+   "e": "The array contains four characters and a terminating null byte.",
+   "d": "easy"
+  },
+  {
+   "id": "q-005",
+   "s": "it-prog",
+   "q": "C: int a[5]; What does sizeof(a)/sizeof(a[0]) give in the same scope?",
+   "o": [
+    "5",
+    "1",
+    "4",
+    "Pointer size"
+   ],
+   "a": 0,
+   "e": "The array total size divided by one element size is the element count. This fails after array-to-pointer parameter adjustment.",
+   "d": "med"
+  },
+  {
+   "id": "q-006",
+   "s": "it-prog",
+   "q": "Which C expression has undefined behaviour?",
+   "o": [
+    "Reading a[4] from int a[5] after initialisation",
+    "Reading a[5] from int a[5]",
+    "Computing 7/2",
+    "Assigning int x=0"
+   ],
+   "a": 1,
+   "e": "Valid indices are 0 through 4. Out-of-bounds access is undefined.",
+   "d": "hard"
+  },
+  {
+   "id": "q-007",
+   "s": "it-prog",
+   "q": "What must a recursive function have to terminate on intended inputs?",
+   "o": [
+    "Global variables",
+    "Only a loop",
+    "A reachable base case and progress toward it",
+    "A pointer argument"
+   ],
+   "a": 2,
+   "e": "A base case is insufficient if recursive calls never move toward it.",
+   "d": "easy"
+  },
+  {
+   "id": "q-008",
+   "s": "it-prog",
+   "q": "C++: int x=2; int& r=x; r=8; What is x?",
+   "o": [
+    "Undefined",
+    "2",
+    "0",
+    "8"
+   ],
+   "a": 3,
+   "e": "r is an alias for x. Assigning through r updates x.",
+   "d": "med"
+  },
+  {
+   "id": "q-009",
+   "s": "it-prog",
+   "q": "What does encapsulation primarily support?",
+   "o": [
+    "Controlling access to state through an interface",
+    "Making every field public",
+    "Replacing all classes with globals",
+    "Guaranteeing encryption"
+   ],
+   "a": 0,
+   "e": "Encapsulation groups state and behaviour and controls how state is accessed.",
+   "d": "med"
+  },
+  {
+   "id": "q-010",
+   "s": "it-prog",
+   "q": "Two methods with the same name but different parameter lists demonstrate what?",
+   "o": [
+    "Overriding",
+    "Overloading",
+    "Garbage collection",
+    "Normalisation"
+   ],
+   "a": 1,
+   "e": "Overloading distinguishes callable signatures; overriding replaces inherited behaviour.",
+   "d": "easy"
+  },
+  {
+   "id": "q-011",
+   "s": "it-prog",
+   "q": "Java: int[] a={1,2}; int[] b=a; b[0]=9; What is a[0]?",
+   "o": [
+    "2",
+    "1",
+    "9",
+    "Compilation error"
+   ],
+   "a": 2,
+   "e": "Both references point to the same array object. No copy was made.",
+   "d": "hard"
+  },
+  {
+   "id": "q-012",
+   "s": "it-prog",
+   "q": "What does a Java finally block generally provide?",
+   "o": [
+    "An alternative constructor",
+    "A loop counter",
+    "A way to ignore all exceptions",
+    "Cleanup executed when leaving the try/catch flow"
+   ],
+   "a": 3,
+   "e": "Finally is for cleanup; abnormal VM termination is an exception to the usual execution rule.",
+   "d": "med"
+  },
+  {
+   "id": "q-013",
+   "s": "it-prog",
+   "q": "Python: a=[1,2]; b=a[:]; b.append(3); What is len(a)?",
+   "o": [
+    "2",
+    "3",
+    "1",
+    "0"
+   ],
+   "a": 0,
+   "e": "Slicing copies the outer list; appending to b does not append to a.",
+   "d": "easy"
+  },
+  {
+   "id": "q-014",
+   "s": "it-prog",
+   "q": "Python: a=[[1]]; b=a[:]; b[0].append(2); What is a?",
+   "o": [
+    "[[1]]",
+    "[[1, 2]]",
+    "[1, 2]",
+    "[[2]]"
+   ],
+   "a": 1,
+   "e": "A shallow copy shares the nested list, so mutating that nested object is visible through both.",
+   "d": "med"
+  },
+  {
+   "id": "q-015",
+   "s": "it-prog",
+   "q": "What is Python len(set([1,1,2,3,3]))?",
+   "o": [
+    "2",
+    "5",
+    "3",
+    "4"
+   ],
+   "a": 2,
+   "e": "A set contains only distinct values: 1, 2 and 3.",
+   "d": "med"
+  },
+  {
+   "id": "q-016",
+   "s": "it-ds",
+   "q": "Which structure naturally implements breadth-first traversal?",
+   "o": [
+    "Call stack only",
+    "Stack",
+    "Binary search tree",
+    "Queue"
+   ],
+   "a": 3,
+   "e": "BFS processes discovered vertices in first-in-first-out order.",
+   "d": "hard"
+  },
+  {
+   "id": "q-017",
+   "s": "it-ds",
+   "q": "Which structure is used for matching nested parentheses?",
+   "o": [
+    "Stack",
+    "FIFO queue",
+    "Unsorted array counter only",
+    "Heap"
+   ],
+   "a": 0,
+   "e": "Each closing bracket must match the most recent unmatched opening bracket.",
+   "d": "med"
+  },
+  {
+   "id": "q-018",
+   "s": "it-ds",
+   "q": "Binary search requires what property of its search space?",
+   "o": [
+    "Unique values only",
+    "An ordered or monotonic search condition",
+    "A linked list only",
+    "A prime number of elements"
+   ],
+   "a": 1,
+   "e": "It discards half the space based on an order or monotonic predicate.",
+   "d": "med"
+  },
+  {
+   "id": "q-019",
+   "s": "it-ds",
+   "q": "What is the worst-case time of binary search on a sorted array?",
+   "o": [
+    "O(n log n)",
+    "O(n)",
+    "O(log n)",
+    "O(n squared)"
+   ],
+   "a": 2,
+   "e": "The remaining interval is halved on each step.",
+   "d": "easy"
+  },
+  {
+   "id": "q-020",
+   "s": "it-ds",
+   "q": "Inserting at the head of a singly linked list, given the head, takes what time?",
+   "o": [
+    "O(n squared)",
+    "O(log n)",
+    "O(n)",
+    "O(1)"
+   ],
+   "a": 3,
+   "e": "Only the new node link and the head pointer need updating.",
+   "d": "med"
+  },
+  {
+   "id": "q-021",
+   "s": "it-ds",
+   "q": "Which traversal of a BST with distinct keys gives ascending order?",
+   "o": [
+    "Inorder",
+    "Preorder",
+    "Postorder",
+    "Breadth first"
+   ],
+   "a": 0,
+   "e": "Left subtree, root, right subtree follows the BST ordering invariant.",
+   "d": "hard"
+  },
+  {
+   "id": "q-022",
+   "s": "it-ds",
+   "q": "A min-heap guarantees which relationship?",
+   "o": [
+    "Every left child is less than every right child",
+    "Each parent is no greater than its children",
+    "The array is fully sorted",
+    "All leaves are equal"
+   ],
+   "a": 1,
+   "e": "The heap invariant is local parent-child order, not total sorted order.",
+   "d": "easy"
+  },
+  {
+   "id": "q-023",
+   "s": "it-ds",
+   "q": "Building a binary heap bottom-up from n values takes what time?",
+   "o": [
+    "O(log n)",
+    "O(n log n) necessarily",
+    "O(n)",
+    "O(n squared)"
+   ],
+   "a": 2,
+   "e": "Most nodes are near leaves and require little work; the sum of sift-down costs is linear.",
+   "d": "med"
+  },
+  {
+   "id": "q-024",
+   "s": "it-ds",
+   "q": "A hash table has n entries and m buckets. Its load factor is?",
+   "o": [
+    "n-m",
+    "m/n",
+    "n+m",
+    "n/m"
+   ],
+   "a": 3,
+   "e": "Load factor measures entries relative to capacity or bucket count.",
+   "d": "med"
+  },
+  {
+   "id": "q-025",
+   "s": "it-ds",
+   "q": "Which sorting algorithm has O(n squared) worst case despite O(n log n) average behaviour?",
+   "o": [
+    "Quicksort",
+    "Merge sort",
+    "Heap sort",
+    "Counting sort on bounded keys"
+   ],
+   "a": 0,
+   "e": "Repeatedly highly unbalanced partitions make quicksort quadratic.",
+   "d": "easy"
+  },
+  {
+   "id": "q-026",
+   "s": "it-ds",
+   "q": "A stable sort preserves what?",
+   "o": [
+    "The original order of all items",
+    "Relative order of equal-key items",
+    "Array length only",
+    "Memory addresses of all items"
+   ],
+   "a": 1,
+   "e": "Stability is useful when composing sorts on multiple keys.",
+   "d": "hard"
+  },
+  {
+   "id": "q-027",
+   "s": "it-ds",
+   "q": "What property commonly makes dynamic programming useful?",
+   "o": [
+    "No repeated subproblem",
+    "Only a sorted input",
+    "Overlapping subproblems and optimal substructure",
+    "A mandatory greedy choice"
+   ],
+   "a": 2,
+   "e": "DP stores subproblem results and combines them according to a recurrence.",
+   "d": "med"
+  },
+  {
+   "id": "q-028",
+   "s": "it-ds",
+   "q": "For 0/1 knapsack, can an item be chosen repeatedly?",
+   "o": [
+    "Only when its value is even",
+    "Yes, without limit",
+    "Exactly twice",
+    "No"
+   ],
+   "a": 3,
+   "e": "0/1 means each item is either selected once or not selected.",
+   "d": "easy"
+  },
+  {
+   "id": "q-029",
+   "s": "it-ds",
+   "q": "With coins 1, 3, 4, how many coins optimally make 6?",
+   "o": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "a": 0,
+   "e": "3+3 uses two coins. Greedy 4+1+1 uses three and is not optimal here.",
+   "d": "med"
+  },
+  {
+   "id": "q-030",
+   "s": "it-ds",
+   "q": "How many overlapping occurrences of ABA are in ABABA?",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "0"
+   ],
+   "a": 1,
+   "e": "Matches start at zero-based positions 0 and 2.",
+   "d": "med"
+  },
+  {
+   "id": "q-031",
+   "s": "it-ds",
+   "q": "What is the zero-based row-major offset of element [2][1] in a matrix with 4 columns?",
+   "o": [
+    "7",
+    "6",
+    "9",
+    "12"
+   ],
+   "a": 2,
+   "e": "Offset = row*columns + column = 2*4+1.",
+   "d": "hard"
+  },
+  {
+   "id": "q-032",
+   "s": "it-ds",
+   "q": "Which is valid JSON?",
+   "o": [
+    "{\"ok\":true,}",
+    "{ok:true}",
+    "{\"ok\":True}",
+    "{\"ok\":true,\"n\":null}"
+   ],
+   "a": 3,
+   "e": "JSON needs quoted keys, lowercase literals and no trailing comma.",
+   "d": "med"
+  },
+  {
+   "id": "q-033",
+   "s": "it-ds",
+   "q": "Dijkstra’s standard correctness guarantee requires which edge-weight condition?",
+   "o": [
+    "Non-negative weights",
+    "All weights negative",
+    "All weights identical",
+    "At least one negative cycle"
+   ],
+   "a": 0,
+   "e": "Negative edges can invalidate the greedy finalisation step.",
+   "d": "med"
+  },
+  {
+   "id": "q-034",
+   "s": "it-ds",
+   "q": "A topological ordering exists for which directed graphs?",
+   "o": [
+    "All directed graphs",
+    "Acyclic directed graphs",
+    "Only complete graphs",
+    "Only graphs with one vertex"
+   ],
+   "a": 1,
+   "e": "A directed cycle prevents an ordering with every edge going forward.",
+   "d": "easy"
+  },
+  {
+   "id": "q-035",
+   "s": "it-dbms",
+   "q": "Which key uniquely identifies a row and is selected as the principal identifier?",
+   "o": [
+    "Nonunique index",
+    "Foreign key",
+    "Primary key",
+    "View"
+   ],
+   "a": 2,
+   "e": "A primary key is the chosen candidate key and disallows null values.",
+   "d": "med"
+  },
+  {
+   "id": "q-036",
+   "s": "it-dbms",
+   "q": "Which relational operation selects rows satisfying a condition?",
+   "o": [
+    "Rename",
+    "Projection",
+    "Cartesian product",
+    "Selection"
+   ],
+   "a": 3,
+   "e": "Selection filters rows; projection selects attributes.",
+   "d": "hard"
+  },
+  {
+   "id": "q-037",
+   "s": "it-dbms",
+   "q": "SQL: Which clause filters groups after aggregation?",
+   "o": [
+    "HAVING",
+    "WHERE only",
+    "ORDER BY",
+    "FROM"
+   ],
+   "a": 0,
+   "e": "WHERE filters input rows, while HAVING filters grouped results.",
+   "d": "easy"
+  },
+  {
+   "id": "q-038",
+   "s": "it-dbms",
+   "q": "SQL: What does COUNT(column) exclude?",
+   "o": [
+    "Zero values",
+    "NULL values in that column",
+    "Duplicate values always",
+    "Empty tables only"
+   ],
+   "a": 1,
+   "e": "COUNT(column) counts non-null values; COUNT(*) counts rows.",
+   "d": "med"
+  },
+  {
+   "id": "q-039",
+   "s": "it-dbms",
+   "q": "SQL: What predicate correctly tests a null value?",
+   "o": [
+    "== NULL",
+    "= NULL",
+    "IS NULL",
+    "IN NULL"
+   ],
+   "a": 2,
+   "e": "SQL uses three-valued logic; ordinary comparison with null is unknown.",
+   "d": "med"
+  },
+  {
+   "id": "q-040",
+   "s": "it-dbms",
+   "q": "Which join retains every left-table row even when there is no right match?",
+   "o": [
+    "SELF JOIN always",
+    "INNER JOIN",
+    "CROSS JOIN only",
+    "LEFT JOIN"
+   ],
+   "a": 3,
+   "e": "A left outer join supplies nulls for the missing right-side values.",
+   "d": "easy"
+  },
+  {
+   "id": "q-041",
+   "s": "it-dbms",
+   "q": "How does UNION differ from UNION ALL?",
+   "o": [
+    "UNION eliminates duplicate result rows",
+    "UNION ALL eliminates duplicates",
+    "UNION cannot combine queries",
+    "UNION always sorts by the first column"
+   ],
+   "a": 0,
+   "e": "UNION has distinct semantics. Ordering is not guaranteed without ORDER BY.",
+   "d": "hard"
+  },
+  {
+   "id": "q-042",
+   "s": "it-dbms",
+   "q": "A transaction should happen entirely or not at all. Which ACID property is this?",
+   "o": [
+    "Consistency",
+    "Atomicity",
+    "Isolation",
+    "Durability"
+   ],
+   "a": 1,
+   "e": "Atomicity prevents partial transaction effects from being committed.",
+   "d": "med"
+  },
+  {
+   "id": "q-043",
+   "s": "it-dbms",
+   "q": "Which ACID property concerns persistence after commit?",
+   "o": [
+    "Atomicity",
+    "Isolation",
+    "Durability",
+    "Indexing"
+   ],
+   "a": 2,
+   "e": "Committed changes should survive the failures covered by the system guarantees.",
+   "d": "easy"
+  },
+  {
+   "id": "q-044",
+   "s": "it-dbms",
+   "q": "For BCNF, every nontrivial functional dependency X → Y must satisfy what?",
+   "o": [
+    "Y contains every attribute",
+    "Y is always a primary key",
+    "X is a single attribute",
+    "X is a superkey"
+   ],
+   "a": 3,
+   "e": "BCNF requires every determinant of a nontrivial dependency to be a superkey.",
+   "d": "med"
+  },
+  {
+   "id": "q-045",
+   "s": "it-dbms",
+   "q": "Which index structure is especially suitable for ordered range scans?",
+   "o": [
+    "B+ tree",
+    "Unordered heap file only",
+    "Cryptographic hash only",
+    "Stack"
+   ],
+   "a": 0,
+   "e": "Sorted leaf entries and leaf links allow efficient range traversal.",
+   "d": "med"
+  },
+  {
+   "id": "q-046",
+   "s": "it-dbms",
+   "q": "What does a window aggregate usually preserve compared with GROUP BY?",
+   "o": [
+    "Only one row in the result",
+    "Individual input rows",
+    "Only primary keys",
+    "No ordering information"
+   ],
+   "a": 1,
+   "e": "A window computes over related rows without necessarily collapsing them into grouped rows.",
+   "d": "hard"
+  },
+  {
+   "id": "q-047",
+   "s": "it-cn",
+   "q": "Which OSI layer handles routing between networks?",
+   "o": [
+    "Data link",
+    "Physical",
+    "Network",
+    "Presentation"
+   ],
+   "a": 2,
+   "e": "The network layer deals with logical addressing and routing.",
+   "d": "med"
+  },
+  {
+   "id": "q-048",
+   "s": "it-cn",
+   "q": "Which transport protocol provides ordered reliable byte-stream delivery?",
+   "o": [
+    "ARP",
+    "UDP",
+    "IP",
+    "TCP"
+   ],
+   "a": 3,
+   "e": "TCP uses sequence numbers, acknowledgements and retransmissions.",
+   "d": "med"
+  },
+  {
+   "id": "q-049",
+   "s": "it-cn",
+   "q": "What service usually resolves hostnames to IP addresses?",
+   "o": [
+    "DNS",
+    "DHCP",
+    "SMTP",
+    "NTP"
+   ],
+   "a": 0,
+   "e": "DNS provides name resolution; DHCP supplies network configuration.",
+   "d": "easy"
+  },
+  {
+   "id": "q-050",
+   "s": "it-cn",
+   "q": "How many total IPv4 addresses are in a /26 subnet?",
+   "o": [
+    "62",
+    "64",
+    "32",
+    "128"
+   ],
+   "a": 1,
+   "e": "There are 6 host bits, so 2^6 = 64 total addresses. Traditional usable-host count is 62.",
+   "d": "med"
+  },
+  {
+   "id": "q-051",
+   "s": "it-cn",
+   "q": "An Ethernet switch normally forwards frames using which address?",
+   "o": [
+    "URL path",
+    "Destination email",
+    "Destination MAC",
+    "Process ID"
+   ],
+   "a": 2,
+   "e": "Layer-2 switches use their learned MAC forwarding table.",
+   "d": "hard"
+  },
+  {
+   "id": "q-052",
+   "s": "it-cn",
+   "q": "What is ARP used for in an IPv4 LAN?",
+   "o": [
+    "Selecting application ports",
+    "Encrypting email",
+    "Assigning domain names",
+    "Resolving a local IPv4 address to a link-layer address"
+   ],
+   "a": 3,
+   "e": "ARP maps an on-link IPv4 destination or next hop to its MAC address.",
+   "d": "easy"
+  },
+  {
+   "id": "q-053",
+   "s": "it-cn",
+   "q": "Which protocol is associated with sending email?",
+   "o": [
+    "SMTP",
+    "POP3 only",
+    "IMAP only",
+    "SNMP"
+   ],
+   "a": 0,
+   "e": "SMTP transports outgoing mail. POP3 and IMAP are mainly for mailbox access.",
+   "d": "med"
+  },
+  {
+   "id": "q-054",
+   "s": "it-cn",
+   "q": "What does TCP flow control mainly protect?",
+   "o": [
+    "All routers from every attack",
+    "The receiver from excessive incoming data",
+    "DNS consistency",
+    "Disk integrity"
+   ],
+   "a": 1,
+   "e": "The receiver window limits how much unacknowledged data the receiver can accept.",
+   "d": "med"
+  },
+  {
+   "id": "q-055",
+   "s": "it-sec",
+   "q": "Which CIA property is harmed when unauthorised users read confidential records?",
+   "o": [
+    "Availability only",
+    "Integrity only",
+    "Confidentiality",
+    "Nonrepudiation only"
+   ],
+   "a": 2,
+   "e": "Confidentiality controls disclosure to unauthorised parties.",
+   "d": "easy"
+  },
+  {
+   "id": "q-056",
+   "s": "it-sec",
+   "q": "A record is altered without authorisation. Which CIA property is directly affected?",
+   "o": [
+    "Compression",
+    "Availability only",
+    "Confidentiality only",
+    "Integrity"
+   ],
+   "a": 3,
+   "e": "Integrity concerns correctness and unauthorised modification.",
+   "d": "hard"
+  },
+  {
+   "id": "q-057",
+   "s": "it-sec",
+   "q": "Which combination represents two distinct authentication factors?",
+   "o": [
+    "Password and hardware security key",
+    "Password and PIN",
+    "Two passwords",
+    "Username and password"
+   ],
+   "a": 0,
+   "e": "Knowledge plus possession is multifactor. Two knowledge secrets are the same factor type.",
+   "d": "med"
+  },
+  {
+   "id": "q-058",
+   "s": "it-sec",
+   "q": "Which control most directly prevents SQL injection in query parameters?",
+   "o": [
+    "Hiding the login page",
+    "Parameterized queries",
+    "Longer table names",
+    "Client-side validation alone"
+   ],
+   "a": 1,
+   "e": "Bind values as data rather than concatenating them into executable SQL.",
+   "d": "easy"
+  },
+  {
+   "id": "q-059",
+   "s": "it-sec",
+   "q": "Passwords should generally be stored using what?",
+   "o": [
+    "Reversible encryption with a shared hardcoded key",
+    "Plain text",
+    "A salted password hashing function",
+    "A username prefix"
+   ],
+   "a": 2,
+   "e": "A deliberately costly password hash with a unique salt limits offline guessing and precomputed attacks.",
+   "d": "med"
+  },
+  {
+   "id": "q-060",
+   "s": "it-sec",
+   "q": "A digital signature is typically created with which key?",
+   "o": [
+    "The document title",
+    "Verifier’s private key",
+    "Everyone’s public key",
+    "Signer’s private key"
+   ],
+   "a": 3,
+   "e": "Verification uses the corresponding public key. Signing does not itself encrypt the message.",
+   "d": "med"
+  },
+  {
+   "id": "q-061",
+   "s": "it-sec",
+   "q": "Which policy best follows least privilege?",
+   "o": [
+    "Grant only necessary access and review it",
+    "Give all staff administrator access",
+    "Never revoke permissions",
+    "Share one administrator account"
+   ],
+   "a": 0,
+   "e": "Limit access by role and task, and review it as needs change.",
+   "d": "hard"
+  },
+  {
+   "id": "q-062",
+   "s": "it-sec",
+   "q": "What distinguishes an IPS from a purely passive IDS?",
+   "o": [
+    "An IPS cannot inspect traffic",
+    "An IPS can actively block traffic",
+    "IDS always encrypts traffic",
+    "They are both backup systems"
+   ],
+   "a": 1,
+   "e": "An intrusion prevention system can intervene; detection alone alerts.",
+   "d": "med"
+  },
+  {
+   "id": "q-063",
+   "s": "it-data",
+   "q": "Python: list(range(1,6,2)) gives what?",
+   "o": [
+    "[1, 3]",
+    "[1, 2, 3, 4, 5]",
+    "[1, 3, 5]",
+    "[2, 4, 6]"
+   ],
+   "a": 2,
+   "e": "range excludes the stop value and advances by the supplied step.",
+   "d": "med"
+  },
+  {
+   "id": "q-064",
+   "s": "it-data",
+   "q": "In pandas, which selector is primarily position-based?",
+   "o": [
+    "merge",
+    "loc",
+    "groupby",
+    "iloc"
+   ],
+   "a": 3,
+   "e": "iloc selects by integer positions; loc uses labels or boolean masks.",
+   "d": "easy"
+  },
+  {
+   "id": "q-065",
+   "s": "it-data",
+   "q": "A join key appears 3 times on the left and 2 times on the right. How many matching rows can an inner join produce for it?",
+   "o": [
+    "6",
+    "5",
+    "3",
+    "2"
+   ],
+   "a": 0,
+   "e": "Every left match combines with every right match: 3*2 rows.",
+   "d": "med"
+  },
+  {
+   "id": "q-066",
+   "s": "it-data",
+   "q": "R: c(10,20,30)[1] is what?",
+   "o": [
+    "20",
+    "10",
+    "30",
+    "An error because indexing starts at 0"
+   ],
+   "a": 1,
+   "e": "R uses one-based vector indexing.",
+   "d": "hard"
+  },
+  {
+   "id": "q-067",
+   "s": "it-data",
+   "q": "R: mean(c(2,NA,6), na.rm=TRUE) gives what?",
+   "o": [
+    "8",
+    "NA",
+    "4",
+    "2"
+   ],
+   "a": 2,
+   "e": "Removing the missing observation leaves (2+6)/2 = 4.",
+   "d": "easy"
+  },
+  {
+   "id": "q-068",
+   "s": "it-data",
+   "q": "Which ETL stage standardises inconsistent date formats?",
+   "o": [
+    "Archive only",
+    "Extract only",
+    "Load only",
+    "Transform"
+   ],
+   "a": 3,
+   "e": "Transformation cleans and maps source values into the target representation.",
+   "d": "med"
+  },
+  {
+   "id": "q-069",
+   "s": "it-data",
+   "q": "Moving from daily totals to monthly totals is which OLAP operation?",
+   "o": [
+    "Roll-up",
+    "Drill-down",
+    "Transaction rollback",
+    "Index seek"
+   ],
+   "a": 0,
+   "e": "Roll-up aggregates to a coarser level of a hierarchy.",
+   "d": "med"
+  },
+  {
+   "id": "q-070",
+   "s": "it-data",
+   "q": "What should a fact table’s grain define?",
+   "o": [
+    "The font size",
+    "What one row represents",
+    "The number of users",
+    "Only the primary-key data type"
+   ],
+   "a": 1,
+   "e": "A clear grain prevents mixing measures at incompatible levels of detail.",
+   "d": "easy"
+  },
+  {
+   "id": "q-071",
+   "s": "it-data",
+   "q": "Which regex matches exactly three ASCII digits and nothing else?",
+   "o": [
+    "[0-9]+",
+    "[0-9]*",
+    "^[0-9]{3}$",
+    "[A-Z]{3}"
+   ],
+   "a": 2,
+   "e": "Anchors require the whole string and {3} sets the exact repetition count.",
+   "d": "hard"
+  },
+  {
+   "id": "q-072",
+   "s": "it-shell",
+   "q": "In a shell script, what does $# represent?",
+   "o": [
+    "Current directory",
+    "Previous command status",
+    "First argument",
+    "Number of positional arguments"
+   ],
+   "a": 3,
+   "e": "The argument count is separate from $1 (first argument) and $? (previous status).",
+   "d": "med"
+  },
+  {
+   "id": "q-073",
+   "s": "it-shell",
+   "q": "Which shell exit status conventionally indicates success?",
+   "o": [
+    "0",
+    "1",
+    "-1",
+    "255"
+   ],
+   "a": 0,
+   "e": "Zero means success by convention; nonzero usually signals failure.",
+   "d": "easy"
+  },
+  {
+   "id": "q-074",
+   "s": "it-shell",
+   "q": "What does a shell pipe connect?",
+   "o": [
+    "Two file names only",
+    "Left command stdout to right command stdin",
+    "Stderr to a password",
+    "Two login sessions"
+   ],
+   "a": 1,
+   "e": "A pipe streams one program’s standard output to another’s standard input.",
+   "d": "med"
+  },
+  {
+   "id": "q-075",
+   "s": "it-shell",
+   "q": "Why quote \"$name\" in a shell command?",
+   "o": [
+    "To execute it as code",
+    "To encrypt it",
+    "To preserve it as one argument despite spaces",
+    "To make it numeric"
+   ],
+   "a": 2,
+   "e": "Double quotes allow variable expansion while preventing word splitting and pathname expansion of the result.",
+   "d": "med"
+  },
+  {
+   "id": "q-076",
+   "s": "it-shell",
+   "q": "Why commonly run sort before uniq?",
+   "o": [
+    "uniq only accepts numbers",
+    "uniq needs reverse alphabetical order",
+    "sort encrypts duplicates",
+    "uniq combines adjacent duplicate lines"
+   ],
+   "a": 3,
+   "e": "Identical lines must be adjacent to be consolidated by uniq.",
+   "d": "hard"
+  },
+  {
+   "id": "q-077",
+   "s": "ga",
+   "q": "What is a primary market transaction?",
+   "o": [
+    "An issuer selling newly issued securities",
+    "An investor reselling existing shares on exchange",
+    "A dividend record update only",
+    "A bank ATM withdrawal"
+   ],
+   "a": 0,
+   "e": "The primary market raises funds through new issuance; secondary trading transfers existing securities.",
+   "d": "med"
+  },
+  {
+   "id": "q-078",
+   "s": "ga",
+   "q": "What does diversification mainly reduce?",
+   "o": [
+    "Every possible loss",
+    "Asset-specific risk",
+    "All systematic risk",
+    "The need to understand products"
+   ],
+   "a": 1,
+   "e": "Combining imperfectly correlated exposures can reduce concentration risk, but does not guarantee returns.",
+   "d": "med"
+  },
+  {
+   "id": "q-079",
+   "s": "ga",
+   "q": "An equity share generally represents what?",
+   "o": [
+    "A tax invoice",
+    "A guaranteed fixed bank deposit",
+    "An ownership interest",
+    "A government promise of profit"
+   ],
+   "a": 2,
+   "e": "Equity is a residual ownership claim with uncertain returns.",
+   "d": "easy"
+  },
+  {
+   "id": "q-080",
+   "s": "ga",
+   "q": "What is a depository’s core role?",
+   "o": [
+    "Printing currency",
+    "Guaranteeing stock prices",
+    "Setting income-tax rates",
+    "Holding securities electronically and facilitating transfers"
+   ],
+   "a": 3,
+   "e": "Electronic holdings and book-entry transfers are central depository functions.",
+   "d": "med"
+  },
+  {
+   "id": "q-081",
+   "s": "ga",
+   "q": "Which instrument gives its holder a right, without an obligation, to buy at a specified strike under its terms?",
+   "o": [
+    "Call option",
+    "Put option",
+    "Futures contract",
+    "Ordinary bond"
+   ],
+   "a": 0,
+   "e": "A call provides the purchase right; a put provides the sale right.",
+   "d": "hard"
+  },
+  {
+   "id": "q-082",
+   "s": "ga",
+   "q": "What does a mutual fund NAV represent?",
+   "o": [
+    "A guaranteed next-day return",
+    "Net assets per unit",
+    "Only the unit’s face value",
+    "Total trading volume"
+   ],
+   "a": 1,
+   "e": "NAV divides the fund’s net asset value by its outstanding units.",
+   "d": "easy"
+  },
+  {
+   "id": "q-083",
+   "s": "eng",
+   "q": "Choose the grammatically correct sentence.",
+   "o": [
+    "Each of the applicant are ready.",
+    "Each of the applicants are ready.",
+    "Each of the applicants is ready.",
+    "Each applicants is ready."
+   ],
+   "a": 2,
+   "e": "Each is the singular subject; the phrase of the applicants does not change agreement.",
+   "d": "med"
+  },
+  {
+   "id": "q-084",
+   "s": "eng",
+   "q": "Choose the correct usage.",
+   "o": [
+    "The results affected to the decision.",
+    "The results effects the decision.",
+    "The results effecting the decision.",
+    "The results affect the decision."
+   ],
+   "a": 3,
+   "e": "Affect is the verb meaning influence; results is plural and takes affect.",
+   "d": "med"
+  },
+  {
+   "id": "q-085",
+   "s": "eng",
+   "q": "Which word is closest in meaning to mitigate?",
+   "o": [
+    "Reduce the severity of",
+    "Completely prove",
+    "Increase sharply",
+    "Conceal permanently"
+   ],
+   "a": 0,
+   "e": "Mitigate means make less severe; it does not mean eliminate.",
+   "d": "easy"
+  },
+  {
+   "id": "q-086",
+   "s": "eng",
+   "q": "Which sentence uses parallel structure?",
+   "o": [
+    "The role requires analysis data, to write reports and controls.",
+    "The role requires analysing data, writing reports and reviewing controls.",
+    "The role requires analysing data, reports written and review.",
+    "The role requires analyse data, writing and controls."
+   ],
+   "a": 1,
+   "e": "All three coordinated activities use the same grammatical form.",
+   "d": "hard"
+  },
+  {
+   "id": "q-087",
+   "s": "reas",
+   "q": "All A are B. Some B are C. Does some A are C necessarily follow?",
+   "o": [
+    "Only if A is singular",
+    "Yes, always",
+    "No",
+    "Only if B is plural"
+   ],
+   "a": 2,
+   "e": "The B-C overlap may be entirely outside A.",
+   "d": "med"
+  },
+  {
+   "id": "q-088",
+   "s": "reas",
+   "q": "A > B and B >= C. What follows?",
+   "o": [
+    "No relation can be established",
+    "A = C",
+    "A < C",
+    "A > C"
+   ],
+   "a": 3,
+   "e": "Combining a strict greater-than with a non-strict greater-than gives a strict greater-than.",
+   "d": "easy"
+  },
+  {
+   "id": "q-089",
+   "s": "reas",
+   "q": "A candidate ranks 7th from the top and 14th from the bottom. How many candidates are there?",
+   "o": [
+    "20",
+    "21",
+    "19",
+    "22"
+   ],
+   "a": 0,
+   "e": "Add the two ranks and subtract one to avoid counting the candidate twice.",
+   "d": "med"
+  },
+  {
+   "id": "q-090",
+   "s": "reas",
+   "q": "A person walks 6 km east then 8 km north. What is displacement magnitude?",
+   "o": [
+    "14 km",
+    "10 km",
+    "2 km",
+    "48 km"
+   ],
+   "a": 1,
+   "e": "The straight-line displacement follows the Pythagorean theorem: sqrt(36+64).",
+   "d": "med"
+  },
+  {
+   "id": "q-091",
+   "s": "qa",
+   "q": "A value rises 20% then falls 20%. Relative to the original, it is now?",
+   "o": [
+    "4% higher",
+    "Unchanged",
+    "4% lower",
+    "20% lower"
+   ],
+   "a": 2,
+   "e": "Multipliers 1.2*0.8 = 0.96. The percentage changes have different bases.",
+   "d": "hard"
+  },
+  {
+   "id": "q-092",
+   "s": "qa",
+   "q": "A does a job in 10 days and B in 15 days. Together they need?",
+   "o": [
+    "25 days",
+    "5 days",
+    "12.5 days",
+    "6 days"
+   ],
+   "a": 3,
+   "e": "Combined daily work rate is 1/10+1/15 = 1/6.",
+   "d": "med"
+  },
+  {
+   "id": "q-093",
+   "s": "qa",
+   "q": "A bag has 3 red and 2 blue balls. One is drawn uniformly. P(blue) is?",
+   "o": [
+    "2/5",
+    "3/5",
+    "1/2",
+    "2/3"
+   ],
+   "a": 0,
+   "e": "Two of the five equally likely outcomes are blue.",
+   "d": "med"
+  },
+  {
+   "id": "q-094",
+   "s": "qa",
+   "q": "How many ways can 2 people be selected from 5, ignoring order?",
+   "o": [
+    "20",
+    "10",
+    "25",
+    "5"
+   ],
+   "a": 1,
+   "e": "5 choose 2 = 5*4/2 = 10. Divide by two because each pair can be ordered in two ways.",
+   "d": "easy"
+  },
+  {
+   "id": "q-095",
+   "s": "qa",
+   "q": "A train covers 150 km in 2.5 hours. Average speed is?",
+   "o": [
+    "75 km/h",
+    "50 km/h",
+    "60 km/h",
+    "375 km/h"
+   ],
+   "a": 2,
+   "e": "Average speed = total distance divided by total time.",
+   "d": "med"
+  },
+  {
+   "id": "q-096",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(3): total += i. What is total?",
+   "o": [
+    "4",
+    "6",
+    "9",
+    "3"
+   ],
+   "a": 3,
+   "e": "range(3) includes 0 through 2. Their sum is 3*2/2.",
+   "d": "hard"
+  },
+  {
+   "id": "q-097",
+   "s": "qa",
+   "q": "An item costs Rs 300 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 360",
+    "Rs 240",
+    "Rs 330",
+    "Rs 375"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 300 * 1.20.",
+   "d": "easy"
+  },
+  {
+   "id": "q-098",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(4): total += i. What is total?",
+   "o": [
+    "10",
+    "6",
+    "16",
+    "5"
+   ],
+   "a": 1,
+   "e": "range(4) includes 0 through 3. Their sum is 4*3/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-099",
+   "s": "qa",
+   "q": "An item costs Rs 400 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 440",
+    "Rs 320",
+    "Rs 480",
+    "Rs 500"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 400 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-100",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(5): total += i. What is total?",
+   "o": [
+    "6",
+    "15",
+    "25",
+    "10"
+   ],
+   "a": 3,
+   "e": "range(5) includes 0 through 4. Their sum is 5*4/2.",
+   "d": "easy"
+  },
+  {
+   "id": "q-101",
+   "s": "qa",
+   "q": "An item costs Rs 500 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 600",
+    "Rs 400",
+    "Rs 550",
+    "Rs 625"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 500 * 1.20.",
+   "d": "hard"
+  },
+  {
+   "id": "q-102",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(6): total += i. What is total?",
+   "o": [
+    "21",
+    "15",
+    "36",
+    "7"
+   ],
+   "a": 1,
+   "e": "range(6) includes 0 through 5. Their sum is 6*5/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-103",
+   "s": "qa",
+   "q": "An item costs Rs 600 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 660",
+    "Rs 480",
+    "Rs 720",
+    "Rs 750"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 600 * 1.20.",
+   "d": "easy"
+  },
+  {
+   "id": "q-104",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(7): total += i. What is total?",
+   "o": [
+    "8",
+    "28",
+    "49",
+    "21"
+   ],
+   "a": 3,
+   "e": "range(7) includes 0 through 6. Their sum is 7*6/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-105",
+   "s": "qa",
+   "q": "An item costs Rs 700 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 840",
+    "Rs 560",
+    "Rs 770",
+    "Rs 875"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 700 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-106",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(8): total += i. What is total?",
+   "o": [
+    "36",
+    "28",
+    "64",
+    "9"
+   ],
+   "a": 1,
+   "e": "range(8) includes 0 through 7. Their sum is 8*7/2.",
+   "d": "hard"
+  },
+  {
+   "id": "q-107",
+   "s": "qa",
+   "q": "An item costs Rs 800 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 880",
+    "Rs 640",
+    "Rs 960",
+    "Rs 1000"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 800 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-108",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(9): total += i. What is total?",
+   "o": [
+    "10",
+    "45",
+    "81",
+    "36"
+   ],
+   "a": 3,
+   "e": "range(9) includes 0 through 8. Their sum is 9*8/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-109",
+   "s": "qa",
+   "q": "An item costs Rs 900 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1080",
+    "Rs 720",
+    "Rs 990",
+    "Rs 1125"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 900 * 1.20.",
+   "d": "easy"
+  },
+  {
+   "id": "q-110",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(10): total += i. What is total?",
+   "o": [
+    "55",
+    "45",
+    "100",
+    "11"
+   ],
+   "a": 1,
+   "e": "range(10) includes 0 through 9. Their sum is 10*9/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-111",
+   "s": "qa",
+   "q": "An item costs Rs 1000 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1100",
+    "Rs 800",
+    "Rs 1200",
+    "Rs 1250"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 1000 * 1.20.",
+   "d": "hard"
+  },
+  {
+   "id": "q-112",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(11): total += i. What is total?",
+   "o": [
+    "12",
+    "66",
+    "121",
+    "55"
+   ],
+   "a": 3,
+   "e": "range(11) includes 0 through 10. Their sum is 11*10/2.",
+   "d": "easy"
+  },
+  {
+   "id": "q-113",
+   "s": "qa",
+   "q": "An item costs Rs 1100 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1320",
+    "Rs 880",
+    "Rs 1210",
+    "Rs 1375"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 1100 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-114",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(12): total += i. What is total?",
+   "o": [
+    "78",
+    "66",
+    "144",
+    "13"
+   ],
+   "a": 1,
+   "e": "range(12) includes 0 through 11. Their sum is 12*11/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-115",
+   "s": "qa",
+   "q": "An item costs Rs 1200 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1320",
+    "Rs 960",
+    "Rs 1440",
+    "Rs 1500"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 1200 * 1.20.",
+   "d": "easy"
+  },
+  {
+   "id": "q-116",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(13): total += i. What is total?",
+   "o": [
+    "14",
+    "91",
+    "169",
+    "78"
+   ],
+   "a": 3,
+   "e": "range(13) includes 0 through 12. Their sum is 13*12/2.",
+   "d": "hard"
+  },
+  {
+   "id": "q-117",
+   "s": "qa",
+   "q": "An item costs Rs 1300 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1560",
+    "Rs 1040",
+    "Rs 1430",
+    "Rs 1625"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 1300 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-118",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(14): total += i. What is total?",
+   "o": [
+    "105",
+    "91",
+    "196",
+    "15"
+   ],
+   "a": 1,
+   "e": "range(14) includes 0 through 13. Their sum is 14*13/2.",
+   "d": "easy"
+  },
+  {
+   "id": "q-119",
+   "s": "qa",
+   "q": "An item costs Rs 1400 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1540",
+    "Rs 1120",
+    "Rs 1680",
+    "Rs 1750"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 1400 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-120",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(15): total += i. What is total?",
+   "o": [
+    "16",
+    "120",
+    "225",
+    "105"
+   ],
+   "a": 3,
+   "e": "range(15) includes 0 through 14. Their sum is 15*14/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-121",
+   "s": "qa",
+   "q": "An item costs Rs 1500 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1800",
+    "Rs 1200",
+    "Rs 1650",
+    "Rs 1875"
+   ],
+   "a": 0,
+   "e": "Selling price = cost * 1.20 = 1500 * 1.20.",
+   "d": "hard"
+  },
+  {
+   "id": "q-122",
+   "s": "it-prog",
+   "q": "Python: total=0; then for i in range(16): total += i. What is total?",
+   "o": [
+    "136",
+    "120",
+    "256",
+    "17"
+   ],
+   "a": 1,
+   "e": "range(16) includes 0 through 15. Their sum is 16*15/2.",
+   "d": "med"
+  },
+  {
+   "id": "q-123",
+   "s": "qa",
+   "q": "An item costs Rs 1600 and is sold at a 20% profit on cost. What is the selling price?",
+   "o": [
+    "Rs 1760",
+    "Rs 1280",
+    "Rs 1920",
+    "Rs 2000"
+   ],
+   "a": 2,
+   "e": "Selling price = cost * 1.20 = 1600 * 1.20.",
+   "d": "med"
+  },
+  {
+   "id": "q-124",
+   "s": "it-os",
+   "q": "Which scheduling algorithm provably gives the minimum average waiting time?",
+   "o": [
+    "FCFS",
+    "Shortest Job First",
+    "Round Robin",
+    "Priority scheduling"
+   ],
+   "a": 1,
+   "e": "SJF is optimal for average waiting time, but it needs burst times in advance, which is why it is not directly implementable.",
+   "d": "easy"
+  },
+  {
+   "id": "q-125",
+   "s": "it-os",
+   "q": "Belady's anomaly can occur in which page replacement algorithm?",
+   "o": [
+    "LRU",
+    "Optimal",
+    "FIFO",
+    "All stack algorithms"
+   ],
+   "a": 2,
+   "e": "FIFO can produce more page faults with more frames. LRU and Optimal are stack algorithms and are immune.",
+   "d": "med"
+  },
+  {
+   "id": "q-126",
+   "s": "it-os",
+   "q": "How many child processes are created by three successive fork() calls?",
+   "o": [
+    "3",
+    "6",
+    "7",
+    "8"
+   ],
+   "a": 2,
+   "e": "2^n - 1 children for n sequential forks, so 2^3 - 1 = 7.",
+   "d": "med"
+  },
+  {
+   "id": "q-127",
+   "s": "it-os",
+   "q": "Which is NOT one of the four Coffman conditions for deadlock?",
+   "o": [
+    "Mutual exclusion",
+    "Hold and wait",
+    "Circular wait",
+    "Priority inversion"
+   ],
+   "a": 3,
+   "e": "The four are mutual exclusion, hold and wait, no preemption and circular wait. Priority inversion is a separate scheduling problem.",
+   "d": "easy"
+  },
+  {
+   "id": "q-128",
+   "s": "it-os",
+   "q": "In the Banker's algorithm, an unsafe state means:",
+   "o": [
+    "Deadlock has occurred",
+    "Deadlock is possible but not certain",
+    "The request must be granted",
+    "All processes have finished"
+   ],
+   "a": 1,
+   "e": "Safe implies no deadlock, but unsafe only means deadlock could occur; it is not a guarantee.",
+   "d": "med"
+  },
+  {
+   "id": "q-129",
+   "s": "it-os",
+   "q": "A logical address space of 4 GB with 4 KB pages needs how many bits for the page offset?",
+   "o": [
+    "10",
+    "12",
+    "16",
+    "20"
+   ],
+   "a": 1,
+   "e": "Offset bits = log2(page size) = log2(4096) = 12.",
+   "d": "med"
+  },
+  {
+   "id": "q-130",
+   "s": "it-os",
+   "q": "Thrashing is best described as:",
+   "o": [
+    "Too many context switches",
+    "A process spending more time paging than executing",
+    "Disk fragmentation",
+    "Excessive interrupt handling"
+   ],
+   "a": 1,
+   "e": "It happens when a process has too few frames for its working set, usually from too high a degree of multiprogramming.",
+   "d": "easy"
+  },
+  {
+   "id": "q-131",
+   "s": "it-os",
+   "q": "Which disk scheduling algorithm gives the most uniform waiting time?",
+   "o": [
+    "FCFS",
+    "SSTF",
+    "SCAN",
+    "C-SCAN"
+   ],
+   "a": 3,
+   "e": "C-SCAN services in one direction then jumps back without serving, so requests at both ends wait similarly.",
+   "d": "med"
+  },
+  {
+   "id": "q-132",
+   "s": "it-os",
+   "q": "A binary semaphore differs from a mutex mainly because:",
+   "o": [
+    "A mutex has ownership; only the locking thread may unlock",
+    "A semaphore cannot block",
+    "A mutex allows counting",
+    "A semaphore is always faster"
+   ],
+   "a": 0,
+   "e": "Ownership is the key distinction; a semaphore may be signalled by any thread.",
+   "d": "med"
+  },
+  {
+   "id": "q-133",
+   "s": "it-os",
+   "q": "Threads of the same process share all EXCEPT:",
+   "o": [
+    "Code section",
+    "Data section",
+    "Open files",
+    "Stack and registers"
+   ],
+   "a": 3,
+   "e": "Each thread has its own stack, registers and program counter; everything else is shared.",
+   "d": "easy"
+  },
+  {
+   "id": "q-134",
+   "s": "it-os",
+   "q": "Which scheduler controls the degree of multiprogramming?",
+   "o": [
+    "Short-term",
+    "Medium-term",
+    "Long-term",
+    "Dispatcher"
+   ],
+   "a": 2,
+   "e": "The long-term (job) scheduler decides how many processes enter the ready queue.",
+   "d": "med"
+  },
+  {
+   "id": "q-135",
+   "s": "it-os",
+   "q": "A system call is best classified as:",
+   "o": [
+    "A hardware interrupt",
+    "A trap (software interrupt)",
+    "A DMA transfer",
+    "A page fault"
+   ],
+   "a": 1,
+   "e": "System calls are synchronous software-generated traps that switch the CPU to kernel mode.",
+   "d": "easy"
+  },
+  {
+   "id": "q-136",
+   "s": "it-os",
+   "q": "A process that has terminated but whose parent has not called wait() is called:",
+   "o": [
+    "Orphan",
+    "Zombie",
+    "Daemon",
+    "Suspended"
+   ],
+   "a": 1,
+   "e": "The entry remains in the process table until reaped. An orphan is one whose parent died first.",
+   "d": "easy"
+  },
+  {
+   "id": "q-137",
+   "s": "it-os",
+   "q": "In Round Robin with n processes and quantum q, the maximum time a process waits before its next turn is:",
+   "o": [
+    "nq",
+    "(n-1)q",
+    "q/n",
+    "2q"
+   ],
+   "a": 1,
+   "e": "Every other process runs at most one quantum before the turn comes back.",
+   "d": "med"
+  },
+  {
+   "id": "q-138",
+   "s": "it-os",
+   "q": "RAID 5 can survive the failure of how many disks?",
+   "o": [
+    "Zero",
+    "One",
+    "Two",
+    "Half the array"
+   ],
+   "a": 1,
+   "e": "RAID 5 uses distributed single parity. RAID 6 with dual parity survives two.",
+   "d": "easy"
+  },
+  {
+   "id": "q-139",
+   "s": "it-coa",
+   "q": "The range of an 8-bit two's complement number is:",
+   "o": [
+    "-127 to +127",
+    "-128 to +127",
+    "0 to 255",
+    "-128 to +128"
+   ],
+   "a": 1,
+   "e": "Two's complement is asymmetric and has a single zero.",
+   "d": "easy"
+  },
+  {
+   "id": "q-140",
+   "s": "it-coa",
+   "q": "In IEEE 754 single precision, the exponent field is how many bits and what is the bias?",
+   "o": [
+    "8 bits, bias 127",
+    "11 bits, bias 1023",
+    "8 bits, bias 128",
+    "7 bits, bias 63"
+   ],
+   "a": 0,
+   "e": "Single precision is 1 sign + 8 exponent + 23 mantissa, bias 127.",
+   "d": "med"
+  },
+  {
+   "id": "q-141",
+   "s": "it-coa",
+   "q": "Which pair of gates is functionally complete (universal)?",
+   "o": [
+    "AND and OR",
+    "NAND and NOR",
+    "XOR and AND",
+    "OR and NOT only"
+   ],
+   "a": 1,
+   "e": "Any Boolean function can be built from NAND alone or NOR alone.",
+   "d": "easy"
+  },
+  {
+   "id": "q-142",
+   "s": "it-coa",
+   "q": "Overflow in two's complement addition occurs when:",
+   "o": [
+    "There is any carry out",
+    "Operands of the same sign give a result of the opposite sign",
+    "Operands have different signs",
+    "The result is zero"
+   ],
+   "a": 1,
+   "e": "Adding two positives giving a negative (or vice versa) signals overflow.",
+   "d": "med"
+  },
+  {
+   "id": "q-143",
+   "s": "it-coa",
+   "q": "A 2^n-to-1 multiplexer can implement any Boolean function of how many variables directly?",
+   "o": [
+    "n-1",
+    "n",
+    "n+1",
+    "2n"
+   ],
+   "a": 1,
+   "e": "With n select lines it covers all 2^n minterms; with one inverter it can stretch to n+1 variables.",
+   "d": "med"
+  },
+  {
+   "id": "q-144",
+   "s": "it-coa",
+   "q": "Cache mapping with exactly one possible line per block is:",
+   "o": [
+    "Fully associative",
+    "Set associative",
+    "Direct mapped",
+    "Sector mapped"
+   ],
+   "a": 2,
+   "e": "Direct mapping needs no replacement policy because there is only one candidate line.",
+   "d": "easy"
+  },
+  {
+   "id": "q-145",
+   "s": "it-coa",
+   "q": "Average memory access time equals:",
+   "o": [
+    "Hit time + miss rate x miss penalty",
+    "Miss rate x hit time",
+    "Hit time x miss penalty",
+    "Miss penalty - hit time"
+   ],
+   "a": 0,
+   "e": "AMAT = hit time + (miss rate x miss penalty), applied recursively for multi-level caches.",
+   "d": "med"
+  },
+  {
+   "id": "q-146",
+   "s": "it-coa",
+   "q": "Which cache miss type is reduced by increasing associativity?",
+   "o": [
+    "Compulsory",
+    "Capacity",
+    "Conflict",
+    "Coherence"
+   ],
+   "a": 2,
+   "e": "Conflict misses come from too many blocks mapping to one set; fully associative caches have none.",
+   "d": "med"
+  },
+  {
+   "id": "q-147",
+   "s": "it-coa",
+   "q": "In a k-stage pipeline executing n instructions, the ideal speedup approaches:",
+   "o": [
+    "n",
+    "k",
+    "n/k",
+    "k/n"
+   ],
+   "a": 1,
+   "e": "Speedup = nk/(k+n-1), which tends to k for large n.",
+   "d": "med"
+  },
+  {
+   "id": "q-148",
+   "s": "it-coa",
+   "q": "A RAW hazard is:",
+   "o": [
+    "A false dependency removable by renaming",
+    "A true data dependency",
+    "A control hazard",
+    "A structural hazard"
+   ],
+   "a": 1,
+   "e": "Read-after-write is a genuine dependency; WAR and WAW are name dependencies fixed by register renaming.",
+   "d": "med"
+  },
+  {
+   "id": "q-149",
+   "s": "it-coa",
+   "q": "With a 32-bit address bus and byte addressing, the addressable memory is:",
+   "o": [
+    "2 GB",
+    "4 GB",
+    "8 GB",
+    "32 GB"
+   ],
+   "a": 1,
+   "e": "2^32 bytes = 4 GB. The address bus width alone fixes the addressable range, independent of how much RAM is installed.",
+   "d": "easy"
+  },
+  {
+   "id": "q-150",
+   "s": "it-coa",
+   "q": "Which addressing mode is most natural for accessing array elements?",
+   "o": [
+    "Immediate",
+    "Indexed",
+    "Register direct",
+    "PC-relative"
+   ],
+   "a": 1,
+   "e": "Base plus index maps directly onto array indexing; PC-relative suits branches.",
+   "d": "easy"
+  },
+  {
+   "id": "q-151",
+   "s": "it-coa",
+   "q": "Gray code is characterised by:",
+   "o": [
+    "Weighted binary digits",
+    "Exactly one bit changing between successive values",
+    "Self-complementing pairs",
+    "Parity in every nibble"
+   ],
+   "a": 1,
+   "e": "Single-bit transitions avoid intermediate glitches in encoders and K-map adjacency.",
+   "d": "easy"
+  },
+  {
+   "id": "q-152",
+   "s": "it-coa",
+   "q": "A mod-12 counter requires at least how many flip-flops?",
+   "o": [
+    "3",
+    "4",
+    "5",
+    "12"
+   ],
+   "a": 1,
+   "e": "A mod-N counter needs ceil(log2 N) flip-flops, so ceil(log2 12) = 4. Four flip-flops give 16 states, of which 12 are used.",
+   "d": "easy"
+  },
+  {
+   "id": "q-153",
+   "s": "it-coa",
+   "q": "In a Moore machine the output depends on:",
+   "o": [
+    "Present state only",
+    "Present state and input",
+    "Input only",
+    "The next state"
+   ],
+   "a": 0,
+   "e": "Mealy outputs depend on state and input and usually need fewer states, but can glitch.",
+   "d": "med"
+  },
+  {
+   "id": "q-154",
+   "s": "it-se",
+   "q": "Which SDLC model pairs every development phase with a corresponding test phase?",
+   "o": [
+    "Spiral",
+    "V-model",
+    "RAD",
+    "Prototype"
+   ],
+   "a": 1,
+   "e": "The V-model maps requirements to acceptance testing, design to integration testing and code to unit testing.",
+   "d": "easy"
+  },
+  {
+   "id": "q-155",
+   "s": "it-se",
+   "q": "Which model is explicitly risk-driven?",
+   "o": [
+    "Waterfall",
+    "Spiral",
+    "Incremental",
+    "Big bang"
+   ],
+   "a": 1,
+   "e": "Boehm's spiral model devotes one quadrant of every loop to risk analysis.",
+   "d": "easy"
+  },
+  {
+   "id": "q-156",
+   "s": "it-se",
+   "q": "Cyclomatic complexity of a program with 10 edges, 8 nodes and 1 connected component is:",
+   "o": [
+    "2",
+    "3",
+    "4",
+    "18"
+   ],
+   "a": 2,
+   "e": "V(G) = E - N + 2P = 10 - 8 + 2 = 4.",
+   "d": "med"
+  },
+  {
+   "id": "q-157",
+   "s": "it-se",
+   "q": "Good software design aims for:",
+   "o": [
+    "High coupling, low cohesion",
+    "Low coupling, high cohesion",
+    "High coupling, high cohesion",
+    "Low coupling, low cohesion"
+   ],
+   "a": 1,
+   "e": "Modules should be internally focused and externally independent.",
+   "d": "easy"
+  },
+  {
+   "id": "q-158",
+   "s": "it-se",
+   "q": "Which type of coupling is the worst?",
+   "o": [
+    "Data coupling",
+    "Stamp coupling",
+    "Control coupling",
+    "Content coupling"
+   ],
+   "a": 3,
+   "e": "Content coupling means one module modifies another's internals. Data coupling is the best form.",
+   "d": "med"
+  },
+  {
+   "id": "q-159",
+   "s": "it-se",
+   "q": "In COCOMO, which mode has the highest effort exponent?",
+   "o": [
+    "Organic",
+    "Semi-detached",
+    "Embedded",
+    "All are equal"
+   ],
+   "a": 2,
+   "e": "Embedded projects have the tightest constraints, with b = 1.20 against 1.05 for organic.",
+   "d": "med"
+  },
+  {
+   "id": "q-160",
+   "s": "it-se",
+   "q": "The PERT expected time for an activity is:",
+   "o": [
+    "(O + M + P)/3",
+    "(O + 4M + P)/6",
+    "(O + P)/2",
+    "(4O + M + P)/6"
+   ],
+   "a": 1,
+   "e": "The beta-distribution weighting gives the most likely estimate four times the weight.",
+   "d": "med"
+  },
+  {
+   "id": "q-161",
+   "s": "it-se",
+   "q": "Activities on the critical path have:",
+   "o": [
+    "Maximum float",
+    "Zero float",
+    "Negative float",
+    "Free float only"
+   ],
+   "a": 1,
+   "e": "The critical path is the longest path through the network and determines project duration.",
+   "d": "easy"
+  },
+  {
+   "id": "q-162",
+   "s": "it-se",
+   "q": "Verification answers which question?",
+   "o": [
+    "Are we building the right product?",
+    "Are we building the product right?",
+    "Will users accept it?",
+    "Is it profitable?"
+   ],
+   "a": 1,
+   "e": "Verification is process conformance; validation checks fitness for user needs.",
+   "d": "med"
+  },
+  {
+   "id": "q-163",
+   "s": "it-se",
+   "q": "Which maintenance category is typically the largest share of effort?",
+   "o": [
+    "Corrective",
+    "Adaptive",
+    "Perfective",
+    "Preventive"
+   ],
+   "a": 2,
+   "e": "Enhancement and improvement dominate, at roughly half of maintenance effort.",
+   "d": "med"
+  },
+  {
+   "id": "q-164",
+   "s": "it-se",
+   "q": "Top-down integration testing requires:",
+   "o": [
+    "Drivers",
+    "Stubs",
+    "Neither",
+    "Both in equal measure"
+   ],
+   "a": 1,
+   "e": "Stubs stand in for lower modules; bottom-up integration needs drivers instead.",
+   "d": "med"
+  },
+  {
+   "id": "q-165",
+   "s": "it-se",
+   "q": "Boundary value analysis for a valid range of 1 to 100 should test:",
+   "o": [
+    "Only 50",
+    "0, 1, 100, 101",
+    "Only 1 and 100",
+    "Random values inside the range"
+   ],
+   "a": 1,
+   "e": "Defects cluster at boundaries, so test just inside and just outside each edge.",
+   "d": "easy"
+  },
+  {
+   "id": "q-166",
+   "s": "it-se",
+   "q": "In Scrum, who owns the product backlog?",
+   "o": [
+    "Scrum Master",
+    "Product Owner",
+    "Developers",
+    "Project Manager"
+   ],
+   "a": 1,
+   "e": "The Scrum Master serves the team and removes impediments but does not own the backlog.",
+   "d": "easy"
+  },
+  {
+   "id": "q-167",
+   "s": "it-se",
+   "q": "Which is NOT one of the four DORA metrics?",
+   "o": [
+    "Deployment frequency",
+    "Lead time for changes",
+    "Lines of code per developer",
+    "Change failure rate"
+   ],
+   "a": 2,
+   "e": "The fourth is mean time to restore. LOC per developer is a discredited productivity proxy.",
+   "d": "med"
+  },
+  {
+   "id": "q-168",
+   "s": "it-se",
+   "q": "CMMI level 5 is:",
+   "o": [
+    "Defined",
+    "Managed",
+    "Quantitatively Managed",
+    "Optimising"
+   ],
+   "a": 3,
+   "e": "The ladder is Initial, Managed, Defined, Quantitatively Managed, Optimising.",
+   "d": "easy"
+  },
+  {
+   "id": "q-169",
+   "s": "it-web",
+   "q": "Which HTTP methods are idempotent?",
+   "o": [
+    "POST and PATCH",
+    "PUT and DELETE",
+    "POST and GET",
+    "PATCH and DELETE"
+   ],
+   "a": 1,
+   "e": "Repeating a PUT or DELETE has the same effect as doing it once; POST and PATCH do not guarantee that.",
+   "d": "med"
+  },
+  {
+   "id": "q-170",
+   "s": "it-web",
+   "q": "HTTP 401 versus 403 means:",
+   "o": [
+    "401 forbidden, 403 unauthenticated",
+    "401 unauthenticated, 403 authenticated but not permitted",
+    "Both mean the same",
+    "401 server error, 403 client error"
+   ],
+   "a": 1,
+   "e": "401 asks you to identify yourself; 403 says who you are is not allowed.",
+   "d": "easy"
+  },
+  {
+   "id": "q-171",
+   "s": "it-web",
+   "q": "Which cookie attribute is the primary defence against CSRF?",
+   "o": [
+    "HttpOnly",
+    "Secure",
+    "SameSite",
+    "Path"
+   ],
+   "a": 2,
+   "e": "SameSite stops the cookie being sent on cross-site requests. HttpOnly mitigates XSS theft instead.",
+   "d": "med"
+  },
+  {
+   "id": "q-172",
+   "s": "it-web",
+   "q": "The most reliable fix for SQL injection is:",
+   "o": [
+    "Escaping quotes",
+    "Parameterised (prepared) statements",
+    "A web application firewall",
+    "Hiding error messages"
+   ],
+   "a": 1,
+   "e": "Parameterisation separates code from data so input can never be parsed as SQL.",
+   "d": "easy"
+  },
+  {
+   "id": "q-173",
+   "s": "it-web",
+   "q": "XSS exploits trust in which direction?",
+   "o": [
+    "The site's trust in the user's browser",
+    "The user's trust in the site",
+    "The server's trust in the database",
+    "The browser's trust in DNS"
+   ],
+   "a": 1,
+   "e": "CSRF is the mirror image: it exploits the site's trust in the user's browser.",
+   "d": "med"
+  },
+  {
+   "id": "q-174",
+   "s": "it-web",
+   "q": "HTTP/3 runs over which transport?",
+   "o": [
+    "TCP",
+    "QUIC over UDP",
+    "SCTP",
+    "TLS over TCP only"
+   ],
+   "a": 1,
+   "e": "QUIC removes TCP head-of-line blocking and speeds up connection setup.",
+   "d": "med"
+  },
+  {
+   "id": "q-175",
+   "s": "it-web",
+   "q": "REST's statelessness constraint means:",
+   "o": [
+    "The server stores no session state between requests",
+    "Cookies are forbidden",
+    "The client cannot cache",
+    "Only GET is allowed"
+   ],
+   "a": 0,
+   "e": "Each request carries all context needed, which is what allows horizontal scaling.",
+   "d": "med"
+  },
+  {
+   "id": "q-176",
+   "s": "it-web",
+   "q": "The top-ranked API vulnerability in the OWASP API list is:",
+   "o": [
+    "SQL injection",
+    "Broken object level authorisation",
+    "Clickjacking",
+    "Buffer overflow"
+   ],
+   "a": 1,
+   "e": "BOLA/IDOR: failing to check that the caller may access the specific object identified in the request.",
+   "d": "med"
+  },
+  {
+   "id": "q-177",
+   "s": "it-web",
+   "q": "CORS is best described as:",
+   "o": [
+    "A server-side security control",
+    "A browser-enforced relaxation of the same-origin policy",
+    "An encryption protocol",
+    "A firewall rule set"
+   ],
+   "a": 1,
+   "e": "It loosens, not tightens, the default restriction, and only browsers enforce it.",
+   "d": "med"
+  },
+  {
+   "id": "q-178",
+   "s": "it-web",
+   "q": "In Kubernetes, the smallest deployable unit is:",
+   "o": [
+    "Container",
+    "Pod",
+    "Node",
+    "Deployment"
+   ],
+   "a": 1,
+   "e": "A pod holds one or more containers that share network and storage.",
+   "d": "easy"
+  },
+  {
+   "id": "q-179",
+   "s": "it-web",
+   "q": "Which deployment strategy exposes a small percentage of traffic to the new version first?",
+   "o": [
+    "Blue-green",
+    "Canary",
+    "Rolling",
+    "Recreate"
+   ],
+   "a": 1,
+   "e": "Blue-green switches all traffic at once between two full environments.",
+   "d": "easy"
+  },
+  {
+   "id": "q-180",
+   "s": "it-web",
+   "q": "Availability of 99.9% allows roughly how much downtime per year?",
+   "o": [
+    "About 52 minutes",
+    "About 8.8 hours",
+    "About 3.65 days",
+    "About 5 minutes"
+   ],
+   "a": 1,
+   "e": "99.99% is about 52 minutes and 99.999% about 5 minutes.",
+   "d": "med"
+  },
+  {
+   "id": "q-181",
+   "s": "it-web",
+   "q": "RPO measures:",
+   "o": [
+    "How fast service must be restored",
+    "How much data loss is tolerable",
+    "Mean time between failures",
+    "Time to detect an incident"
+   ],
+   "a": 1,
+   "e": "RTO is time to restore; RPO is the acceptable data-loss window, set by replication design.",
+   "d": "easy"
+  },
+  {
+   "id": "q-182",
+   "s": "it-web",
+   "q": "Which pattern stops an application repeatedly calling a failing dependency?",
+   "o": [
+    "Retry with backoff",
+    "Circuit breaker",
+    "Bulkhead",
+    "Idempotency key"
+   ],
+   "a": 1,
+   "e": "The breaker opens after repeated failures and fails fast until the dependency recovers.",
+   "d": "med"
+  },
+  {
+   "id": "q-183",
+   "s": "it-web",
+   "q": "Containers isolate workloads using:",
+   "o": [
+    "A separate kernel per container",
+    "Namespaces and cgroups on a shared kernel",
+    "Hardware virtualisation",
+    "Separate physical NICs"
+   ],
+   "a": 1,
+   "e": "That shared kernel is also why a container is a weaker security boundary than a VM.",
+   "d": "med"
+  },
+  {
+   "id": "q-184",
+   "s": "it-cloud",
+   "q": "Which is NOT one of the five essential characteristics of cloud computing in NIST SP 800-145?",
+   "o": [
+    "On-demand self-service",
+    "Resource pooling",
+    "Guaranteed lowest cost",
+    "Measured service"
+   ],
+   "a": 2,
+   "e": "The five are on-demand self-service, broad network access, resource pooling, rapid elasticity and measured service.",
+   "d": "easy"
+  },
+  {
+   "id": "q-185",
+   "s": "it-cloud",
+   "q": "In IaaS, who is responsible for patching the guest operating system?",
+   "o": [
+    "The provider",
+    "The customer",
+    "Neither",
+    "The auditor"
+   ],
+   "a": 1,
+   "e": "In PaaS and SaaS the provider handles it; identity configuration and data always stay with the customer.",
+   "d": "med"
+  },
+  {
+   "id": "q-186",
+   "s": "it-cloud",
+   "q": "The most common root cause of publicised cloud data exposure is:",
+   "o": [
+    "Hypervisor escape",
+    "Customer misconfiguration",
+    "Provider insider attack",
+    "Physical theft"
+   ],
+   "a": 1,
+   "e": "Public storage buckets and over-permissive IAM roles dominate real incidents.",
+   "d": "med"
+  },
+  {
+   "id": "q-187",
+   "s": "it-cloud",
+   "q": "For a financial-sector regulator, the biggest systemic cloud concern is:",
+   "o": [
+    "Cost unpredictability",
+    "Concentration risk across a few providers",
+    "Slow provisioning",
+    "Vendor marketing claims"
+   ],
+   "a": 1,
+   "e": "If most regulated entities depend on the same provider or region, one outage becomes a market-wide event.",
+   "d": "med"
+  },
+  {
+   "id": "q-188",
+   "s": "it-cloud",
+   "q": "In HDFS, the default replication factor is:",
+   "o": [
+    "One",
+    "Two",
+    "Three",
+    "Five"
+   ],
+   "a": 2,
+   "e": "Three replicas by default, with the NameNode holding metadata as a single point of failure.",
+   "d": "easy"
+  },
+  {
+   "id": "q-189",
+   "s": "it-cloud",
+   "q": "MapReduce phases in order are:",
+   "o": [
+    "Map, Reduce, Shuffle",
+    "Shuffle, Map, Reduce",
+    "Map, Shuffle and Sort, Reduce",
+    "Reduce, Map, Sort"
+   ],
+   "a": 2,
+   "e": "Shuffling and sorting group values by key between the map and reduce stages.",
+   "d": "easy"
+  },
+  {
+   "id": "q-190",
+   "s": "it-cloud",
+   "q": "Apache Spark is faster than MapReduce for iterative work mainly because it:",
+   "o": [
+    "Uses more nodes",
+    "Processes in memory",
+    "Compresses data better",
+    "Skips fault tolerance"
+   ],
+   "a": 1,
+   "e": "In-memory RDDs avoid writing intermediate results to disk on every pass.",
+   "d": "easy"
+  },
+  {
+   "id": "q-191",
+   "s": "it-cloud",
+   "q": "For a fraud model with 0.1% positives, which metric is most misleading?",
+   "o": [
+    "Precision",
+    "Recall",
+    "Accuracy",
+    "PR-AUC"
+   ],
+   "a": 2,
+   "e": "Predicting 'no fraud' always would score 99.9% accuracy and catch nothing.",
+   "d": "med"
+  },
+  {
+   "id": "q-192",
+   "s": "it-cloud",
+   "q": "L1 regularisation (Lasso) is notable because it:",
+   "o": [
+    "Always improves accuracy",
+    "Drives some coefficients to exactly zero, selecting features",
+    "Prevents all overfitting",
+    "Speeds up inference"
+   ],
+   "a": 1,
+   "e": "L2 (Ridge) shrinks coefficients without eliminating them.",
+   "d": "med"
+  },
+  {
+   "id": "q-193",
+   "s": "it-cloud",
+   "q": "Overfitting corresponds to:",
+   "o": [
+    "High bias",
+    "High variance",
+    "Low variance",
+    "Underfitting"
+   ],
+   "a": 1,
+   "e": "The model memorises noise in training data and generalises poorly.",
+   "d": "easy"
+  },
+  {
+   "id": "q-194",
+   "s": "it-cloud",
+   "q": "In a blockchain, tampering with one transaction is detectable because:",
+   "o": [
+    "Miners inspect every transaction manually",
+    "It changes the Merkle root and therefore every subsequent block hash",
+    "Transactions are encrypted",
+    "The ledger is centralised"
+   ],
+   "a": 1,
+   "e": "Hash chaining plus the Merkle tree makes any alteration propagate visibly.",
+   "d": "med"
+  },
+  {
+   "id": "q-195",
+   "s": "it-cloud",
+   "q": "For regulated securities-market use, the realistic DLT choice is:",
+   "o": [
+    "A public proof-of-work chain",
+    "A permissioned ledger with known participants",
+    "An anonymous mixer",
+    "No ledger at all"
+   ],
+   "a": 1,
+   "e": "Permissioned ledgers with BFT consensus give deterministic finality and identifiable parties.",
+   "d": "med"
+  },
+  {
+   "id": "q-196",
+   "s": "it-cloud",
+   "q": "Atomic delivery versus payment (DvP) removes which risk?",
+   "o": [
+    "Market risk",
+    "Principal risk in settlement",
+    "Inflation risk",
+    "Model risk"
+   ],
+   "a": 1,
+   "e": "Both legs settle together or not at all, so neither side can deliver without receiving.",
+   "d": "med"
+  },
+  {
+   "id": "q-197",
+   "s": "it-cloud",
+   "q": "Shor's algorithm, if run on a large quantum computer, would break:",
+   "o": [
+    "AES-256",
+    "SHA-3",
+    "RSA and ECC",
+    "All hashing"
+   ],
+   "a": 2,
+   "e": "Grover's algorithm only halves effective symmetric key strength, so AES-256 remains adequate.",
+   "d": "med"
+  },
+  {
+   "id": "q-198",
+   "s": "it-cloud",
+   "q": "'Harvest now, decrypt later' refers to:",
+   "o": [
+    "Caching data for speed",
+    "Recording encrypted traffic today to decrypt when quantum capability arrives",
+    "Batch processing",
+    "Data warehousing"
+   ],
+   "a": 1,
+   "e": "It is why migration to post-quantum cryptography and crypto-agility starts before the threat is live.",
+   "d": "med"
+  },
+  {
+   "id": "q-199",
+   "s": "it-fin",
+   "q": "Which set makes up Market Infrastructure Institutions?",
+   "o": [
+    "Brokers, banks and insurers",
+    "Stock exchanges, clearing corporations and depositories",
+    "SEBI, RBI and IRDAI",
+    "Mutual funds and AIFs"
+   ],
+   "a": 1,
+   "e": "MIIs are systemically important and are governed largely by the SECC Regulations, 2018.",
+   "d": "easy"
+  },
+  {
+   "id": "q-200",
+   "s": "it-fin",
+   "q": "Novation by a clearing corporation means it:",
+   "o": [
+    "Cancels unmatched trades",
+    "Becomes the buyer to every seller and seller to every buyer",
+    "Lends securities to members",
+    "Sets the closing price"
+   ],
+   "a": 1,
+   "e": "Acting as central counterparty is what removes bilateral counterparty risk.",
+   "d": "med"
+  },
+  {
+   "id": "q-201",
+   "s": "it-fin",
+   "q": "An exchange order book is ordered by:",
+   "o": [
+    "Quantity then price",
+    "Price then time",
+    "Member size",
+    "Random allocation"
+   ],
+   "a": 1,
+   "e": "Price-time priority: the better price wins, and at equal price the earlier order wins.",
+   "d": "easy"
+  },
+  {
+   "id": "q-202",
+   "s": "it-fin",
+   "q": "Market data feeds often use UDP multicast rather than TCP because:",
+   "o": [
+    "UDP is more reliable",
+    "One publisher must reach many subscribers simultaneously and fairly",
+    "TCP cannot carry binary data",
+    "Regulation requires it"
+   ],
+   "a": 1,
+   "e": "Sequential unicast would advantage whoever is served first; order entry still uses TCP.",
+   "d": "med"
+  },
+  {
+   "id": "q-203",
+   "s": "it-fin",
+   "q": "SEBI's regulatory concern about co-location is primarily:",
+   "o": [
+    "That speed itself is unfair",
+    "Equal and non-discriminatory access to the same facilities and data",
+    "Electricity consumption",
+    "Foreign ownership"
+   ],
+   "a": 1,
+   "e": "Hence equal-length cabling, transparent allocation and access for smaller members.",
+   "d": "med"
+  },
+  {
+   "id": "q-204",
+   "s": "it-fin",
+   "q": "Placing orders with no intention of executing them, to move prices, is:",
+   "o": [
+    "Arbitrage",
+    "Spoofing",
+    "Hedging",
+    "Market making"
+   ],
+   "a": 1,
+   "e": "Spoofing and layering are manipulative practices actionable under the PFUTP Regulations.",
+   "d": "easy"
+  },
+  {
+   "id": "q-205",
+   "s": "it-fin",
+   "q": "Detecting circular trading among connected accounts is most naturally modelled as:",
+   "o": [
+    "A sorting problem",
+    "A graph problem",
+    "A compression problem",
+    "A caching problem"
+   ],
+   "a": 1,
+   "e": "Accounts are nodes and trades or fund transfers are edges; look for cycles and communities.",
+   "d": "med"
+  },
+  {
+   "id": "q-206",
+   "s": "it-fin",
+   "q": "The difference between RegTech and SupTech is:",
+   "o": [
+    "There is none",
+    "RegTech serves regulated entities; SupTech serves the supervisor",
+    "RegTech is hardware, SupTech is software",
+    "RegTech is Indian, SupTech is global"
+   ],
+   "a": 1,
+   "e": "A SEBI IT officer works on the SupTech side, supervising entities that rely on RegTech.",
+   "d": "med"
+  },
+  {
+   "id": "q-207",
+   "s": "it-fin",
+   "q": "Under the PIT Regulations, the Structured Digital Database must record:",
+   "o": [
+    "All client trades",
+    "Persons with whom unpublished price sensitive information is shared, with time stamps",
+    "Board meeting minutes only",
+    "Auditor appointments"
+   ],
+   "a": 1,
+   "e": "It must be non-tamperable and maintain an audit trail - an explicitly technological obligation.",
+   "d": "med"
+  },
+  {
+   "id": "q-208",
+   "s": "it-fin",
+   "q": "ASBA in a public issue means the application money is:",
+   "o": [
+    "Transferred to the issuer immediately",
+    "Blocked in the investor's own bank account until allotment",
+    "Held by the broker",
+    "Paid by cheque"
+   ],
+   "a": 1,
+   "e": "UPI provides the retail block mechanism; the funds are debited only on allotment.",
+   "d": "easy"
+  },
+  {
+   "id": "q-209",
+   "s": "it-fin",
+   "q": "Which KYC body is specific to the securities market?",
+   "o": [
+    "CERSAI's CKYCR",
+    "KYC Registration Agency (KRA)",
+    "UIDAI",
+    "NPCI"
+   ],
+   "a": 1,
+   "e": "CKYCR is sector-wide across finance; KRAs are SEBI-registered for the securities market.",
+   "d": "med"
+  },
+  {
+   "id": "q-210",
+   "s": "it-fin",
+   "q": "For market systems, the expected disaster recovery posture includes:",
+   "o": [
+    "A DR site in the same building",
+    "A DR site in a different seismic zone with live drills",
+    "Backups only",
+    "Annual paper review of the plan"
+   ],
+   "a": 1,
+   "e": "Intraday recovery timelines and periodic live drills, including member participation, are expected.",
+   "d": "med"
+  },
+  {
+   "id": "q-211",
+   "s": "it-fin",
+   "q": "Cyber recovery differs from ordinary disaster recovery because:",
+   "o": [
+    "It is cheaper",
+    "It must assume the primary environment is compromised, not merely unavailable",
+    "It needs no testing",
+    "It only applies to small firms"
+   ],
+   "a": 1,
+   "e": "Replication faithfully copies corruption, so immutable backups and rebuild are required.",
+   "d": "hard"
+  },
+  {
+   "id": "q-212",
+   "s": "it-fin",
+   "q": "Clock synchronisation across trading systems matters because:",
+   "o": [
+    "It reduces latency",
+    "Order and trade timestamps must be comparable for audit and surveillance",
+    "It saves storage",
+    "Exchanges bill by the second"
+   ],
+   "a": 1,
+   "e": "Without a common time reference, surveillance replay and glitch investigation are meaningless.",
+   "d": "med"
+  },
+  {
+   "id": "q-213",
+   "s": "it-fin",
+   "q": "DDPI replaced the broad power of attorney model in order to:",
+   "o": [
+    "Speed up trading",
+    "Narrow the authority a broker holds over client securities",
+    "Reduce brokerage",
+    "Support algorithmic trading"
+   ],
+   "a": 1,
+   "e": "It followed misuse of client securities held under wide POAs.",
+   "d": "med"
+  },
+  {
+   "id": "q-214",
+   "s": "it-sec",
+   "q": "Which property is provided by a digital signature but NOT by a MAC?",
+   "o": [
+    "Integrity",
+    "Authentication",
+    "Non-repudiation",
+    "Confidentiality"
+   ],
+   "a": 2,
+   "e": "A MAC uses a shared key, so either party could have produced it.",
+   "d": "med"
+  },
+  {
+   "id": "q-215",
+   "s": "it-sec",
+   "q": "To encrypt a message so only the recipient can read it, you use:",
+   "o": [
+    "Your private key",
+    "The recipient's public key",
+    "Your public key",
+    "The recipient's private key"
+   ],
+   "a": 1,
+   "e": "Sign with your private key for authenticity; encrypt with their public key for confidentiality.",
+   "d": "easy"
+  },
+  {
+   "id": "q-216",
+   "s": "it-sec",
+   "q": "Which block cipher mode should never be used for bulk data?",
+   "o": [
+    "CBC",
+    "CTR",
+    "GCM",
+    "ECB"
+   ],
+   "a": 3,
+   "e": "ECB encrypts identical plaintext blocks to identical ciphertext, leaking structure.",
+   "d": "easy"
+  },
+  {
+   "id": "q-217",
+   "s": "it-sec",
+   "q": "AES has a block size of:",
+   "o": [
+    "64 bits always",
+    "128 bits always",
+    "Equal to the key size",
+    "256 bits always"
+   ],
+   "a": 1,
+   "e": "Key sizes vary at 128, 192 or 256 bits, but the block is always 128 bits.",
+   "d": "med"
+  },
+  {
+   "id": "q-218",
+   "s": "it-sec",
+   "q": "For n users, symmetric cryptography requires how many keys for pairwise secure communication?",
+   "o": [
+    "n",
+    "2n",
+    "n(n-1)/2",
+    "n^2"
+   ],
+   "a": 2,
+   "e": "Asymmetric cryptography needs only 2n keys, which is why key distribution drove its invention.",
+   "d": "med"
+  },
+  {
+   "id": "q-219",
+   "s": "it-sec",
+   "q": "Passwords should be stored using:",
+   "o": [
+    "SHA-256 of the password",
+    "A salted, deliberately slow KDF such as bcrypt or Argon2",
+    "Reversible encryption",
+    "Plain text with file permissions"
+   ],
+   "a": 1,
+   "e": "Salting defeats rainbow tables and slowness defeats mass offline cracking.",
+   "d": "easy"
+  },
+  {
+   "id": "q-220",
+   "s": "it-sec",
+   "q": "Which is genuine multi-factor authentication?",
+   "o": [
+    "Password plus security question",
+    "Password plus OTP on a registered device",
+    "Two different passwords",
+    "Password plus username"
+   ],
+   "a": 1,
+   "e": "MFA requires different factor types: something you know, have or are.",
+   "d": "easy"
+  },
+  {
+   "id": "q-221",
+   "s": "it-sec",
+   "q": "A lower Crossover Error Rate in a biometric system indicates:",
+   "o": [
+    "A worse system",
+    "A better system",
+    "Higher false acceptance",
+    "Nothing about accuracy"
+   ],
+   "a": 1,
+   "e": "CER is where false acceptance and false rejection rates meet; lower is better.",
+   "d": "med"
+  },
+  {
+   "id": "q-222",
+   "s": "it-sec",
+   "q": "OAuth 2.0 is fundamentally a framework for:",
+   "o": [
+    "Authentication",
+    "Authorisation (delegated access)",
+    "Encryption",
+    "Key exchange"
+   ],
+   "a": 1,
+   "e": "OpenID Connect adds the authentication layer on top with an ID token.",
+   "d": "med"
+  },
+  {
+   "id": "q-223",
+   "s": "it-sec",
+   "q": "Under the CERT-In directions of April 2022, specified cyber incidents must be reported within:",
+   "o": [
+    "1 hour",
+    "6 hours",
+    "24 hours",
+    "72 hours"
+   ],
+   "a": 1,
+   "e": "The same directions require 180 days of ICT log retention within India.",
+   "d": "med"
+  },
+  {
+   "id": "q-224",
+   "s": "it-sec",
+   "q": "Which IT Act section deals with cyber terrorism?",
+   "o": [
+    "Section 43",
+    "Section 66C",
+    "Section 66F",
+    "Section 72"
+   ],
+   "a": 2,
+   "e": "Section 66F can carry imprisonment for life; 66C covers identity theft.",
+   "d": "med"
+  },
+  {
+   "id": "q-225",
+   "s": "it-sec",
+   "q": "Under the DPDP Act 2023, the maximum penalty for failing to take reasonable security safeguards is:",
+   "o": [
+    "Rs 5 crore",
+    "Rs 50 crore",
+    "Rs 250 crore",
+    "Rs 500 crore"
+   ],
+   "a": 2,
+   "e": "Appeals from the Data Protection Board lie to TDSAT.",
+   "d": "med"
+  },
+  {
+   "id": "q-226",
+   "s": "it-sec",
+   "q": "SEBI's CSCRF is structured around which framework's functions?",
+   "o": [
+    "ISO 9001",
+    "NIST Cybersecurity Framework",
+    "COBIT",
+    "PCI DSS"
+   ],
+   "a": 1,
+   "e": "Governance plus Identify, Protect, Detect, Respond and Recover, with resilience emphasised.",
+   "d": "med"
+  },
+  {
+   "id": "q-227",
+   "s": "it-sec",
+   "q": "In digital forensics, the order of volatility says to collect first:",
+   "o": [
+    "Disk images",
+    "RAM and running state",
+    "Backup tapes",
+    "Printed logs"
+   ],
+   "a": 1,
+   "e": "Most volatile evidence disappears on power loss, so memory precedes disk.",
+   "d": "med"
+  },
+  {
+   "id": "q-228",
+   "s": "it-sec",
+   "q": "The only dependable control against ransomware destroying your backups is:",
+   "o": [
+    "Antivirus on the backup server",
+    "Immutable or offline backup copies that are restore-tested",
+    "Longer retention",
+    "More frequent replication"
+   ],
+   "a": 1,
+   "e": "Continuous replication faithfully copies the encryption too.",
+   "d": "med"
+  },
+  {
+   "id": "q-229",
+   "s": "it-sec",
+   "q": "Zero trust is best summarised as:",
+   "o": [
+    "Trust the internal network, verify externally",
+    "Never trust, always verify; assume breach",
+    "Encrypt everything and stop",
+    "Block all remote access"
+   ],
+   "a": 1,
+   "e": "NIST SP 800-207: verify explicitly, least-privilege access, assume breach.",
+   "d": "easy"
+  },
+  {
+   "id": "q-230",
+   "s": "it-sec",
+   "q": "An IPS differs from an IDS because it:",
+   "o": [
+    "Detects more attack types",
+    "Sits inline and can block traffic",
+    "Runs only on hosts",
+    "Requires no signatures"
+   ],
+   "a": 1,
+   "e": "Being inline is what lets it prevent, and also what makes false positives costly.",
+   "d": "easy"
+  },
+  {
+   "id": "q-231",
+   "s": "it-sec",
+   "q": "In IPsec, which protocol provides encryption as well as integrity?",
+   "o": [
+    "AH",
+    "ESP",
+    "IKE",
+    "SA"
+   ],
+   "a": 1,
+   "e": "AH provides authentication and integrity only; ESP adds confidentiality.",
+   "d": "med"
+  },
+  {
+   "id": "q-232",
+   "s": "ga",
+   "q": "SEBI was given statutory status with effect from:",
+   "o": [
+    "12 April 1988",
+    "30 January 1992",
+    "1 April 1992",
+    "28 September 2015"
+   ],
+   "a": 1,
+   "e": "It was set up as a non-statutory body in April 1988; the SEBI Act took effect from 30 January 1992.",
+   "d": "med"
+  },
+  {
+   "id": "q-233",
+   "s": "ga",
+   "q": "An appeal against a SEBI order lies to SAT within:",
+   "o": [
+    "30 days",
+    "45 days",
+    "60 days",
+    "90 days"
+   ],
+   "a": 1,
+   "e": "A further appeal to the Supreme Court on a question of law lies within 60 days.",
+   "d": "med"
+  },
+  {
+   "id": "q-234",
+   "s": "ga",
+   "q": "SAT hears appeals from which of the following?",
+   "o": [
+    "SEBI only",
+    "SEBI and RBI",
+    "SEBI, IRDAI, PFRDA and IBBI",
+    "All financial regulators including RBI"
+   ],
+   "a": 2,
+   "e": "RBI orders are not appealable to SAT - a frequently tested distinction.",
+   "d": "med"
+  },
+  {
+   "id": "q-235",
+   "s": "ga",
+   "q": "Which SEBI Act section empowers the Board to issue directions, including disgorgement?",
+   "o": [
+    "Section 11B",
+    "Section 11C",
+    "Section 15-I",
+    "Section 24"
+   ],
+   "a": 0,
+   "e": "11C is investigation, 15-I is adjudication and 24 covers offences.",
+   "d": "med"
+  },
+  {
+   "id": "q-236",
+   "s": "ga",
+   "q": "The open offer trigger under the SAST Regulations is acquisition of:",
+   "o": [
+    "10% or more",
+    "15% or more",
+    "25% or more",
+    "51% or more"
+   ],
+   "a": 2,
+   "e": "Creeping acquisition permits up to 5% a year beyond that, and the open offer must be for at least 26%.",
+   "d": "med"
+  },
+  {
+   "id": "q-237",
+   "s": "ga",
+   "q": "Minimum public shareholding for a listed company under SCRR is:",
+   "o": [
+    "10%",
+    "25%",
+    "51%",
+    "75%"
+   ],
+   "a": 1,
+   "e": "Rule 19A of the Securities Contracts (Regulation) Rules, 1957.",
+   "d": "easy"
+  },
+  {
+   "id": "q-238",
+   "s": "ga",
+   "q": "In a book-built issue, the cut-off price option is available to:",
+   "o": [
+    "All investors",
+    "Retail individual investors only",
+    "QIBs only",
+    "Anchor investors only"
+   ],
+   "a": 1,
+   "e": "QIBs and non-institutional investors must bid at a specific price.",
+   "d": "med"
+  },
+  {
+   "id": "q-239",
+   "s": "ga",
+   "q": "India completed its move to a T+1 rolling settlement cycle in:",
+   "o": [
+    "January 2020",
+    "January 2023",
+    "March 2024",
+    "April 2025"
+   ],
+   "a": 1,
+   "e": "An optional same-day T+0 settlement beta followed in March 2024.",
+   "d": "med"
+  },
+  {
+   "id": "q-240",
+   "s": "ga",
+   "q": "Under the Depositories Act, the depository is the:",
+   "o": [
+    "Beneficial owner with voting rights",
+    "Registered owner without voting rights",
+    "Trustee of the issuer",
+    "Custodian of funds"
+   ],
+   "a": 1,
+   "e": "The investor is the beneficial owner and holds all economic and voting rights.",
+   "d": "med"
+  },
+  {
+   "id": "q-241",
+   "s": "ga",
+   "q": "Which regulation governs corporate governance and disclosure by listed companies?",
+   "o": [
+    "ICDR 2018",
+    "LODR 2015",
+    "PIT 2015",
+    "SECC 2018"
+   ],
+   "a": 1,
+   "e": "ICDR covers issue of capital; SECC covers exchanges and clearing corporations.",
+   "d": "easy"
+  },
+  {
+   "id": "q-242",
+   "s": "ga",
+   "q": "Insider trading penalties fall under which section of the SEBI Act?",
+   "o": [
+    "15G",
+    "15HA",
+    "15HB",
+    "15A"
+   ],
+   "a": 0,
+   "e": "15HA covers fraudulent and unfair trade practices.",
+   "d": "med"
+  },
+  {
+   "id": "q-243",
+   "s": "ga",
+   "q": "The monetary policy target for CPI inflation in India is:",
+   "o": [
+    "2% +/- 2%",
+    "4% +/- 2%",
+    "5% +/- 1%",
+    "6% flat"
+   ],
+   "a": 1,
+   "e": "Set under the flexible inflation targeting framework adopted in 2016.",
+   "d": "easy"
+  },
+  {
+   "id": "q-244",
+   "s": "ga",
+   "q": "The Monetary Policy Committee has how many members?",
+   "o": [
+    "Four",
+    "Five",
+    "Six",
+    "Eight"
+   ],
+   "a": 2,
+   "e": "Three from RBI and three external members; the Governor has a casting vote.",
+   "d": "easy"
+  },
+  {
+   "id": "q-245",
+   "s": "ga",
+   "q": "Which body is the unified regulator for GIFT City?",
+   "o": [
+    "SEBI",
+    "IFSCA",
+    "RBI",
+    "IRDAI"
+   ],
+   "a": 1,
+   "e": "IFSCA, established in 2020 and headquartered at Gandhinagar, covers banking, capital markets, insurance and funds.",
+   "d": "med"
+  },
+  {
+   "id": "q-246",
+   "s": "ga",
+   "q": "IOSCO, of which SEBI is a member, is headquartered at:",
+   "o": [
+    "Basel",
+    "Madrid",
+    "Paris",
+    "Geneva"
+   ],
+   "a": 1,
+   "e": "BIS and FSB are at Basel; FATF and OECD at Paris.",
+   "d": "med"
+  },
+  {
+   "id": "q-247",
+   "s": "ga",
+   "q": "AIF Category III is characterised by:",
+   "o": [
+    "Social venture and SME funds",
+    "Private equity and debt funds without leverage",
+    "Complex strategies that may employ leverage",
+    "Only government-backed funds"
+   ],
+   "a": 2,
+   "e": "Category I is socially desirable sectors; Category II is PE and debt funds.",
+   "d": "med"
+  },
+  {
+   "id": "q-248",
+   "s": "ga",
+   "q": "A REIT must distribute at least what share of net distributable cash flows?",
+   "o": [
+    "50%",
+    "75%",
+    "90%",
+    "100%"
+   ],
+   "a": 2,
+   "e": "At least 80% of assets must also be in completed, income-generating property.",
+   "d": "med"
+  },
+  {
+   "id": "q-249",
+   "s": "ga",
+   "q": "The minimum investment in a Portfolio Management Service is:",
+   "o": [
+    "Rs 5 lakh",
+    "Rs 25 lakh",
+    "Rs 50 lakh",
+    "Rs 1 crore"
+   ],
+   "a": 2,
+   "e": "Raised from Rs 25 lakh in 2020. AIFs require Rs 1 crore.",
+   "d": "med"
+  },
+  {
+   "id": "q-250",
+   "s": "ga",
+   "q": "Deposit insurance cover provided by DICGC per depositor per bank is:",
+   "o": [
+    "Rs 1 lakh",
+    "Rs 2 lakh",
+    "Rs 5 lakh",
+    "Rs 10 lakh"
+   ],
+   "a": 2,
+   "e": "Raised from Rs 1 lakh in 2020.",
+   "d": "easy"
+  },
+  {
+   "id": "q-251",
+   "s": "ga",
+   "q": "The Forward Markets Commission merged with SEBI in:",
+   "o": [
+    "2012",
+    "2015",
+    "2018",
+    "2020"
+   ],
+   "a": 1,
+   "e": "On 28 September 2015, bringing commodity derivatives under SEBI.",
+   "d": "med"
+  },
+  {
+   "id": "q-252",
+   "s": "reas",
+   "q": "If in a code LIGHT is written as MJHIU, how is SOUND written?",
+   "o": [
+    "TPVOE",
+    "TPVPE",
+    "TQVOE",
+    "TPWOE"
+   ],
+   "a": 0,
+   "e": "Each letter moves one step forward in the alphabet.",
+   "d": "easy"
+  },
+  {
+   "id": "q-253",
+   "s": "reas",
+   "q": "Statements: All pens are books. Some books are red. Conclusion I: Some pens are red. Conclusion II: Some books are pens.",
+   "o": [
+    "Only I follows",
+    "Only II follows",
+    "Both follow",
+    "Neither follows"
+   ],
+   "a": 1,
+   "e": "Conversion of the universal affirmative gives II. I is only a possibility, not a certainty.",
+   "d": "med"
+  },
+  {
+   "id": "q-254",
+   "s": "reas",
+   "q": "Pointing to a photograph, a man says 'She is the daughter of my grandfather's only son.' The girl is his:",
+   "o": [
+    "Sister",
+    "Daughter",
+    "Niece",
+    "Cousin"
+   ],
+   "a": 0,
+   "e": "His grandfather's only son is his own father, so the girl is his sister.",
+   "d": "med"
+  },
+  {
+   "id": "q-255",
+   "s": "reas",
+   "q": "If A > B, B >= C and C > D, which conclusion is definitely true?",
+   "o": [
+    "A > D",
+    "D >= B",
+    "A = C",
+    "B > A"
+   ],
+   "a": 0,
+   "e": "The chain A > B >= C > D gives A > D. The others break the chain direction.",
+   "d": "med"
+  },
+  {
+   "id": "q-256",
+   "s": "reas",
+   "q": "A man walks 5 km north, turns right and walks 3 km, then turns right and walks 5 km. How far is he from the start?",
+   "o": [
+    "3 km",
+    "5 km",
+    "8 km",
+    "13 km"
+   ],
+   "a": 0,
+   "e": "He ends level with the start, displaced 3 km to the east.",
+   "d": "easy"
+  },
+  {
+   "id": "q-257",
+   "s": "reas",
+   "q": "In a row of 40 students, Riya is 12th from the left. What is her position from the right?",
+   "o": [
+    "28th",
+    "29th",
+    "27th",
+    "30th"
+   ],
+   "a": 1,
+   "e": "Position from right = total - position from left + 1 = 40 - 12 + 1 = 29.",
+   "d": "easy"
+  },
+  {
+   "id": "q-258",
+   "s": "qa",
+   "q": "A sum doubles in 8 years at simple interest. In how many years will it triple?",
+   "o": [
+    "12",
+    "16",
+    "20",
+    "24"
+   ],
+   "a": 1,
+   "e": "Doubling means interest equals the principal in 8 years, so 2x principal of interest takes 16 years.",
+   "d": "med"
+  },
+  {
+   "id": "q-259",
+   "s": "qa",
+   "q": "Successive discounts of 20% and 10% equal a single discount of:",
+   "o": [
+    "30%",
+    "28%",
+    "26%",
+    "25%"
+   ],
+   "a": 1,
+   "e": "Net = a + b - ab/100 = 20 + 10 - 2 = 28%.",
+   "d": "med"
+  },
+  {
+   "id": "q-260",
+   "s": "qa",
+   "q": "A train 150 m long crosses a pole in 10 seconds. Its speed is:",
+   "o": [
+    "36 km/h",
+    "54 km/h",
+    "60 km/h",
+    "72 km/h"
+   ],
+   "a": 1,
+   "e": "Crossing a pole means covering only the train length: 150/10 = 15 m/s, and 15 x 18/5 = 54 km/h.",
+   "d": "easy"
+  },
+  {
+   "id": "q-261",
+   "s": "qa",
+   "q": "The difference between CI and SI on Rs 10,000 for 2 years at 10% per annum is:",
+   "o": [
+    "Rs 50",
+    "Rs 100",
+    "Rs 150",
+    "Rs 200"
+   ],
+   "a": 1,
+   "e": "Difference = P(R/100)^2 = 10000 x 0.01 = Rs 100.",
+   "d": "med"
+  },
+  {
+   "id": "q-262",
+   "s": "qa",
+   "q": "A can do a job in 12 days and B in 18 days. Working together they finish it in:",
+   "o": [
+    "6 days",
+    "7.2 days",
+    "7.5 days",
+    "9 days"
+   ],
+   "a": 1,
+   "e": "ab/(a+b) = (12 x 18)/30 = 7.2 days.",
+   "d": "med"
+  },
+  {
+   "id": "q-263",
+   "s": "qa",
+   "q": "Average speed for equal distances travelled at 40 km/h and 60 km/h is:",
+   "o": [
+    "48 km/h",
+    "50 km/h",
+    "52 km/h",
+    "55 km/h"
+   ],
+   "a": 0,
+   "e": "Harmonic mean 2xy/(x+y) = 4800/100 = 48, not the arithmetic mean.",
+   "d": "med"
+  },
+  {
+   "id": "q-264",
+   "s": "qa",
+   "q": "The unit digit of 7^103 is:",
+   "o": [
+    "1",
+    "3",
+    "7",
+    "9"
+   ],
+   "a": 1,
+   "e": "The cycle of 7 is 7, 9, 3, 1. 103 mod 4 = 3, so the third term, 3.",
+   "d": "med"
+  },
+  {
+   "id": "q-265",
+   "s": "qa",
+   "q": "In how many ways can 5 people sit around a circular table?",
+   "o": [
+    "120",
+    "60",
+    "24",
+    "20"
+   ],
+   "a": 2,
+   "e": "Circular arrangements = (n-1)! = 4! = 24.",
+   "d": "easy"
+  },
+  {
+   "id": "q-266",
+   "s": "eng",
+   "q": "Choose the correct sentence.",
+   "o": [
+    "The list of items are on the desk.",
+    "The list of items is on the desk.",
+    "The list of item are on the desk.",
+    "List of items are on desk."
+   ],
+   "a": 1,
+   "e": "The verb agrees with the subject 'list', not with the nearest noun 'items'.",
+   "d": "easy"
+  },
+  {
+   "id": "q-267",
+   "s": "eng",
+   "q": "Neither the manager nor the officers ____ informed.",
+   "o": [
+    "was",
+    "were",
+    "is",
+    "has been"
+   ],
+   "a": 1,
+   "e": "With neither/nor the verb agrees with the nearer subject, 'officers'.",
+   "d": "med"
+  },
+  {
+   "id": "q-268",
+   "s": "eng",
+   "q": "Which is correct?",
+   "o": [
+    "He is superior than me.",
+    "He is superior to me.",
+    "He is more superior than me.",
+    "He is superior from me."
+   ],
+   "a": 1,
+   "e": "Superior, inferior and prefer take 'to', never 'than'.",
+   "d": "easy"
+  },
+  {
+   "id": "q-269",
+   "s": "eng",
+   "q": "'Disinterested' correctly means:",
+   "o": [
+    "Bored",
+    "Impartial",
+    "Curious",
+    "Uninvolved"
+   ],
+   "a": 1,
+   "e": "'Uninterested' means bored; this pair is tested constantly.",
+   "d": "med"
+  },
+  {
+   "id": "q-270",
+   "s": "eng",
+   "q": "Identify the error: 'Walking to the station, the rain started falling heavily.'",
+   "o": [
+    "No error",
+    "Dangling modifier",
+    "Wrong tense",
+    "Subject-verb disagreement"
+   ],
+   "a": 1,
+   "e": "The introductory phrase must modify the subject; as written, the rain was walking.",
+   "d": "med"
+  },
+  {
+   "id": "q-271",
+   "s": "eng",
+   "q": "Which phrase is redundant?",
+   "o": [
+    "Return back",
+    "Return to",
+    "Come back",
+    "Go back"
+   ],
+   "a": 0,
+   "e": "'Return' already contains the sense of 'back'.",
+   "d": "easy"
+  }
+ ]
 }

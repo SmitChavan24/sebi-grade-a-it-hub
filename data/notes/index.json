@@ -1,1566 +1,1581 @@
 {
-  "notes": [
-    {
-      "id": "eng-cloze",
-      "title": "Cloze Test, Fillers and Sentence Completion",
-      "subject": "eng",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "eng"
-      ]
-    },
-    {
-      "id": "eng-comprehension",
-      "title": "Reading Comprehension — Method",
-      "subject": "eng",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "eng"
-      ]
-    },
-    {
-      "id": "eng-grammar",
-      "title": "Grammar — The Rules That Actually Get Tested",
-      "subject": "eng",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "eng"
-      ]
-    },
-    {
-      "id": "eng-parajumble",
-      "title": "Para Jumbles and Sentence Rearrangement",
-      "subject": "eng",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "eng"
-      ]
-    },
-    {
-      "id": "eng-vocab",
-      "title": "Vocabulary, Idioms and Word Usage",
-      "subject": "eng",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "eng"
-      ]
-    },
-    {
-      "id": "engd-comprehension",
-      "title": "Descriptive comprehension",
-      "subject": "engd",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "engd"
-      ]
-    },
-    {
-      "id": "engd-essay-topics",
-      "title": "Essay prompts and weekly writing plan",
-      "subject": "engd",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "engd"
-      ]
-    },
-    {
-      "id": "engd-essay",
-      "title": "Essay writing under a timer",
-      "subject": "engd",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "engd"
-      ]
-    },
-    {
-      "id": "engd-letters",
-      "title": "Formal correspondence and short reports — extra writing practice",
-      "subject": "engd",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "engd"
-      ]
-    },
-    {
-      "id": "engd-precis",
-      "title": "Precis writing with a worked example",
-      "subject": "engd",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "engd"
-      ]
-    },
-    {
-      "id": "ga-current-affairs",
-      "title": "Current Affairs — The Method, Not the Material",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-depositories",
-      "title": "Depositories Act, 1996 — Dematerialisation and Settlement",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-derivatives",
-      "title": "Derivatives — Futures, Options and Regulation",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-economy",
-      "title": "Indian Economy — The Part That Gets Asked",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-financial-system",
-      "title": "Indian Financial System — Structure & Regulators",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-instruments",
-      "title": "Market Instruments — Equity, Debt and Hybrids",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-investor-protection",
-      "title": "Investor Protection, Grievance Redress and ODR",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-mutual-funds",
-      "title": "Mutual Funds, AIFs and Portfolio Management",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-other-regulators",
-      "title": "Other Regulators and Institutions",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-primary-market",
-      "title": "Primary Market — IPOs, Book Building, ASBA and UPI",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-rbi-banking",
-      "title": "RBI, Monetary Policy and the Banking System",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-scra",
-      "title": "Securities Contracts (Regulation) Act, 1956 (SCRA)",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-sebi-act",
-      "title": "SEBI Act, 1992 — Sections, Penalties and Appeals",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-sebi-regulations",
-      "title": "The SEBI Regulations You Must Know By Name",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-sebi",
-      "title": "SEBI — Establishment, Structure, Powers and Functions",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-secondary-market",
-      "title": "Secondary Market — Exchanges, Indices, Trading and Settlement",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "ga-static-gk",
-      "title": "Static GK — The Shortlist Worth Memorising",
-      "subject": "ga",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "ga"
-      ]
-    },
-    {
-      "id": "intv-hr",
-      "title": "Ethics and situational interview practice",
-      "subject": "intv",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "intv"
-      ]
-    },
-    {
-      "id": "intv-it-questions",
-      "title": "IT interview scenarios — original practice prompts",
-      "subject": "intv",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "intv"
-      ]
-    },
-    {
-      "id": "intv-profile",
-      "title": "Build your interview profile",
-      "subject": "intv",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "intv"
-      ]
-    },
-    {
-      "id": "intv-sebi-current",
-      "title": "Prepare current SEBI examples for interview",
-      "subject": "intv",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "intv"
-      ]
-    },
-    {
-      "id": "intv-why-sebi",
-      "title": "Why SEBI and the IT stream",
-      "subject": "intv",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "intv"
-      ]
-    },
-    {
-      "id": "it-aiml",
-      "title": "Artificial Intelligence and Machine Learning",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-analytics",
-      "title": "Data Analytics and Visualisation",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-bigdata",
-      "title": "Big Data",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-blockchain",
-      "title": "Blockchain and Distributed Ledger Technology",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-cloud-models",
-      "title": "Cloud Computing — Models and Virtualisation",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-cloud-sebi",
-      "title": "SEBI's Framework for Adoption of Cloud Services",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-cloud-security",
-      "title": "Cloud Security and the Shared Responsibility Model",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-cn-application",
-      "title": "Application Layer Protocols",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-datalink",
-      "title": "Data Link Layer — Framing, Error Control and Flow Control",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-ip",
-      "title": "Network Layer — IP Addressing and Subnetting",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-mac",
-      "title": "MAC Sublayer, Ethernet and LAN Devices",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-models",
-      "title": "OSI and TCP/IP Models",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-modern",
-      "title": "Wireless, Mobile, SDN and Troubleshooting",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-physical",
-      "title": "Physical Layer, Media, Topologies and Switching",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-routing",
-      "title": "Routing Algorithms and Protocols",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-security",
-      "title": "Network Security Devices and Controls",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-cn-transport",
-      "title": "Transport Layer — TCP and UDP",
-      "subject": "it-cn",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-cn"
-      ]
-    },
-    {
-      "id": "it-coa-boolean",
-      "title": "Boolean Algebra and Logic Minimisation",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-combinational",
-      "title": "Combinational Circuits",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-cpu",
-      "title": "CPU Organisation and Instruction Execution",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-io",
-      "title": "I/O Organisation and Buses",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-memory",
-      "title": "Memory Hierarchy and Cache",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-number",
-      "title": "Number Systems and Computer Arithmetic",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-pipeline",
-      "title": "Pipelining and Parallel Processing",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-coa-sequential",
-      "title": "Sequential Circuits",
-      "subject": "it-coa",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-coa"
-      ]
-    },
-    {
-      "id": "it-data-python",
-      "title": "Python analytics: slicing, regex, files and dataframes",
-      "subject": "it-data",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-data"
-      ]
-    },
-    {
-      "id": "it-data-r",
-      "title": "R essentials for data analysis",
-      "subject": "it-data",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-data"
-      ]
-    },
-    {
-      "id": "it-dbms-concurrency",
-      "title": "Concurrency Control",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-indexing",
-      "title": "Indexing, B+ Trees and File Organisation",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-model",
-      "title": "DBMS Architecture and Data Modelling",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-normalisation",
-      "title": "Normalisation and Functional Dependencies",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-nosql",
-      "title": "NoSQL, Data Warehousing and Distributed Databases",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-relational",
-      "title": "Relational Model, Keys and Relational Algebra",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-sql-adv",
-      "title": "Advanced SQL — Views, Indexes, Triggers, Window Functions",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-sql",
-      "title": "SQL — The Core You Must Be Able to Write",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-dbms-transactions",
-      "title": "Transactions, ACID and Recovery",
-      "subject": "it-dbms",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-dbms"
-      ]
-    },
-    {
-      "id": "it-descriptive-method",
-      "title": "How to Write the IT Descriptive Paper",
-      "subject": "it-descriptive",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-descriptive"
-      ]
-    },
-    {
-      "id": "it-ds-complexity",
-      "title": "Complexity Analysis",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-graphs",
-      "title": "Graphs",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-hashing",
-      "title": "Hashing",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-linear",
-      "title": "Arrays, Linked Lists, Stacks and Queues",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-paradigms",
-      "title": "Algorithm Design Paradigms",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-sorting",
-      "title": "Sorting and Searching",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-ds-trees",
-      "title": "Trees, BSTs, Heaps and Balanced Trees",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-emerging",
-      "title": "IoT, Edge and Quantum Computing",
-      "subject": "it-cloud",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-cloud"
-      ]
-    },
-    {
-      "id": "it-fin-algo",
-      "title": "Algorithmic and High-Frequency Trading",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-bcp",
-      "title": "Business Continuity for Market Infrastructure",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-investortech",
-      "title": "Investor-Facing Technology and Market Access",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-kyc",
-      "title": "KYC Infrastructure in the Securities Market",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-mii",
-      "title": "Market Infrastructure Institutions and Their Technology",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-payments",
-      "title": "Payment Rails Behind the Securities Market",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-regtech",
-      "title": "RegTech, SupTech and SEBI's Digital Initiatives",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-surveillance",
-      "title": "Market Surveillance and Data Analytics",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-fin-trading-tech",
-      "title": "Trading Systems, Latency and Co-location",
-      "subject": "it-fin",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-fin"
-      ]
-    },
-    {
-      "id": "it-os-deadlock",
-      "title": "Deadlock",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-file-disk",
-      "title": "File Systems and Disk Scheduling",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-intro",
-      "title": "Operating Systems — Fundamentals",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-io",
-      "title": "I/O Management, Linux Basics and Commands",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-memory",
-      "title": "Memory Management",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-process",
-      "title": "Processes and Threads",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-scheduling",
-      "title": "CPU Scheduling — Algorithms and Numericals",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-sync",
-      "title": "Process Synchronisation",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-os-virtual",
-      "title": "Virtual Memory and Page Replacement",
-      "subject": "it-os",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-os"
-      ]
-    },
-    {
-      "id": "it-prog-c",
-      "title": "C Programming — Fundamentals",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-cpp",
-      "title": "C++ fundamentals and object behaviour",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-java",
-      "title": "Java Essentials",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-oop",
-      "title": "Object-Oriented Programming",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-output",
-      "title": "Output-Based and Code-Tracing Questions",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-pointers",
-      "title": "Pointers, Arrays, Strings and Memory",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-prog-python",
-      "title": "Python Essentials",
-      "subject": "it-prog",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-prog"
-      ]
-    },
-    {
-      "id": "it-se-agile",
-      "title": "Agile, Scrum, DevOps and CI/CD",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-design",
-      "title": "Software Design",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-estimation",
-      "title": "Estimation and Software Metrics",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-pm",
-      "title": "Project Management, CPM/PERT and Risk",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-quality",
-      "title": "Maintenance, Quality and Reverse Engineering",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-requirements",
-      "title": "Requirement Engineering and SRS",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-sdlc",
-      "title": "SDLC Models",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-se-testing",
-      "title": "Software Testing",
-      "subject": "it-se",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-se"
-      ]
-    },
-    {
-      "id": "it-sec-attacks",
-      "title": "Attacks, Malware and Threats",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-auth",
-      "title": "Authentication, Authorisation and Identity",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-crypto",
-      "title": "Cryptography",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-defence",
-      "title": "Defence — SOC, SIEM, Zero Trust and Hardening",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-fundamentals",
-      "title": "Information Security — Fundamentals",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-ir",
-      "title": "Incident Response, Forensics and Threat Intelligence",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-law",
-      "title": "IT Act 2000, CERT-In Directions and the DPDP Act",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 6,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-pki",
-      "title": "Hashing, Digital Signatures and PKI",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-sebi-cscrf",
-      "title": "SEBI's Cyber Security & Cyber Resilience Framework (CSCRF)",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 5,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-sec-standards",
-      "title": "Standards, Frameworks, Audit and BCP",
-      "subject": "it-sec",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "it-sec"
-      ]
-    },
-    {
-      "id": "it-shell",
-      "title": "UNIX commands and shell scripting",
-      "subject": "it-shell",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-shell"
-      ]
-    },
-    {
-      "id": "it-strings",
-      "title": "Strings, pattern matching, matrices and JSON",
-      "subject": "it-ds",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-ds"
-      ]
-    },
-    {
-      "id": "it-warehouse",
-      "title": "Data warehousing, ETL and analytical models",
-      "subject": "it-data",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "it-data"
-      ]
-    },
-    {
-      "id": "it-web-api",
-      "title": "APIs, REST, Microservices and Integration",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-architecture",
-      "title": "Web and System Architecture",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-frontend",
-      "title": "HTML, CSS, JavaScript and the DOM",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-ha",
-      "title": "High Availability, Disaster Recovery and Reliability",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-http",
-      "title": "HTTP, Sessions and Web Protocols",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-infra",
-      "title": "Containers, Orchestration and Delivery Infrastructure",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 3,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "it-web-security",
-      "title": "Web Application Security — OWASP",
-      "subject": "it-web",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 4,
-      "tags": [
-        "it-web"
-      ]
-    },
-    {
-      "id": "qa-arithmetic",
-      "title": "Arithmetic — Percentage, Ratio, Profit, Interest, Time and Work",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "qa-basics",
-      "title": "Quant Foundations — Number System and Algebra",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "qa-di",
-      "title": "Data Interpretation",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "qa-pnc",
-      "title": "Permutation, Combination and Probability",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "qa-series",
-      "title": "Number Series, Quadratic Comparison and Simplification",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "qa-speed-maths",
-      "title": "Speed Maths and the Formula Sheet",
-      "subject": "qa",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 4,
-      "tags": [
-        "qa"
-      ]
-    },
-    {
-      "id": "reas-critical",
-      "title": "Data sufficiency and critical reasoning",
-      "subject": "reas",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "reas"
-      ]
-    },
-    {
-      "id": "reas-inequality",
-      "title": "Direct and coded inequalities",
-      "subject": "reas",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "reas"
-      ]
-    },
-    {
-      "id": "reas-misc",
-      "title": "Directions, relations, ranking and coding",
-      "subject": "reas",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "reas"
-      ]
-    },
-    {
-      "id": "reas-puzzles",
-      "title": "Seating, floor and scheduling puzzles",
-      "subject": "reas",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "reas"
-      ]
-    },
-    {
-      "id": "reas-syllogism",
-      "title": "Syllogisms and logical conclusions",
-      "subject": "reas",
-      "supplemental": false,
-      "desc": "Core lesson with examples and practice guidance.",
-      "mins": 3,
-      "tags": [
-        "reas"
-      ]
-    },
-    {
-      "id": "resources-free-books",
-      "title": "Free Reference Books & Official Sources",
-      "subject": "resources",
-      "supplemental": true,
-      "desc": "Supplementary reference and interview reading.",
-      "mins": 8,
-      "tags": [
-        "resources"
-      ]
-    }
-  ]
+ "notes": [
+  {
+   "id": "eng-cloze",
+   "title": "Cloze Test, Fillers and Sentence Completion",
+   "subject": "eng",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "eng"
+   ]
+  },
+  {
+   "id": "eng-comprehension",
+   "title": "Reading Comprehension — Method",
+   "subject": "eng",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "eng"
+   ]
+  },
+  {
+   "id": "eng-grammar",
+   "title": "Grammar — The Rules That Actually Get Tested",
+   "subject": "eng",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "eng"
+   ]
+  },
+  {
+   "id": "eng-parajumble",
+   "title": "Para Jumbles and Sentence Rearrangement",
+   "subject": "eng",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "eng"
+   ]
+  },
+  {
+   "id": "eng-vocab",
+   "title": "Vocabulary, Idioms and Word Usage",
+   "subject": "eng",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "eng"
+   ]
+  },
+  {
+   "id": "engd-comprehension",
+   "title": "Descriptive comprehension",
+   "subject": "engd",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "engd"
+   ]
+  },
+  {
+   "id": "engd-essay-topics",
+   "title": "Essay prompts and weekly writing plan",
+   "subject": "engd",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "engd"
+   ]
+  },
+  {
+   "id": "engd-essay",
+   "title": "Essay writing under a timer",
+   "subject": "engd",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "engd"
+   ]
+  },
+  {
+   "id": "engd-letters",
+   "title": "Formal correspondence and short reports — extra writing practice",
+   "subject": "engd",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "engd"
+   ]
+  },
+  {
+   "id": "engd-precis",
+   "title": "Precis writing with a worked example",
+   "subject": "engd",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "engd"
+   ]
+  },
+  {
+   "id": "ga-current-affairs",
+   "title": "Current Affairs — The Method, Not the Material",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-depositories",
+   "title": "Depositories Act, 1996 — Dematerialisation and Settlement",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-derivatives",
+   "title": "Derivatives — Futures, Options and Regulation",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-economy",
+   "title": "Indian Economy — The Part That Gets Asked",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-financial-system",
+   "title": "Indian Financial System — Structure & Regulators",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-instruments",
+   "title": "Market Instruments — Equity, Debt and Hybrids",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-investor-protection",
+   "title": "Investor Protection, Grievance Redress and ODR",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-mutual-funds",
+   "title": "Mutual Funds, AIFs and Portfolio Management",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-other-regulators",
+   "title": "Other Regulators and Institutions",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-primary-market",
+   "title": "Primary Market — IPOs, Book Building, ASBA and UPI",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-rbi-banking",
+   "title": "RBI, Monetary Policy and the Banking System",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-scra",
+   "title": "Securities Contracts (Regulation) Act, 1956 (SCRA)",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-sebi-act",
+   "title": "SEBI Act, 1992 — Sections, Penalties and Appeals",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-sebi-regulations",
+   "title": "The SEBI Regulations You Must Know By Name",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-sebi",
+   "title": "SEBI — Establishment, Structure, Powers and Functions",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-secondary-market",
+   "title": "Secondary Market — Exchanges, Indices, Trading and Settlement",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "ga-static-gk",
+   "title": "Static GK — The Shortlist Worth Memorising",
+   "subject": "ga",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "ga"
+   ]
+  },
+  {
+   "id": "intv-hr",
+   "title": "Ethics and situational interview practice",
+   "subject": "intv",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "intv"
+   ]
+  },
+  {
+   "id": "intv-it-questions",
+   "title": "IT interview scenarios — original practice prompts",
+   "subject": "intv",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "intv"
+   ]
+  },
+  {
+   "id": "intv-profile",
+   "title": "Build your interview profile",
+   "subject": "intv",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "intv"
+   ]
+  },
+  {
+   "id": "intv-sebi-current",
+   "title": "Prepare current SEBI examples for interview",
+   "subject": "intv",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "intv"
+   ]
+  },
+  {
+   "id": "intv-why-sebi",
+   "title": "Why SEBI and the IT stream",
+   "subject": "intv",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "intv"
+   ]
+  },
+  {
+   "id": "it-aiml",
+   "title": "Artificial Intelligence and Machine Learning",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-analytics",
+   "title": "Data Analytics and Visualisation",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-bigdata",
+   "title": "Big Data",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-blockchain",
+   "title": "Blockchain and Distributed Ledger Technology",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-cloud-models",
+   "title": "Cloud Computing — Models and Virtualisation",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-cloud-sebi",
+   "title": "SEBI's Framework for Adoption of Cloud Services",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-cloud-security",
+   "title": "Cloud Security and the Shared Responsibility Model",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-cn-application",
+   "title": "Application Layer Protocols",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-datalink",
+   "title": "Data Link Layer — Framing, Error Control and Flow Control",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-ip",
+   "title": "Network Layer — IP Addressing and Subnetting",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-mac",
+   "title": "MAC Sublayer, Ethernet and LAN Devices",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-models",
+   "title": "OSI and TCP/IP Models",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-modern",
+   "title": "Wireless, Mobile, SDN and Troubleshooting",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-physical",
+   "title": "Physical Layer, Media, Topologies and Switching",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-routing",
+   "title": "Routing Algorithms and Protocols",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-security",
+   "title": "Network Security Devices and Controls",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-cn-transport",
+   "title": "Transport Layer — TCP and UDP",
+   "subject": "it-cn",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-cn"
+   ]
+  },
+  {
+   "id": "it-coa-boolean",
+   "title": "Boolean Algebra and Logic Minimisation",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-combinational",
+   "title": "Combinational Circuits",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-cpu",
+   "title": "CPU Organisation and Instruction Execution",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-io",
+   "title": "I/O Organisation and Buses",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-memory",
+   "title": "Memory Hierarchy and Cache",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-number",
+   "title": "Number Systems and Computer Arithmetic",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-pipeline",
+   "title": "Pipelining and Parallel Processing",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-coa-sequential",
+   "title": "Sequential Circuits",
+   "subject": "it-coa",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-coa"
+   ]
+  },
+  {
+   "id": "it-data-python",
+   "title": "Python analytics: slicing, regex, files and dataframes",
+   "subject": "it-data",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-data"
+   ]
+  },
+  {
+   "id": "it-data-r",
+   "title": "R essentials for data analysis",
+   "subject": "it-data",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-data"
+   ]
+  },
+  {
+   "id": "it-dbms-concurrency",
+   "title": "Concurrency Control",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-indexing",
+   "title": "Indexing, B+ Trees and File Organisation",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-model",
+   "title": "DBMS Architecture and Data Modelling",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-normalisation",
+   "title": "Normalisation and Functional Dependencies",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-nosql",
+   "title": "NoSQL, Data Warehousing and Distributed Databases",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-relational",
+   "title": "Relational Model, Keys and Relational Algebra",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-sql-adv",
+   "title": "Advanced SQL — Views, Indexes, Triggers, Window Functions",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-sql",
+   "title": "SQL — The Core You Must Be Able to Write",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-dbms-transactions",
+   "title": "Transactions, ACID and Recovery",
+   "subject": "it-dbms",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-dbms"
+   ]
+  },
+  {
+   "id": "it-descriptive-method",
+   "title": "How to Write the IT Descriptive Paper",
+   "subject": "it-descriptive",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-descriptive"
+   ]
+  },
+  {
+   "id": "it-ds-complexity",
+   "title": "Complexity Analysis",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-graphs",
+   "title": "Graphs",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-hashing",
+   "title": "Hashing",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-linear",
+   "title": "Arrays, Linked Lists, Stacks and Queues",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-paradigms",
+   "title": "Algorithm Design Paradigms",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-sorting",
+   "title": "Sorting and Searching",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-ds-trees",
+   "title": "Trees, BSTs, Heaps and Balanced Trees",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-emerging",
+   "title": "IoT, Edge and Quantum Computing",
+   "subject": "it-cloud",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-cloud"
+   ]
+  },
+  {
+   "id": "it-fin-algo",
+   "title": "Algorithmic and High-Frequency Trading",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-bcp",
+   "title": "Business Continuity for Market Infrastructure",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-investortech",
+   "title": "Investor-Facing Technology and Market Access",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-kyc",
+   "title": "KYC Infrastructure in the Securities Market",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-mii",
+   "title": "Market Infrastructure Institutions and Their Technology",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-payments",
+   "title": "Payment Rails Behind the Securities Market",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-regtech",
+   "title": "RegTech, SupTech and SEBI's Digital Initiatives",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-surveillance",
+   "title": "Market Surveillance and Data Analytics",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-fin-trading-tech",
+   "title": "Trading Systems, Latency and Co-location",
+   "subject": "it-fin",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-fin"
+   ]
+  },
+  {
+   "id": "it-os-deadlock",
+   "title": "Deadlock",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-file-disk",
+   "title": "File Systems and Disk Scheduling",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-intro",
+   "title": "Operating Systems — Fundamentals",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-io",
+   "title": "I/O Management, Linux Basics and Commands",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-memory",
+   "title": "Memory Management",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-process",
+   "title": "Processes and Threads",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-scheduling",
+   "title": "CPU Scheduling — Algorithms and Numericals",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-sync",
+   "title": "Process Synchronisation",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-os-virtual",
+   "title": "Virtual Memory and Page Replacement",
+   "subject": "it-os",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-os"
+   ]
+  },
+  {
+   "id": "it-prog-c",
+   "title": "C Programming — Fundamentals",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-cpp",
+   "title": "C++ fundamentals and object behaviour",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-java",
+   "title": "Java Essentials",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-oop",
+   "title": "Object-Oriented Programming",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-output",
+   "title": "Output-Based and Code-Tracing Questions",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-pointers",
+   "title": "Pointers, Arrays, Strings and Memory",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-prog-python",
+   "title": "Python Essentials",
+   "subject": "it-prog",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-prog"
+   ]
+  },
+  {
+   "id": "it-se-agile",
+   "title": "Agile, Scrum, DevOps and CI/CD",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-design",
+   "title": "Software Design",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-estimation",
+   "title": "Estimation and Software Metrics",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-pm",
+   "title": "Project Management, CPM/PERT and Risk",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-quality",
+   "title": "Maintenance, Quality and Reverse Engineering",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-requirements",
+   "title": "Requirement Engineering and SRS",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-sdlc",
+   "title": "SDLC Models",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-se-testing",
+   "title": "Software Testing",
+   "subject": "it-se",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-se"
+   ]
+  },
+  {
+   "id": "it-sec-attacks",
+   "title": "Attacks, Malware and Threats",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-auth",
+   "title": "Authentication, Authorisation and Identity",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-crypto",
+   "title": "Cryptography",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-defence",
+   "title": "Defence — SOC, SIEM, Zero Trust and Hardening",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-fundamentals",
+   "title": "Information Security — Fundamentals",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-ir",
+   "title": "Incident Response, Forensics and Threat Intelligence",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-law",
+   "title": "IT Act 2000, CERT-In Directions and the DPDP Act",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 6,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-pki",
+   "title": "Hashing, Digital Signatures and PKI",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-sebi-cscrf",
+   "title": "SEBI's Cyber Security & Cyber Resilience Framework (CSCRF)",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 5,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-sec-standards",
+   "title": "Standards, Frameworks, Audit and BCP",
+   "subject": "it-sec",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "it-sec"
+   ]
+  },
+  {
+   "id": "it-shell",
+   "title": "UNIX commands and shell scripting",
+   "subject": "it-shell",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-shell"
+   ]
+  },
+  {
+   "id": "it-strings",
+   "title": "Strings, pattern matching, matrices and JSON",
+   "subject": "it-ds",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-ds"
+   ]
+  },
+  {
+   "id": "it-warehouse",
+   "title": "Data warehousing, ETL and analytical models",
+   "subject": "it-data",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "it-data"
+   ]
+  },
+  {
+   "id": "it-web-api",
+   "title": "APIs, REST, Microservices and Integration",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-architecture",
+   "title": "Web and System Architecture",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-frontend",
+   "title": "HTML, CSS, JavaScript and the DOM",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-ha",
+   "title": "High Availability, Disaster Recovery and Reliability",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-http",
+   "title": "HTTP, Sessions and Web Protocols",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-infra",
+   "title": "Containers, Orchestration and Delivery Infrastructure",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 3,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "it-web-security",
+   "title": "Web Application Security — OWASP",
+   "subject": "it-web",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 4,
+   "tags": [
+    "it-web"
+   ]
+  },
+  {
+   "id": "qa-arithmetic",
+   "title": "Arithmetic — Percentage, Ratio, Profit, Interest, Time and Work",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "qa-basics",
+   "title": "Quant Foundations — Number System and Algebra",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "qa-di",
+   "title": "Data Interpretation",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "qa-pnc",
+   "title": "Permutation, Combination and Probability",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "qa-series",
+   "title": "Number Series, Quadratic Comparison and Simplification",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "qa-speed-maths",
+   "title": "Speed Maths and the Formula Sheet",
+   "subject": "qa",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 4,
+   "tags": [
+    "qa"
+   ]
+  },
+  {
+   "id": "reas-critical",
+   "title": "Data sufficiency and critical reasoning",
+   "subject": "reas",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "reas"
+   ]
+  },
+  {
+   "id": "reas-inequality",
+   "title": "Direct and coded inequalities",
+   "subject": "reas",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "reas"
+   ]
+  },
+  {
+   "id": "reas-misc",
+   "title": "Directions, relations, ranking and coding",
+   "subject": "reas",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "reas"
+   ]
+  },
+  {
+   "id": "reas-puzzles",
+   "title": "Seating, floor and scheduling puzzles",
+   "subject": "reas",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "reas"
+   ]
+  },
+  {
+   "id": "reas-syllogism",
+   "title": "Syllogisms and logical conclusions",
+   "subject": "reas",
+   "supplemental": false,
+   "desc": "Core lesson with examples and practice guidance.",
+   "mins": 3,
+   "tags": [
+    "reas"
+   ]
+  },
+  {
+   "id": "resources-free-books",
+   "title": "Free Reference Books & Official Sources",
+   "subject": "resources",
+   "supplemental": true,
+   "desc": "Supplementary reference and interview reading.",
+   "mins": 8,
+   "tags": [
+    "resources"
+   ]
+  },
+  {
+   "id": "pyq-previous-papers",
+   "title": "Previous Year Questions — What Exists, What Doesn't",
+   "subject": "resources",
+   "supplemental": false,
+   "desc": "Why there are no official SEBI papers, what the IT paper actually looks like, and where to find genuine free past papers.",
+   "mins": 5,
+   "tags": [
+    "pyq",
+    "previous year",
+    "papers",
+    "resources",
+    "strategy"
+   ]
+  }
+ ]
 }

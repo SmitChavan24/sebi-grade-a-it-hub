@@ -49,6 +49,34 @@ export default async function practice(root, ctx) {
   }
   function updateCount() { info.textContent = `${pool().length} questions match your selection.`; }
 
+  /* ---- pattern-accurate papers ---- */
+  const P1_SUBJECTS = ['ga', 'eng', 'qa', 'reas'];
+  const IT_SUBJECTS = ['it-prog', 'it-ds', 'it-dbms', 'it-cn', 'it-os', 'it-se', 'it-coa', 'it-web', 'it-sec', 'it-cloud', 'it-fin', 'it-data', 'it-shell'];
+  function paper(subjects, n, title, minutes) {
+    const picked = [];
+    const buckets = subjects.map(s => shuffle(qs.filter(q => q.s === s)));
+    let i = 0;
+    while (picked.length < n && buckets.some(b => b.length)) {      // round-robin keeps the mix even
+      const b = buckets[i++ % buckets.length];
+      if (b.length) picked.push(b.pop());
+    }
+    if (!picked.length) { toast('No questions available for that paper'); return; }
+    start(root, shuffle(picked), subjMap, { mode: 'test', title: title + ' · ' + picked.length + ' Q / ' + minutes + ' min' });
+  }
+
+  root.append(el('div', { class: 'card', style: 'margin-bottom:18px' },
+    el('h2', {}, 'Exam-pattern papers'),
+    el('p', { class: 'small muted' },
+      'Timed papers built to the real structure. SEBI does not release past papers — these are pattern-accurate practice, not recovered question papers. ',
+      el('a', { href: '#/notes/pyq-previous-papers' }, 'What exists and what does not →')),
+    el('div', { class: 'btn-row' },
+      el('button', { class: 'btn primary', onclick: () => paper(P1_SUBJECTS, 100, 'Phase I Paper 1', 60) }, 'Phase I · Paper 1 (100 Q / 60 min)'),
+      el('button', { class: 'btn primary', onclick: () => paper(IT_SUBJECTS, 100, 'Phase I Paper 2 — IT', 40) }, 'Phase I · Paper 2 IT (100 Q / 40 min)'),
+      el('button', { class: 'btn', onclick: () => paper(IT_SUBJECTS, 40, 'IT sprint', 15) }, 'IT sprint (40 Q / 15 min)'),
+      el('button', { class: 'btn', onclick: () => paper(['ga'], 30, 'Securities market drill', 15) }, 'Securities market (30 Q)')),
+    el('p', { class: 'xsmall muted', style: 'margin:10px 0 0' },
+      'The IT paper allows about 24 seconds per question. If a sprint feels rushed, that is the exam telling you something true.')));
+
   root.append(el('div', { class: 'card', style: 'margin-bottom:18px' },
     el('h2', {}, 'Pick your subjects'),
     el('p', { class: 'small muted' }, 'Nothing selected = everything. Tap to toggle.'),
