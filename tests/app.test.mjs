@@ -32,7 +32,7 @@ test('Markdown preserves code and strips executable links and markup',()=>{
  const holder=document.createElement('div');holder.innerHTML=html;assert.equal(holder.querySelector('script'),null);assert.ok(!holder.querySelector('a')?.getAttribute('href')?.startsWith('javascript:'));assert.ok(holder.querySelector('pre').textContent.includes('1 < 2'));
 });
 test('every route renders against the packaged content',async()=>{
- for(const route of ['dashboard','roadmap','syllabus','notes','library','videos','flashcards','practice','revision','mocks','currentaffairs','analytics','settings']){
+ for(const route of ['dashboard','roadmap','syllabus','curriculum','notes','library','videos','flashcards','practice','revision','mocks','currentaffairs','analytics','settings']){
    console.log('Checking route:',route);
    const host=document.createElement('div');document.querySelector('#view').replaceChildren(host);
    const mod=await import('../assets/js/views/'+route+'.js');await mod.default(host,{params:[],query:new URLSearchParams(),name:route});

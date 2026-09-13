@@ -124,6 +124,42 @@ const books = [
     license: 'US Government work · public domain'
   },
   {
+    sid: 'it-web', id: 'eloquent-js', file: 'library/eloquent-javascript.pdf',
+    title: 'Eloquent JavaScript, 4th edition',
+    author: 'Marijn Haverbeke', subject: 'Web Technologies',
+    desc: 'JavaScript, the DOM, HTTP and asynchronous programming. Chapters 13-18 cover the browser and web platform the IT paper asks about.',
+    source: 'https://eloquentjavascript.net/',
+    url: 'https://eloquentjavascript.net/Eloquent_JavaScript.pdf',
+    license: 'CC BY-NC 3.0 · unmodified · noncommercial study use'
+  },
+  {
+    sid: 'it-coa', id: 'digital-circuits', file: 'library/digital-circuit-projects.pdf',
+    title: 'Digital Circuit Projects',
+    author: 'Charles W. Kann', subject: 'Computer Organisation',
+    desc: 'Logic gates, Boolean algebra, combinational and sequential circuits, counters and registers - the digital-logic half of the COA syllabus.',
+    source: 'https://cupola.gettysburg.edu/oer/3/',
+    url: 'https://cupola.gettysburg.edu/cgi/viewcontent.cgi?article=1000&context=oer',
+    license: 'CC BY 4.0 · unmodified'
+  },
+  {
+    sid: 'reas', id: 'forall-x-logic', file: 'library/forall-x-logic.pdf',
+    title: 'forall x: Calgary — An Introduction to Formal Logic',
+    author: 'Magnus, Button, Loftis, Trueman, Zach', subject: 'Reasoning',
+    desc: 'Formal logic underneath syllogisms, validity and deduction. Read chapters 1-3 for the reasoning that statement-and-conclusion questions test.',
+    source: 'https://forallx.openlogicproject.org/',
+    url: 'https://forallx.openlogicproject.org/forallxyyc.pdf',
+    license: 'CC BY 4.0 · unmodified'
+  },
+  {
+    sid: 'it-se', id: 'scrum-guide', file: 'library/scrum-guide-2020.pdf',
+    title: 'The Scrum Guide (2020)',
+    author: 'Ken Schwaber & Jeff Sutherland', subject: 'Software Engineering',
+    desc: 'Thirteen pages, and the definitive source on Scrum roles, events and artefacts. Read it once; it answers every Agile question directly.',
+    source: 'https://scrumguides.org/',
+    url: 'https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf',
+    license: 'CC BY-SA 4.0 · unmodified'
+  },
+  {
     sid: 'engd', id: 'elements-of-style', file: 'library/elements-of-style.txt',
     title: 'The Elements of Style',
     author: 'William Strunk Jr.', subject: 'English (Descriptive)',

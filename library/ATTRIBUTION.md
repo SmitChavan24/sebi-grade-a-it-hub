@@ -13,6 +13,10 @@ licence shown. Files are unmodified originals.
 - **NIST SP 800-207 · Zero Trust Architecture**, NIST. Unmodified file from https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf. Source: https://csrc.nist.gov/pubs/sp/800/207/final. Licence: US Government work · public domain.
 - **NIST SP 800-61r3 · Incident Response**, NIST. Unmodified file from https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf. Source: https://csrc.nist.gov/pubs/sp/800/61/r3/final. Licence: US Government work · public domain.
 - **NIST SP 800-145 · The NIST Definition of Cloud Computing**, NIST. Unmodified file from https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf. Source: https://csrc.nist.gov/pubs/sp/800/145/final. Licence: US Government work · public domain.
+- **Eloquent JavaScript, 4th edition**, Marijn Haverbeke. Unmodified file from https://eloquentjavascript.net/Eloquent_JavaScript.pdf. Source: https://eloquentjavascript.net/. Licence: CC BY-NC 3.0 · unmodified · noncommercial study use.
+- **Digital Circuit Projects**, Charles W. Kann. Unmodified file from https://cupola.gettysburg.edu/cgi/viewcontent.cgi?article=1000&context=oer. Source: https://cupola.gettysburg.edu/oer/3/. Licence: CC BY 4.0 · unmodified.
+- **forall x: Calgary — An Introduction to Formal Logic**, Magnus, Button, Loftis, Trueman, Zach. Unmodified file from https://forallx.openlogicproject.org/forallxyyc.pdf. Source: https://forallx.openlogicproject.org/. Licence: CC BY 4.0 · unmodified.
+- **The Scrum Guide (2020)**, Ken Schwaber & Jeff Sutherland. Unmodified file from https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf. Source: https://scrumguides.org/. Licence: CC BY-SA 4.0 · unmodified.
 - **The Elements of Style**, William Strunk Jr.. Unmodified file from https://www.gutenberg.org/cache/epub/37134/pg37134.txt. Source: https://www.gutenberg.org/ebooks/37134. Licence: Public domain · Project Gutenberg.
 
 The 180-day handbook and the compiled study-note collection are original

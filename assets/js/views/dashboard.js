@@ -153,7 +153,8 @@ export default async function dashboard(root) {
   if (day) {
     const kit = el('div', { class: 'card', style: 'margin-top:16px' },
       el('h2', {}, "Today's study kit"),
-      el('p', { class: 'small muted' }, 'The book, video course and question set matching what you are studying today.'));
+      el('p', { class: 'small muted' }, 'The book, video course and question set matching what you are studying today. ',
+        el('a', { href: '#/curriculum' }, 'See the full curriculum →')));
     left.append(kit);
     const todaySubjects = [...new Set(day.tasks.map(t => t.s))].slice(0, 4);
     Promise.all(todaySubjects.map(async sid => {

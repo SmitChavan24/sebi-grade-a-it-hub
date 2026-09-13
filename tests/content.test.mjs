@@ -60,7 +60,7 @@ test('every subject connects to notes, a video group and practice',()=>{
  const groups=new Set(vids.groups.map(g=>g.id));
  const subjects=[...new Set(idx.notes.map(n=>n.subject))];
  for(const s of subjects) assert.ok(groups.has(VIDEO_FOR[s]||s),'no video group for subject '+s);
- for(const b of shelf.books) if(b.sid) assert.ok(subjects.includes(b.sid),'book '+b.id+' points at unknown subject '+b.sid);
+ for(const b of shelf.books) for(const sid of [].concat(b.sid||[])) assert.ok(subjects.includes(sid),'book '+b.id+' points at unknown subject '+sid);
  const answered=new Set(qs.map(q=>q.s));
  for(const s of subjects) if(!['resources','intv','it-descriptive','engd'].includes(s)) assert.ok(answered.has(s),'no practice questions for '+s);
 });

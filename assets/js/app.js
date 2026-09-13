@@ -9,6 +9,7 @@ const routes = {
   roadmap:        () => import('./views/roadmap.js'),
   today:          () => import('./views/roadmap.js'),
   syllabus:       () => import('./views/syllabus.js'),
+  curriculum:     () => import('./views/curriculum.js'),
   notes:          () => import('./views/notes.js'),
   library:        () => import('./views/library.js'),
   videos:         () => import('./views/videos.js'),
