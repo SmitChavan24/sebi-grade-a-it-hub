@@ -53,3 +53,14 @@ test('video course data is well formed and uses https links',()=>{
   }
  }
 });
+
+test('every subject connects to notes, a video group and practice',()=>{
+ const shelf=read('library/library.json'), vids=read('data/videos.json'), idx=read('data/notes/index.json'), qs=read('data/mcq/questions.json').questions;
+ const VIDEO_FOR={ga:'markets','it-fin':'markets',intv:'sebi',resources:'sebi',eng:'paper1',qa:'paper1',reas:'paper1',engd:'paper1','it-data':'it-prog','it-shell':'it-os','it-descriptive':'it-sec','it-cloud':'it-sec','it-web':'it-sec'};
+ const groups=new Set(vids.groups.map(g=>g.id));
+ const subjects=[...new Set(idx.notes.map(n=>n.subject))];
+ for(const s of subjects) assert.ok(groups.has(VIDEO_FOR[s]||s),'no video group for subject '+s);
+ for(const b of shelf.books) if(b.sid) assert.ok(subjects.includes(b.sid),'book '+b.id+' points at unknown subject '+b.sid);
+ const answered=new Set(qs.map(q=>q.s));
+ for(const s of subjects) if(!['resources','intv','it-descriptive','engd'].includes(s)) assert.ok(answered.has(s),'no practice questions for '+s);
+});

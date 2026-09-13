@@ -7,7 +7,8 @@
       "title": "Your 180-day study handbook",
       "desc": "Complete daily plan, weekly targets and study routines. Printable PDF.",
       "subject": "Plan",
-      "license": "Original study guide"
+      "license": "Original study guide",
+      "sid": "resources"
     },
     {
       "id": "study-handbook-word",
@@ -15,7 +16,8 @@
       "title": "Your 180-day handbook · Word",
       "desc": "Editable DOCX version. Read here or download for personal planning.",
       "subject": "Plan",
-      "license": "Original study guide"
+      "license": "Original study guide",
+      "sid": "resources"
     },
     {
       "id": "complete-notes",
@@ -23,7 +25,8 @@
       "title": "Complete study notes · offline collection",
       "desc": "All 142 topic notes in one reference. The fastest way to revise away from the app.",
       "subject": "All subjects",
-      "license": "Original study notes"
+      "license": "Original study notes",
+      "sid": "resources"
     },
     {
       "id": "open-data-structures",
@@ -33,7 +36,8 @@
       "subject": "Data Structures",
       "desc": "Full textbook: arrays, lists, hashing, trees, heaps and graphs. Begin with chapters 1-3, 5-6 and 10.",
       "source": "https://opendatastructures.org/",
-      "license": "CC BY · unmodified original"
+      "license": "CC BY · unmodified original",
+      "sid": "it-ds"
     },
     {
       "id": "think-python",
@@ -43,7 +47,8 @@
       "subject": "Programming",
       "desc": "Python foundations, functions, collections and objects. A full introductory book for daily reading.",
       "source": "https://greenteapress.com/wp/think-python-2e/",
-      "license": "CC BY-NC 3.0 · unmodified · noncommercial study use"
+      "license": "CC BY-NC 3.0 · unmodified · noncommercial study use",
+      "sid": "it-prog"
     },
     {
       "id": "algorithms",
@@ -53,7 +58,8 @@
       "subject": "Algorithms",
       "desc": "Deep practice in recursion, backtracking, greedy algorithms and dynamic programming.",
       "source": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
-      "license": "CC BY 4.0 · unmodified original"
+      "license": "CC BY 4.0 · unmodified original",
+      "sid": "it-ds"
     },
     {
       "id": "cn-systems-approach",
@@ -63,7 +69,8 @@
       "subject": "Computer Networks",
       "desc": "Full university textbook. Read chapters 1-2 (foundation, links), 3 (switching), 4 (internetworking), 5 (transport) and 8 (security).",
       "source": "https://book.systemsapproach.org/",
-      "license": "CC BY 4.0 · unmodified release v6.1"
+      "license": "CC BY 4.0 · unmodified release v6.1",
+      "sid": "it-cn"
     },
     {
       "id": "database-design",
@@ -73,7 +80,8 @@
       "subject": "DBMS",
       "desc": "Open textbook covering the relational model, ER modelling, normalisation and SQL basics.",
       "source": "https://opentextbc.ca/dbdesign01/",
-      "license": "CC BY 4.0 · BCcampus Open Education · unmodified"
+      "license": "CC BY 4.0 · BCcampus Open Education · unmodified",
+      "sid": "it-dbms"
     },
     {
       "id": "little-book-semaphores",
@@ -83,7 +91,8 @@
       "subject": "Operating Systems",
       "desc": "Process synchronisation in depth — producer-consumer, readers-writers, dining philosophers, and every classic problem with worked solutions.",
       "source": "https://greenteapress.com/wp/semaphores/",
-      "license": "CC BY-NC · unmodified · noncommercial study use"
+      "license": "CC BY-NC · unmodified · noncommercial study use",
+      "sid": "it-os"
     },
     {
       "id": "crypto101",
@@ -93,7 +102,8 @@
       "subject": "Cyber Security",
       "desc": "Introductory cryptography: block ciphers, modes, hashes, MACs, signatures and how they fail. Pairs with the cryptography notes.",
       "source": "https://www.crypto101.io/",
-      "license": "CC BY-NC 4.0 · unmodified"
+      "license": "CC BY-NC 4.0 · unmodified",
+      "sid": "it-sec"
     },
     {
       "id": "nist-800-207",
@@ -103,7 +113,8 @@
       "subject": "Cyber Security",
       "desc": "The definitive zero-trust reference. Read the tenets in section 2 — quotable in the descriptive paper and the interview.",
       "source": "https://csrc.nist.gov/pubs/sp/800/207/final",
-      "license": "US Government work · public domain"
+      "license": "US Government work · public domain",
+      "sid": "it-sec"
     },
     {
       "id": "nist-800-61r3",
@@ -113,7 +124,8 @@
       "subject": "Cyber Security",
       "desc": "Incident handling lifecycle. Maps directly onto SEBI CSCRF respond-and-recover expectations.",
       "source": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
-      "license": "US Government work · public domain"
+      "license": "US Government work · public domain",
+      "sid": "it-sec"
     },
     {
       "id": "nist-800-145",
@@ -123,7 +135,8 @@
       "subject": "Cloud",
       "desc": "Three pages. The five essential characteristics and the service/deployment models every cloud question is built on.",
       "source": "https://csrc.nist.gov/pubs/sp/800/145/final",
-      "license": "US Government work · public domain"
+      "license": "US Government work · public domain",
+      "sid": "it-cloud"
     },
     {
       "id": "elements-of-style",
@@ -133,7 +146,8 @@
       "subject": "English (Descriptive)",
       "desc": "Short, public-domain style guide. One read improves the Phase II descriptive paper more than any grammar drill.",
       "source": "https://www.gutenberg.org/ebooks/37134",
-      "license": "Public domain · Project Gutenberg"
+      "license": "Public domain · Project Gutenberg",
+      "sid": "engd"
     }
   ],
   "links": [

@@ -1,8 +1,9 @@
 /* Video courses — curated YouTube channels per subject. */
 import { el, getJSON, toast } from '../util.js';
 import { S } from '../store.js';
+import { resourceStrip } from '../resources.js';
 
-export default async function videos(root) {
+export default async function videos(root, ctx = {}) {
   const data = await getJSON('data/videos.json');
 
   root.append(el('div', { class: 'page-head' },
@@ -22,7 +23,7 @@ export default async function videos(root) {
   const host = el('div', {});
   root.append(el('div', { class: 'row', style: 'margin-bottom:12px' }, search), tabs, host);
 
-  let active = 'all';
+  let active = ctx.params?.[0] || 'all';
 
   function paint() {
     tabs.replaceChildren();
@@ -64,10 +65,12 @@ export default async function videos(root) {
             }, done ? '✓ Started' : 'Mark started')));
         grid.append(card);
       }
-      host.append(el('section', { class: 'card', style: 'margin-bottom:18px' },
+      const section = el('section', { class: 'card', style: 'margin-bottom:18px' },
         el('h2', {}, g.name),
         g.note ? el('p', { class: 'small muted' }, g.note) : '',
-        grid));
+        grid);
+      host.append(section);
+      resourceStrip(g.id, { skip: 'videos' }).then(strip => { if (strip) section.append(strip); });
     }
   }
 

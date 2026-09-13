@@ -1,6 +1,7 @@
 import { el, toast, loadScript, pickFile, md } from '../util.js';
 import { S } from '../store.js';
 import { loadLibrary } from '../data.js';
+import { resourceStrip } from '../resources.js';
 
 function savedFile(key,file) {
   return new Promise((resolve,reject)=>{
@@ -56,7 +57,7 @@ export default async function library(root,ctx={}) {
       stage.append(el('section',{class:'card',style:'margin-bottom:18px'},el('h2',{},'Continue reading'),grid));
     }
     const grid=el('div',{class:'note-list'});
-    for(const b of shelf.books){const actions=[];if(b.file){actions.push(el('button',{class:'btn sm primary',onclick:()=>repo(b)},'Read here'),el('a',{class:'btn sm',href:b.file,download:''},'Download'));}if(b.source)actions.push(el('a',{href:b.source,target:'_blank',rel:'noopener',class:'link-btn'},b.file?'Source & licence':'Read online'));grid.append(el('div',{class:'note-card'},el('h4',{},b.title),el('p',{},b.desc||b.author||''),el('p',{class:'xsmall muted'},b.license||''),el('div',{class:'btn-row'},...actions)));}
+    for(const b of shelf.books){const actions=[];if(b.file){actions.push(el('button',{class:'btn sm primary',onclick:()=>repo(b)},'Read here'),el('a',{class:'btn sm',href:b.file,download:''},'Download'));}if(b.source)actions.push(el('a',{href:b.source,target:'_blank',rel:'noopener',class:'link-btn'},b.file?'Source & licence':'Read online'));const card=el('div',{class:'note-card'},el('h4',{},b.title),el('p',{},b.desc||b.author||''),el('p',{class:'xsmall muted'},b.license||''),el('div',{class:'btn-row'},...actions));grid.append(card);if(b.sid)resourceStrip(b.sid,{skip:'library',label:false}).then(strip=>{if(strip)card.append(strip);});}
     stage.append(el('section',{class:'card',style:'margin-bottom:18px'},el('h2',{},'Included books and guides'),el('p',{class:'small muted'},'Open each PDF once while connected to save it offline. The app saves notes, the DOCX guide and reader tools automatically.'),grid));
     for(const group of shelf.links||[])stage.append(el('section',{class:'card',style:'margin-bottom:18px'},el('h2',{},group.group),...group.items.map(item=>el('p',{class:'small'},el('a',{href:item.u,target:'_blank',rel:'noopener'},item.t),el('br'),item.d))));
   }

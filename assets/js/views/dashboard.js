@@ -2,6 +2,7 @@
 import { el, esc, hm, pct, fmtDateFull, lineChart, heatmap, toast } from '../util.js';
 import { S, currentDayNumber, todayISO, daysToExam, dateForDay } from '../store.js';
 import { todayPlan, planProgress, subjectProgress, subjects, pacing } from '../data.js';
+import { resourceStrip } from '../resources.js';
 import { taskList } from './roadmap.js';
 
 export default async function dashboard(root) {
@@ -148,12 +149,52 @@ export default async function dashboard(root) {
   }
   right.append(cov);
 
+  /* ---- today's study kit: the book, videos and practice for today's subjects ---- */
+  if (day) {
+    const kit = el('div', { class: 'card', style: 'margin-top:16px' },
+      el('h2', {}, "Today's study kit"),
+      el('p', { class: 'small muted' }, 'The book, video course and question set matching what you are studying today.'));
+    left.append(kit);
+    const todaySubjects = [...new Set(day.tasks.map(t => t.s))].slice(0, 4);
+    Promise.all(todaySubjects.map(async sid => {
+      const strip = await resourceStrip(sid, { label: false });
+      if (!strip) return null;
+      return el('div', { style: 'padding:9px 0;border-top:1px solid var(--line)' },
+        el('div', { class: 'xsmall muted', style: 'margin-bottom:5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em' },
+          subjMap[sid]?.short || sid),
+        strip);
+    })).then(rows => {
+      const good = rows.filter(Boolean);
+      if (good.length) good.forEach(r => kit.append(r)); else kit.remove();
+    }).catch(() => kit.remove());
+  }
+
+  /* ---- continue reading ---- */
+  const reading = Object.entries(S.readerAll)
+    .filter(([, r]) => r.name).sort((a, b) => (b[1].updated || 0) - (a[1].updated || 0)).slice(0, 3);
+  if (reading.length) {
+    const rc = el('div', { class: 'card', style: 'margin-top:16px' },
+      el('div', { class: 'row between', style: 'margin-bottom:8px' },
+        el('h2', { style: 'margin:0' }, 'Continue reading'),
+        el('a', { class: 'link-btn', href: '#/library' }, 'All books')));
+    for (const [, r] of reading) {
+      const p = r.total ? Math.round((r.page / r.total) * 100) : 0;
+      rc.append(el('a', { href: '#/library', style: 'display:block;color:inherit;text-decoration:none;padding:8px 0' },
+        el('div', { class: 'row between', style: 'font-size:.82rem;margin-bottom:4px' },
+          el('span', {}, r.name.length > 42 ? r.name.slice(0, 40) + '…' : r.name),
+          el('span', { class: 'muted xsmall' }, r.total ? `p.${r.page} / ${r.total}` : '')),
+        p ? el('div', { class: 'bar', html: `<i style="width:${p}%"></i>` }) : ''));
+    }
+    right.append(rc);
+  }
+
   // quick actions
   right.append(el('div', { class: 'card', style: 'margin-top:16px' },
     el('h2', {}, 'Jump to'),
     el('div', { class: 'btn-row' },
       el('a', { class: 'btn sm', href: '#/notes' }, '✎ Study material'),
       el('a', { class: 'btn sm', href: '#/library' }, '▣ Book reader'),
+      el('a', { class: 'btn sm', href: '#/videos' }, '▶ Video courses'),
       el('a', { class: 'btn sm', href: '#/practice' }, '? Question bank'),
       el('a', { class: 'btn sm', href: '#/flashcards' }, '⚡ Flashcards'),
       el('a', { class: 'btn sm', href: '#/revision' }, '↻ Revision queue'),

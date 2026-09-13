@@ -2,6 +2,7 @@
 import { el, esc, md, getText, toast, download } from '../util.js';
 import { S } from '../store.js';
 import { loadNotesIdx, subjects } from '../data.js';
+import { resourceStrip, bookCardsFor } from '../resources.js';
 
 export default async function notes(root, ctx) {
   const [idx, subjMap] = await Promise.all([loadNotesIdx(), subjects()]);
@@ -22,7 +23,7 @@ export default async function notes(root, ctx) {
   root.append(tabs, host);
 
   const groups = [...new Set(idx.notes.map(n => n.subject))];
-  let active = 'all';
+  let active = ctx?.query?.get('s') || 'all';
 
   function paint() {
     tabs.innerHTML = '';
@@ -89,6 +90,20 @@ async function renderNote(root, idx, subjMap, id) {
     body.innerHTML = '';
     body.append(el('p', { class: 'muted' }, 'Could not load this note: ' + e.message));
   }
+
+  // everything else on this subject: book, videos, practice
+  const deeper = el('div', { class: 'card', style: 'margin-top:16px' },
+    el('h2', {}, 'Go deeper on ' + (subjMap[meta.subject]?.short || meta.subject)));
+  root.append(deeper);
+  Promise.all([bookCardsFor(meta.subject), resourceStrip(meta.subject, { skip: 'notes', label: false })])
+    .then(([cards, strip]) => {
+      if (!cards && !strip) { deeper.remove(); return; }
+      deeper.append(el('p', { class: 'small muted' },
+        'Read the note first, then use these when a point will not click — and always finish with the practice set.'));
+      if (cards) deeper.append(cards);
+      if (strip) deeper.append(strip);
+    })
+    .catch(() => deeper.remove());
 
   root.append(userNoteBox(id));
 
