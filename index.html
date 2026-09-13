@@ -50,6 +50,7 @@
       <p class="nav-label">Study</p>
       <a href="#/notes"     data-nav="notes"><span class="ic">✎</span>Study Material</a>
       <a href="#/library"   data-nav="library"><span class="ic">▣</span>Book Reader (PDF/DOC)</a>
+      <a href="#/videos"    data-nav="videos"><span class="ic">▶</span>Video Courses</a>
       <a href="#/flashcards" data-nav="flashcards"><span class="ic">⚡</span>Flashcards</a>
 
       <p class="nav-label">Practice</p>
@@ -98,7 +99,8 @@
 <script type="module" src="assets/js/app.js?v=3"></script>
 <script>
 if ('serviceWorker' in navigator) {
-  if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') navigator.serviceWorker.addEventListener('controllerchange', () => location.reload());
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (reloading) return; reloading = true; location.reload(); });
   window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
 }
 </script>

@@ -5,7 +5,7 @@ const CORE = __CORE__;
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(async cache => {
   // Batches prevent hundreds of simultaneous requests on mobile connections.
   for(let i=0;i<CORE.length;i+=12) await cache.addAll(CORE.slice(i,i+12));
-  if (self.location.hostname === '127.0.0.1' || self.location.hostname === 'localhost') await self.skipWaiting();
+  await self.skipWaiting();   // a new build takes over on the next load, not after every tab is closed
 })));
 self.addEventListener('activate', event => event.waitUntil((async()=>{
   for (const key of await caches.keys()) if(key.startsWith(PREFIX)&&key!==CACHE&&key!==BOOKS) await caches.delete(key);

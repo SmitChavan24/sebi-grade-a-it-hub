@@ -383,3 +383,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   .row{flex-wrap:wrap}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- PDF reader: continuous scrolling ---------- */
+.pdf-slot{
+  margin:0 auto 14px;background:#fff;border-radius:4px;box-shadow:var(--sh);
+  display:flex;align-items:center;justify-content:center;max-width:100%;
+  contain:content;
+}
+.pdf-slot canvas{display:block;max-width:100%;height:auto;border-radius:4px}
+.reader-stage{scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.note-card.done{opacity:.6}
+.note-card.done h4::after{content:' ✓';color:var(--ok)}

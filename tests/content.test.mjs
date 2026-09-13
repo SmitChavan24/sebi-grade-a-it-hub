@@ -36,3 +36,20 @@ test('all app modules parse',()=>{
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
  for(const f of walk(path.join(root,'assets/js')).filter(f=>f.endsWith('.js')))execFileSync(process.execPath,['--input-type=module','--check'],{input:fs.readFileSync(f),stdio:'pipe'});
 });
+
+test('video course data is well formed and uses https links',()=>{
+ const v=read('data/videos.json');
+ assert.ok(v.howto.length>=3);
+ assert.ok(v.groups.length>=8);
+ const seen=new Set();
+ for(const g of v.groups){
+  assert.ok(g.id&&g.name&&g.items.length,g.id);
+  assert.ok(!seen.has(g.id),'duplicate group '+g.id);seen.add(g.id);
+  for(const i of g.items){
+   assert.ok(i.t&&i.d&&i.ch,i.t);
+   for(const url of [i.u,i.s].filter(Boolean)){
+    assert.ok(url.startsWith('https://www.youtube.com/'), url);
+   }
+  }
+ }
+});

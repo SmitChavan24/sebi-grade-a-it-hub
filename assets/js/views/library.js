@@ -73,24 +73,125 @@ export default async function library(root,ctx={}) {
         const vendor=new URL('../../vendor/',import.meta.url).href;pdfjs.GlobalWorkerOptions.workerSrc=vendor+'pdf.worker.mjs';
         const loading=pdfjs.getDocument({data:await blob.arrayBuffer(),isEvalSupported:false,cMapUrl:vendor+'cmaps/',cMapPacked:true,standardFontDataUrl:vendor+'standard_fonts/',wasmUrl:vendor+'wasm/'});
         let alive=true;dispose=()=>{alive=false;loading.destroy();};const doc=await loading.promise;if(!alive)return;
-        let page=Math.max(1,Math.min(doc.numPages,S.readerState(key).page||1)),zoom=0,sequence=0;
+        const saved=S.readerState(key);
+        let page=Math.max(1,Math.min(doc.numPages,saved.page||1)),zoom=saved.zoom||0,sequence=0;
+        let scrollMode=saved.mode!=='page';                       // continuous scrolling is the default
+        const first=await doc.getPage(1),base=first.getViewport({scale:1});
         const input=el('input',{class:'inp',type:'number',min:1,max:doc.numPages,'aria-label':'PDF page',style:'width:70px'}),count=el('span',{class:'small'},'/ '+doc.numPages),marks=el('select',{class:'sel sm','aria-label':'Bookmarked pages'});
         const prev=el('button',{class:'btn sm','aria-label':'Previous page'},'‹'),next=el('button',{class:'btn sm','aria-label':'Next page'},'›'),mark=el('button',{class:'btn sm'},'Bookmark'),fit=el('button',{class:'btn sm'},'Fit'),minus=el('button',{class:'btn sm','aria-label':'Zoom out'},'−'),plus=el('button',{class:'btn sm','aria-label':'Zoom in'},'+');
-        bar.append(prev,input,count,next,minus,fit,plus,mark,marks);
-        const sync=()=>{input.value=page;prev.disabled=page===1;next.disabled=page===doc.numPages;const bm=S.readerState(key).bookmarks||[];mark.textContent=bm.includes(page)?'Remove bookmark':'Bookmark';marks.replaceChildren(el('option',{value:''},`${bm.length} bookmarks`),...bm.slice().sort((a,b)=>a-b).map(p=>el('option',{value:p},'Page '+p)));};
-        async function draw(){
-          const current=++sequence;sync();S.setReader(key,{page,total:doc.numPages});
-          try{const p=await doc.getPage(page);if(!alive||current!==sequence)return;
-            const vp=p.getViewport({scale:zoom||Math.max(.25,Math.min(2,(body.clientWidth-32)/p.getViewport({scale:1}).width))});
-            const ratio=Math.min(devicePixelRatio||1,2),canvas=el('canvas',{'aria-label':`${title}, page ${page}`});canvas.width=Math.floor(vp.width*ratio);canvas.height=Math.floor(vp.height*ratio);canvas.style.width=vp.width+'px';canvas.style.height=vp.height+'px';
-            await p.render({canvasContext:canvas.getContext('2d'),viewport:vp,transform:[ratio,0,0,ratio,0,0]}).promise;if(alive&&current===sequence){body.replaceChildren(canvas);body.scrollTop=0;}
+        const modeBtn=el('button',{class:'btn sm','aria-label':'Reading mode'});
+        bar.append(prev,input,count,next,minus,fit,plus,modeBtn,mark,marks);
+        const scaleFor=()=>zoom||Math.max(.25,Math.min(2,(body.clientWidth-32)/base.width));
+        const persist=()=>S.setReader(key,{page,total:doc.numPages,zoom,mode:scrollMode?'scroll':'page'});
+        const sync=()=>{
+          input.value=page;
+          prev.disabled=page===1;next.disabled=page===doc.numPages;
+          modeBtn.textContent=scrollMode?'▤ Scrolling':'▭ Page by page';
+          modeBtn.title=scrollMode?'Switch to one page at a time':'Switch to continuous scrolling';
+          const bm=S.readerState(key).bookmarks||[];
+          mark.textContent=bm.includes(page)?'Remove bookmark':'Bookmark';
+          marks.replaceChildren(el('option',{value:''},`${bm.length} bookmarks`),...bm.slice().sort((a,b)=>a-b).map(p=>el('option',{value:p},'Page '+p)));
+        };
+
+        /* draw one page into a host element */
+        async function paint(host,n,scale){
+          const p=await doc.getPage(n);if(!alive)return;
+          const vp=p.getViewport({scale});
+          const ratio=Math.min(devicePixelRatio||1,2),canvas=el('canvas',{'aria-label':`${title}, page ${n}`});
+          canvas.width=Math.floor(vp.width*ratio);canvas.height=Math.floor(vp.height*ratio);
+          canvas.style.width=vp.width+'px';canvas.style.height=vp.height+'px';
+          await p.render({canvasContext:canvas.getContext('2d'),viewport:vp,transform:[ratio,0,0,ratio,0,0]}).promise;
+          if(alive&&host.isConnected)host.replaceChildren(canvas);
+        }
+
+        /* ---------- continuous scrolling ---------- */
+        let io=null,slots=[],scrollTimer=null;
+        function teardownScroll(){if(io){io.disconnect();io=null;}slots=[];clearTimeout(scrollTimer);body.onscroll=null;}
+        function buildScroll(jumpTo){
+          teardownScroll();
+          const scale=scaleFor(),w=Math.round(base.width*scale),h=Math.round(base.height*scale);
+          slots=[];const frag=document.createDocumentFragment();
+          for(let n=1;n<=doc.numPages;n++){
+            const slot=el('div',{class:'pdf-slot','data-page':String(n),style:`width:${w}px;height:${h}px`});
+            slots.push(slot);frag.append(slot);
+          }
+          body.replaceChildren(frag);
+          io=new IntersectionObserver(entries=>{
+            for(const en of entries){
+              const n=+en.target.dataset.page;
+              if(en.isIntersecting){
+                if(!en.target.dataset.done){en.target.dataset.done='1';paint(en.target,n,scale).catch(()=>{delete en.target.dataset.done;});}
+                if(en.intersectionRatio>0.25&&n!==page){page=n;sync();clearTimeout(scrollTimer);scrollTimer=setTimeout(persist,400);}
+              }else if(en.target.dataset.done&&Math.abs(n-page)>5){
+                delete en.target.dataset.done;en.target.replaceChildren();   // release memory on long books
+              }
+            }
+          },{root:body,rootMargin:'700px 0px',threshold:[0,0.25]});
+          slots.forEach(s=>io.observe(s));
+          const target=slots[(jumpTo||page)-1];
+          if(target)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+          sync();
+        }
+
+        /* ---------- one page at a time ---------- */
+        async function drawPage(){
+          teardownScroll();
+          const current=++sequence;sync();persist();
+          try{
+            const host=el('div',{class:'pdf-slot',style:'width:auto;height:auto'});
+            body.replaceChildren(host);body.scrollTop=0;
+            await paint(host,page,scaleFor());
+            if(!alive||current!==sequence)return;
           }catch(e){if(alive&&current===sequence)body.textContent='Could not render page: '+e.message;}
         }
-        const go=n=>{page=Math.max(1,Math.min(doc.numPages,Math.trunc(n)||1));draw();};prev.onclick=()=>go(page-1);next.onclick=()=>go(page+1);input.onchange=()=>go(+input.value);
-        minus.onclick=()=>{zoom=Math.max(.3,(zoom||1)/1.2);draw();};plus.onclick=()=>{zoom=Math.min(3,(zoom||1)*1.2);draw();};fit.onclick=()=>{zoom=0;draw();};
-        mark.onclick=()=>{const bm=S.readerState(key).bookmarks||[];S.setReader(key,{bookmarks:bm.includes(page)?bm.filter(p=>p!==page):[...bm,page]});sync();};marks.onchange=()=>{if(marks.value)go(+marks.value);};
-        const handler=e=>{if(e.target.matches('input,textarea,select,button'))return;if(e.key==='ArrowRight'){e.preventDefault();go(page+1);}if(e.key==='ArrowLeft'){e.preventDefault();go(page-1);}};document.addEventListener('keydown',handler);
-        dispose=()=>{alive=false;sequence++;document.removeEventListener('keydown',handler);loading.destroy();};await draw();
+
+        const render=jumpTo=>scrollMode?buildScroll(jumpTo):drawPage();
+        const go=n=>{
+          page=Math.max(1,Math.min(doc.numPages,Math.trunc(n)||1));
+          if(scrollMode){const t=slots[page-1];if(t)t.scrollIntoView({behavior:'smooth',block:'start'});sync();persist();}
+          else drawPage();
+        };
+        prev.onclick=()=>go(page-1);next.onclick=()=>go(page+1);input.onchange=()=>go(+input.value);
+        minus.onclick=()=>{zoom=Math.max(.3,(zoom||scaleFor())/1.2);render();};
+        plus.onclick=()=>{zoom=Math.min(3,(zoom||scaleFor())*1.2);render();};
+        fit.onclick=()=>{zoom=0;render();};
+        modeBtn.onclick=()=>{scrollMode=!scrollMode;persist();render();toast(scrollMode?'Continuous scrolling — swipe up and down':'One page at a time — swipe left and right',3000);};
+        mark.onclick=()=>{const bm=S.readerState(key).bookmarks||[];S.setReader(key,{bookmarks:bm.includes(page)?bm.filter(p=>p!==page):[...bm,page]});sync();};
+        marks.onchange=()=>{if(marks.value)go(+marks.value);};
+
+        /* keyboard */
+        const handler=e=>{
+          if(e.target.matches('input,textarea,select,button'))return;
+          if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();go(page+1);}
+          if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(page-1);}
+        };
+        document.addEventListener('keydown',handler);
+
+        /* swipe: sideways turns the page, vertical is left to the browser */
+        let sx=0,sy=0,swiping=false;
+        const onStart=e=>{if(e.touches.length!==1)return;sx=e.touches[0].clientX;sy=e.touches[0].clientY;swiping=true;};
+        const onEnd=e=>{
+          if(!swiping)return;swiping=false;
+          const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+          if(scrollMode)return;                                   // vertical scrolling owns the gesture
+          if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)go(page+(dx<0?1:-1));
+        };
+        body.addEventListener('touchstart',onStart,{passive:true});
+        body.addEventListener('touchend',onEnd,{passive:true});
+
+        /* re-fit on rotation / resize while fit-to-width is active */
+        let resizeTimer=null;
+        const onResize=()=>{if(zoom)return;clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(alive)render();},250);};
+        window.addEventListener('resize',onResize);
+
+        dispose=()=>{
+          alive=false;sequence++;teardownScroll();
+          document.removeEventListener('keydown',handler);
+          window.removeEventListener('resize',onResize);
+          clearTimeout(resizeTimer);
+          loading.destroy();
+        };
+        render();
       }else{
         const page=el('article',{class:'docx-page'});
         if(ext==='docx'){await loadScript('assets/vendor/mammoth.min.js');const result=await window.mammoth.convertToHtml({arrayBuffer:await blob.arrayBuffer()});page.innerHTML=window.DOMPurify.sanitize(result.value,{USE_PROFILES:{html:true}});}

@@ -11,6 +11,7 @@ const routes = {
   syllabus:       () => import('./views/syllabus.js'),
   notes:          () => import('./views/notes.js'),
   library:        () => import('./views/library.js'),
+  videos:         () => import('./views/videos.js'),
   flashcards:     () => import('./views/flashcards.js'),
   practice:       () => import('./views/practice.js'),
   revision:       () => import('./views/revision.js'),

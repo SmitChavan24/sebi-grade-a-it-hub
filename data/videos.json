@@ -1,0 +1,120 @@
+{
+  "_readme": "Curated YouTube channels for the SEBI Grade A (IT) syllabus. Every channel URL below was checked to resolve. Playlists are linked as YouTube searches scoped to the channel rather than hard-coded playlist IDs, because playlist IDs get renamed and deleted while channels do not.",
+  "howto": [
+    "Watch a lecture ONCE at 1.25x-1.5x, then close it and write the four main points from memory. If you cannot, rewatch that one section only.",
+    "Video is for topics that will not click from the notes. It is the slowest way to revise, so never use it for revision - use the notes and flashcards.",
+    "Cap video at about 45 minutes a day. Beyond that it becomes comfortable procrastination that feels like studying.",
+    "Always finish a video topic by doing 10 questions on it in the Question Bank. Watching without testing produces recognition, not recall."
+  ],
+  "groups": [
+    {
+      "id": "sebi",
+      "name": "SEBI Grade A — exam-specific channels",
+      "note": "Start here for strategy, pattern and previous-year discussion. Treat coaching content as a supplement to the official SEBI material, never as a replacement for it.",
+      "items": [
+        { "t": "Anuj Jindal — SEBI / RBI Grade A", "ch": "@AnujJindal", "u": "https://www.youtube.com/@AnujJindal", "s": "https://www.youtube.com/results?search_query=anuj+jindal+sebi+grade+a+strategy", "lang": "Hindi + English", "d": "The best-known channel for SEBI and RBI Grade A. Strategy, syllabus breakdown, previous-year analysis and free classes on securities market awareness." },
+        { "t": "EduTap — SEBI Grade A", "ch": "@edutap", "u": "https://www.youtube.com/@edutap", "s": "https://www.youtube.com/results?search_query=edutap+sebi+grade+a+information+technology", "lang": "Hindi + English", "d": "Detailed sessions on SEBI Act, regulations and the securities market. Useful for Phase I Paper 1 and the interview." },
+        { "t": "Oliveboard", "ch": "@Oliveboard", "u": "https://www.youtube.com/@Oliveboard", "s": "https://www.youtube.com/results?search_query=oliveboard+sebi+grade+a+quant+reasoning", "lang": "Hindi + English", "d": "Quant, reasoning and English sessions for bank/regulator exams, plus mock analysis." }
+      ]
+    },
+    {
+      "id": "markets",
+      "name": "Securities market & finance — build the intuition",
+      "note": "You need to understand markets, not just memorise them. These make the concepts concrete before you read the regulation.",
+      "items": [
+        { "t": "SEBI — official channel", "ch": "@SEBI_India", "u": "https://www.youtube.com/@SEBI_India", "s": "https://www.youtube.com/results?search_query=sebi+investor+awareness", "lang": "Hindi + English", "d": "The regulator's own investor-education videos. Short, authoritative, and exactly the framing SEBI itself uses." },
+        { "t": "NSE India — official", "ch": "@NSEIndia", "u": "https://www.youtube.com/@NSEIndia", "s": "https://www.youtube.com/results?search_query=nse+india+market+basics", "lang": "English", "d": "Exchange-side explanations of trading, settlement and market operations." },
+        { "t": "Zerodha Varsity", "ch": "@varsitybyzerodha", "u": "https://www.youtube.com/@varsitybyzerodha", "s": "https://www.youtube.com/results?search_query=zerodha+varsity+markets+module", "lang": "English", "d": "The clearest free explanation of markets, derivatives and trading mechanics in India. Pairs with the derivatives and secondary-market notes." },
+        { "t": "CA Rachana Ranade", "ch": "@CARachanaRanade", "u": "https://www.youtube.com/@CARachanaRanade", "s": "https://www.youtube.com/results?search_query=rachana+ranade+stock+market+for+beginners", "lang": "Hindi + English", "d": "Beginner-friendly market and accounting basics. Good if the financial side feels foreign to you as an IT graduate." },
+        { "t": "ET Money", "ch": "@ETMONEY", "u": "https://www.youtube.com/@ETMONEY", "s": "https://www.youtube.com/results?search_query=et+money+mutual+funds+explained", "lang": "English", "d": "Mutual funds, AIFs and personal-finance products explained simply." }
+      ]
+    },
+    {
+      "id": "it-os",
+      "name": "Operating Systems",
+      "note": "Highest-yield IT subject after security. Watch for scheduling, deadlock, memory and paging — the topics with numericals.",
+      "items": [
+        { "t": "Gate Smashers — Operating System", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+operating+system+playlist", "lang": "Hindi + English", "d": "Short, exam-focused lectures that map almost one-to-one onto this syllabus. The single best match for the IT paper." },
+        { "t": "Knowledge Gate — Operating System", "ch": "@KNOWLEDGEGATE_kg", "u": "https://www.youtube.com/@KNOWLEDGEGATE_kg", "s": "https://www.youtube.com/results?search_query=knowledge+gate+operating+system+full+course", "lang": "Hindi", "d": "Long-form complete course. Use when a topic needs slower, fuller treatment." },
+        { "t": "Neso Academy — Operating System", "ch": "@nesoacademy", "u": "https://www.youtube.com/@nesoacademy", "s": "https://www.youtube.com/results?search_query=neso+academy+operating+system", "lang": "English", "d": "Clean, structured English lectures. Best if you prefer a university style." }
+      ]
+    },
+    {
+      "id": "it-cn",
+      "name": "Computer Networks",
+      "note": "Focus on the OSI/TCP-IP split, IP addressing and subnetting, TCP congestion control, and the application protocols.",
+      "items": [
+        { "t": "Gate Smashers — Computer Networks", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+computer+network+playlist", "lang": "Hindi + English", "d": "Covers every layer with exam-style framing, including subnetting numericals." },
+        { "t": "Neso Academy — Computer Networks", "ch": "@nesoacademy", "u": "https://www.youtube.com/@nesoacademy", "s": "https://www.youtube.com/results?search_query=neso+academy+computer+networks", "lang": "English", "d": "Excellent on the data link layer, error detection and flow control protocols." }
+      ]
+    },
+    {
+      "id": "it-dbms",
+      "name": "DBMS & SQL",
+      "note": "Normalisation, transactions and SQL writing are the scoring areas. Practise SQL by typing it, not by watching it.",
+      "items": [
+        { "t": "Gate Smashers — DBMS", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+dbms+playlist", "lang": "Hindi + English", "d": "Normalisation and transaction/concurrency lectures are particularly good." },
+        { "t": "Jenny's Lectures — DBMS", "ch": "@JennysLecturesCSIT", "u": "https://www.youtube.com/@JennysLecturesCSIT", "s": "https://www.youtube.com/results?search_query=jenny+lectures+dbms+normalization", "lang": "English + Hindi", "d": "Worked examples on functional dependencies and candidate keys — the skill the exam actually tests." },
+        { "t": "Knowledge Gate — DBMS", "ch": "@KNOWLEDGEGATE_kg", "u": "https://www.youtube.com/@KNOWLEDGEGATE_kg", "s": "https://www.youtube.com/results?search_query=knowledge+gate+dbms+full+course", "lang": "Hindi", "d": "Complete course if you want the subject built from scratch." }
+      ]
+    },
+    {
+      "id": "it-ds",
+      "name": "Data Structures & Algorithms",
+      "note": "For the objective paper you need complexity, properties and behaviour more than implementation. Do not fall into a coding-interview rabbit hole.",
+      "items": [
+        { "t": "Abdul Bari — Algorithms", "ch": "@abdul_bari", "u": "https://www.youtube.com/@abdul_bari", "s": "https://www.youtube.com/results?search_query=abdul+bari+algorithms+playlist", "lang": "English", "d": "The clearest algorithms teaching on YouTube. Greedy, dynamic programming and graph algorithms especially." },
+        { "t": "Apna College — DSA", "ch": "@ApnaCollegeOfficial", "u": "https://www.youtube.com/@ApnaCollegeOfficial", "s": "https://www.youtube.com/results?search_query=apna+college+dsa+full+course", "lang": "Hindi", "d": "Structured DSA course in Hindi, with code." },
+        { "t": "Jenny's Lectures — Data Structures", "ch": "@JennysLecturesCSIT", "u": "https://www.youtube.com/@JennysLecturesCSIT", "s": "https://www.youtube.com/results?search_query=jenny+lectures+data+structures", "lang": "English + Hindi", "d": "Trees, hashing and sorting with worked traces." }
+      ]
+    },
+    {
+      "id": "it-prog",
+      "name": "Programming — C, Java, Python",
+      "note": "The paper asks output-based and concept questions, not large programs. Watch enough to read code confidently.",
+      "items": [
+        { "t": "CodeWithHarry — C / Python", "ch": "@CodeWithHarry", "u": "https://www.youtube.com/@CodeWithHarry", "s": "https://www.youtube.com/results?search_query=codewithharry+c+language+full+course", "lang": "Hindi", "d": "Approachable Hindi courses in C and Python, good for pointers and memory." },
+        { "t": "Telusko — Java", "ch": "@Telusko", "u": "https://www.youtube.com/@Telusko", "s": "https://www.youtube.com/results?search_query=telusko+java+tutorial+for+beginners", "lang": "English", "d": "Java, OOP, collections and multithreading explained simply." },
+        { "t": "freeCodeCamp — full courses", "ch": "@freecodecamp", "u": "https://www.youtube.com/@freecodecamp", "s": "https://www.youtube.com/results?search_query=freecodecamp+python+full+course", "lang": "English", "d": "Multi-hour complete courses in almost every language and technology." }
+      ]
+    },
+    {
+      "id": "it-coa",
+      "name": "Computer Organisation & Digital Logic",
+      "note": "Cache mapping, pipelining and number systems carry the numericals. Boolean algebra and K-maps are free marks once practised.",
+      "items": [
+        { "t": "Gate Smashers — COA", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+computer+organization+architecture", "lang": "Hindi + English", "d": "Cache mapping and pipelining numericals worked step by step." },
+        { "t": "Neso Academy — Digital Electronics", "ch": "@nesoacademy", "u": "https://www.youtube.com/@nesoacademy", "s": "https://www.youtube.com/results?search_query=neso+academy+digital+electronics", "lang": "English", "d": "Boolean algebra, K-maps, combinational and sequential circuits." }
+      ]
+    },
+    {
+      "id": "it-se",
+      "name": "Software Engineering",
+      "note": "Mostly definitional. A single pass on video is enough; spend the saved time on security.",
+      "items": [
+        { "t": "Knowledge Gate — Software Engineering", "ch": "@KNOWLEDGEGATE_kg", "u": "https://www.youtube.com/@KNOWLEDGEGATE_kg", "s": "https://www.youtube.com/results?search_query=knowledge+gate+software+engineering+full+course", "lang": "Hindi", "d": "SDLC models, estimation, testing and project management." },
+        { "t": "Gate Smashers — Software Engineering", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+software+engineering", "lang": "Hindi + English", "d": "Short lectures on COCOMO, testing and process models." }
+      ]
+    },
+    {
+      "id": "it-sec",
+      "name": "Cyber Security, Cloud & Emerging Tech",
+      "note": "Your differentiating block. Use video for the concepts, then read the bundled NIST documents and SEBI's CSCRF — a panel will ask about the regulation, not the YouTube explanation.",
+      "items": [
+        { "t": "freeCodeCamp — security & networking courses", "ch": "@freecodecamp", "u": "https://www.youtube.com/@freecodecamp", "s": "https://www.youtube.com/results?search_query=freecodecamp+cyber+security+full+course", "lang": "English", "d": "Full courses on security fundamentals, cryptography and ethical hacking basics." },
+        { "t": "Gate Smashers — Cryptography & Network Security", "ch": "@GateSmashers", "u": "https://www.youtube.com/@GateSmashers", "s": "https://www.youtube.com/results?search_query=gate+smashers+cryptography+network+security", "lang": "Hindi + English", "d": "Symmetric and asymmetric cryptography, digital signatures, attacks." },
+        { "t": "Cloud & blockchain explainers", "ch": "@freecodecamp", "u": "https://www.youtube.com/@freecodecamp", "s": "https://www.youtube.com/results?search_query=cloud+computing+explained+iaas+paas+saas", "lang": "English", "d": "Search-based: cloud service models, containers, blockchain fundamentals." }
+      ]
+    },
+    {
+      "id": "paper1",
+      "name": "Quant, Reasoning & English (Phase I Paper 1)",
+      "note": "These are habit subjects. Twenty minutes of daily practice beats three hours of watching.",
+      "items": [
+        { "t": "Oliveboard — Quant & Reasoning", "ch": "@Oliveboard", "u": "https://www.youtube.com/@Oliveboard", "s": "https://www.youtube.com/results?search_query=oliveboard+quant+shortcut+tricks+bank+exam", "lang": "Hindi + English", "d": "Shortcut techniques, DI sets and sectional strategy for regulator exams." },
+        { "t": "Puzzle & seating arrangement practice", "ch": "@Oliveboard", "u": "https://www.youtube.com/@Oliveboard", "s": "https://www.youtube.com/results?search_query=seating+arrangement+puzzle+tricks+bank+exam", "lang": "Hindi + English", "d": "Search-based: the reasoning topic that decides Paper 1 timing." },
+        { "t": "English for competitive exams", "ch": "@Oliveboard", "u": "https://www.youtube.com/@Oliveboard", "s": "https://www.youtube.com/results?search_query=english+grammar+rules+for+bank+exams+error+spotting", "lang": "Hindi + English", "d": "Search-based: error spotting rules and reading comprehension technique." }
+      ]
+    }
+  ]
+}
